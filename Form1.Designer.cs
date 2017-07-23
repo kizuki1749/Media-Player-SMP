@@ -57,6 +57,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.リストの削除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -94,6 +98,8 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label1);
@@ -123,6 +129,7 @@
             this.axWindowsMediaPlayer1.TabIndex = 2;
             this.axWindowsMediaPlayer1.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.axWindowsMediaPlayer1_OpenStateChange);
             this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
+            this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
             this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
             // 
             // label1
@@ -250,7 +257,9 @@
             this.toolStripSeparator1,
             this.toolStripMenuItem1,
             this.toolStripTextBox1,
-            this.uRLを開くUToolStripMenuItem});
+            this.uRLを開くUToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.リストの削除DToolStripMenuItem});
             this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
             this.メディアMToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.メディアMToolStripMenuItem.Text = "メディア(&M)";
@@ -259,8 +268,8 @@
             // 
             this.開くOToolStripMenuItem.Name = "開くOToolStripMenuItem";
             this.開くOToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.開くOToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.開くOToolStripMenuItem.Text = "開く(&O)";
+            this.開くOToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.開くOToolStripMenuItem.Text = "ファイルからリストに追加(&O)";
             this.開くOToolStripMenuItem.Click += new System.EventHandler(this.開くOToolStripMenuItem_Click);
             // 
             // openFileDialog1
@@ -268,6 +277,7 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "すべてのファイル|*.*|動画ファイル|*.mp4;*.avi;*.mpg;*.mpeg;*.wmv|音楽ファイル|*.mp3;*.wma;*.m4a|プレイリス" +
     "ト|*.wpl;*.m3u";
+            this.openFileDialog1.Multiselect = true;
             this.openFileDialog1.Title = "メディアファイルを開く";
             // 
             // timer1
@@ -298,8 +308,8 @@
             // uRLを開くUToolStripMenuItem
             // 
             this.uRLを開くUToolStripMenuItem.Name = "uRLを開くUToolStripMenuItem";
-            this.uRLを開くUToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.uRLを開くUToolStripMenuItem.Text = "URLから開く(&U)";
+            this.uRLを開くUToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.uRLを開くUToolStripMenuItem.Text = "URLからリストに追加(&U)";
             this.uRLを開くUToolStripMenuItem.Click += new System.EventHandler(this.uRLを開くUToolStripMenuItem_Click);
             // 
             // toolStripTextBox1
@@ -310,13 +320,13 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Enabled = false;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(243, 22);
             this.toolStripMenuItem1.Text = "URL";
             // 
             // timer2
@@ -324,6 +334,38 @@
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(240, 6);
+            // 
+            // リストの削除DToolStripMenuItem
+            // 
+            this.リストの削除DToolStripMenuItem.Name = "リストの削除DToolStripMenuItem";
+            this.リストの削除DToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.リストの削除DToolStripMenuItem.Text = "リストの削除(&D)";
+            this.リストの削除DToolStripMenuItem.Click += new System.EventHandler(this.リストの削除DToolStripMenuItem_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(355, 62);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(179, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 14;
+            this.progressBar1.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(258, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 12);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "バッファ中... (100%)";
+            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1
             // 
@@ -336,7 +378,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Media Player SMP 1.0 Beta 1";
+            this.Text = "Media Player SMP 1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -379,6 +421,10 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem リストの削除DToolStripMenuItem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

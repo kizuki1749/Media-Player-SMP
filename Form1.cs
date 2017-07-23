@@ -27,7 +27,11 @@ namespace Media_Player_SMP
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                axWindowsMediaPlayer1.URL = openFileDialog1.FileName;
+                string[] files = openFileDialog1.FileNames;
+                foreach (string a in files)
+                {
+                    axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(a));
+                }
                 timer1.Start();
             }
         }
@@ -89,11 +93,23 @@ namespace Media_Player_SMP
 
         private async void axWindowsMediaPlayer1_StatusChange(object sender, EventArgs e)
         {
-            if (axWindowsMediaPlayer1.status == "停止")
+            if (axWindowsMediaPlayer1.status == "停止" || axWindowsMediaPlayer1.status == "準備完了")
             {
                 timer1.Stop();
                 label2.Text = "00:00";
                 trackBar1.Value = 0;
+            }
+            if (axWindowsMediaPlayer1.status == "バッファー中")
+            {
+                progressBar1.Visible = true;
+                label6.Visible = true;
+                progressBar1.Style = ProgressBarStyle.Marquee;
+                label6.Text = "バッファ中...";
+            }
+            else
+            {
+                progressBar1.Visible = false;
+                label6.Visible = false;
             }
             label5.Text = axWindowsMediaPlayer1.status;
             label5.Visible = true;
@@ -134,12 +150,39 @@ namespace Media_Player_SMP
 
         private void uRLを開くUToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = toolStripTextBox1.Text;
+            axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(toolStripTextBox1.Text));
             timer1.Start();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+        }
+
+        private void リストの削除DToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("リストを削除しますか？この操作はもとに戻せません。","確認",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                axWindowsMediaPlayer1.currentPlaylist.clear();
+            }
+        }
+
+        private void axWindowsMediaPlayer1_Buffering(object sender, AxWMPLib._WMPOCXEvents_BufferingEvent e)
+        {
+            progressBar1.Visible = true;
+            label6.Visible = true;
+            progressBar1.Style = ProgressBarStyle.Continuous;
+            progressBar1.Value = axWindowsMediaPlayer1.network.bufferingProgress;
+            label6.Text = "バッファ中... ("+axWindowsMediaPlayer1.network.bufferingProgress+"%)";
+            if (axWindowsMediaPlayer1.network.bufferingProgress == 100)
+            {
+                progressBar1.Visible = false;
+                label6.Visible = false;
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
