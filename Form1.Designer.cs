@@ -33,39 +33,39 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ファイルFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.メディアMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.開くOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.uRLを開くUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.uRLを開くUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.リストの削除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -93,6 +93,65 @@
             this.終了ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.終了ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.終了ToolStripMenuItem.Text = "終了(&E)";
+            this.終了ToolStripMenuItem.Click += new System.EventHandler(this.終了ToolStripMenuItem_Click);
+            // 
+            // メディアMToolStripMenuItem
+            // 
+            this.メディアMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.開くOToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.toolStripMenuItem1,
+            this.toolStripTextBox1,
+            this.uRLを開くUToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.リストの削除DToolStripMenuItem});
+            this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
+            this.メディアMToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.メディアMToolStripMenuItem.Text = "メディア(&M)";
+            // 
+            // 開くOToolStripMenuItem
+            // 
+            this.開くOToolStripMenuItem.Name = "開くOToolStripMenuItem";
+            this.開くOToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.開くOToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.開くOToolStripMenuItem.Text = "ファイルからリストに追加(&O)";
+            this.開くOToolStripMenuItem.Click += new System.EventHandler(this.開くOToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(243, 22);
+            this.toolStripMenuItem1.Text = "URL";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            // 
+            // uRLを開くUToolStripMenuItem
+            // 
+            this.uRLを開くUToolStripMenuItem.Name = "uRLを開くUToolStripMenuItem";
+            this.uRLを開くUToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.uRLを開くUToolStripMenuItem.Text = "URLからリストに追加(&U)";
+            this.uRLを開くUToolStripMenuItem.Click += new System.EventHandler(this.uRLを開くUToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(240, 6);
+            // 
+            // リストの削除DToolStripMenuItem
+            // 
+            this.リストの削除DToolStripMenuItem.Name = "リストの削除DToolStripMenuItem";
+            this.リストの削除DToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.リストの削除DToolStripMenuItem.Text = "リストの削除(&D)";
+            this.リストの削除DToolStripMenuItem.Click += new System.EventHandler(this.リストの削除DToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -118,19 +177,45 @@
             this.panel1.Size = new System.Drawing.Size(756, 98);
             this.panel1.TabIndex = 1;
             // 
-            // axWindowsMediaPlayer1
+            // label6
             // 
-            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 24);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(756, 408);
-            this.axWindowsMediaPlayer1.TabIndex = 2;
-            this.axWindowsMediaPlayer1.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.axWindowsMediaPlayer1_OpenStateChange);
-            this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
-            this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
-            this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(258, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 12);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "バッファ中... (100%)";
+            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(355, 62);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(179, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 14;
+            this.progressBar1.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(209, 50);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(43, 35);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "次へ";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(160, 50);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(43, 35);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "前へ";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -140,24 +225,71 @@
             this.label1.Size = new System.Drawing.Size(0, 12);
             this.label1.TabIndex = 3;
             // 
-            // label2
+            // checkBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 12);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "00:00";
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(540, 56);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(39, 22);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.Text = "消音";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label3
+            // label4
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(712, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "00:00";
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(538, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 12);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "音量 : 50";
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar2.Location = new System.Drawing.Point(604, 32);
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(139, 45);
+            this.trackBar2.TabIndex = 10;
+            this.trackBar2.TickFrequency = 10;
+            this.trackBar2.Value = 50;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(111, 50);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(43, 35);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "停止";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(62, 50);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 35);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "一時停止";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(43, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "再生";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // trackBar1
             // 
@@ -174,71 +306,38 @@
             this.trackBar1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackBar1_MouseDown);
             this.trackBar1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.trackBar1_MouseUp);
             // 
-            // button1
+            // label3
             // 
-            this.button1.Location = new System.Drawing.Point(13, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "再生";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(712, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "00:00";
             // 
-            // button2
+            // label2
             // 
-            this.button2.Location = new System.Drawing.Point(62, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "一時停止";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 12);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "00:00";
             // 
-            // button3
+            // axWindowsMediaPlayer1
             // 
-            this.button3.Location = new System.Drawing.Point(111, 50);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(43, 35);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "停止";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBar2.Location = new System.Drawing.Point(604, 32);
-            this.trackBar2.Maximum = 100;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(139, 45);
-            this.trackBar2.TabIndex = 10;
-            this.trackBar2.TickFrequency = 10;
-            this.trackBar2.Value = 50;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(538, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 12);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "音量 : 50";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(540, 56);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(39, 22);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "消音";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 24);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(756, 408);
+            this.axWindowsMediaPlayer1.TabIndex = 2;
+            this.axWindowsMediaPlayer1.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.axWindowsMediaPlayer1_OpenStateChange);
+            this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
+            this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
+            this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
             // 
             // label5
             // 
@@ -249,28 +348,6 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "ステータス";
             this.label5.Visible = false;
-            // 
-            // メディアMToolStripMenuItem
-            // 
-            this.メディアMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.開くOToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.toolStripMenuItem1,
-            this.toolStripTextBox1,
-            this.uRLを開くUToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.リストの削除DToolStripMenuItem});
-            this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
-            this.メディアMToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.メディアMToolStripMenuItem.Text = "メディア(&M)";
-            // 
-            // 開くOToolStripMenuItem
-            // 
-            this.開くOToolStripMenuItem.Name = "開くOToolStripMenuItem";
-            this.開くOToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.開くOToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.開くOToolStripMenuItem.Text = "ファイルからリストに追加(&O)";
-            this.開くOToolStripMenuItem.Click += new System.EventHandler(this.開くOToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -285,87 +362,11 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(160, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(43, 35);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "前へ";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(209, 50);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(43, 35);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "次へ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // uRLを開くUToolStripMenuItem
-            // 
-            this.uRLを開くUToolStripMenuItem.Name = "uRLを開くUToolStripMenuItem";
-            this.uRLを開くUToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.uRLを開くUToolStripMenuItem.Text = "URLからリストに追加(&U)";
-            this.uRLを開くUToolStripMenuItem.Click += new System.EventHandler(this.uRLを開くUToolStripMenuItem_Click);
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(243, 22);
-            this.toolStripMenuItem1.Text = "URL";
-            // 
             // timer2
             // 
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(240, 6);
-            // 
-            // リストの削除DToolStripMenuItem
-            // 
-            this.リストの削除DToolStripMenuItem.Name = "リストの削除DToolStripMenuItem";
-            this.リストの削除DToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.リストの削除DToolStripMenuItem.Text = "リストの削除(&D)";
-            this.リストの削除DToolStripMenuItem.Click += new System.EventHandler(this.リストの削除DToolStripMenuItem_Click);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(355, 62);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(179, 23);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar1.TabIndex = 14;
-            this.progressBar1.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(258, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 12);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "バッファ中... (100%)";
-            this.label6.Visible = false;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Form1
             // 
@@ -384,9 +385,9 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

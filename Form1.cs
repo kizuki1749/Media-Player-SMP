@@ -184,5 +184,10 @@ namespace Media_Player_SMP
         {
 
         }
+
+        private void 終了ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
