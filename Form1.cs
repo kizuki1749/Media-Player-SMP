@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Shell32;
 
 namespace Media_Player_SMP
 {
@@ -146,6 +148,28 @@ namespace Media_Player_SMP
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
             label1.Text = axWindowsMediaPlayer1.currentMedia.name;
+            label7.Text = axWindowsMediaPlayer1.currentMedia.sourceURL;
+            label8.Text = axWindowsMediaPlayer1.currentMedia.name;
+            string Extension = System.IO.Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL);
+            if ( Extension == ".mp3" || Extension == "MP3" || Extension == ".wma" || Extension == ".WMA" || Extension == ".m4a" || Extension == ".M4A" || Extension == ".wav" || Extension == ".WAV" )
+            {
+                panel2.Visible = true;
+            }
+            else
+            {
+                panel2.Visible = false;
+            }
+        }
+
+        private string ByteToStr(byte[] b)
+        {
+            Encoding Enc = System.Text.Encoding.UTF8;
+            return Enc.GetString(b).TrimEnd();
+        }
+
+        private int ByteToInt(byte b)
+        {
+            return Convert.ToInt32(b);
         }
 
         private void uRLを開くUToolStripMenuItem_Click(object sender, EventArgs e)
@@ -156,6 +180,15 @@ namespace Media_Player_SMP
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            if (label2.Text == "")
+            {
+                label2.Text = "00:00";
+                timer1.Stop();
+            }
+            else if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString != "")
+            {
+                timer1.Start();
+            }
         }
 
         private void リストの削除DToolStripMenuItem_Click(object sender, EventArgs e)
@@ -163,6 +196,8 @@ namespace Media_Player_SMP
             if (MessageBox.Show("リストを削除しますか？この操作はもとに戻せません。","確認",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 axWindowsMediaPlayer1.currentPlaylist.clear();
+                panel2.Visible = false;
+                label1.Text = "";
             }
         }
 
