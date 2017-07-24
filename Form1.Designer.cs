@@ -62,8 +62,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -342,6 +342,7 @@
             this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
             this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
             this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
+            this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
             // 
             // label5
             // 
@@ -357,7 +358,7 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "すべてのファイル|*.*|動画ファイル|*.mp4;*.avi;*.mpg;*.mpeg;*.wmv|音楽ファイル|*.mp3;*.wma;*.m4a;*.wav" +
-    "|プレイリスト|*.wpl;*.m3u";
+    "|MIDI シーケンス|*.mid|プレイリスト|*.wpl;*.m3u";
             this.openFileDialog1.Multiselect = true;
             this.openFileDialog1.Title = "メディアファイルを開く";
             // 
@@ -384,6 +385,15 @@
             this.panel2.TabIndex = 14;
             this.panel2.Visible = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 12);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Title";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -393,15 +403,6 @@
             this.label7.Size = new System.Drawing.Size(113, 12);
             this.label7.TabIndex = 0;
             this.label7.Text = "ファイル名 / FileName";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 12);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Title";
             // 
             // Form1
             // 
@@ -415,7 +416,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Media Player SMP 1.1 Beta 1";
+            this.Text = "Media Player SMP 1.1 Beta 2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

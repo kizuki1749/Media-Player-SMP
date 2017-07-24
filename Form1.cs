@@ -46,8 +46,15 @@ namespace Media_Player_SMP
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label2.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
-            trackBar1.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
+            try
+            {
+                label2.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
+                trackBar1.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -93,7 +100,12 @@ namespace Media_Player_SMP
             axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
         }
 
-        private async void axWindowsMediaPlayer1_StatusChange(object sender, EventArgs e)
+        private void axWindowsMediaPlayer1_StatusChange(object sender, EventArgs e)
+        {
+            StatusChange(axWindowsMediaPlayer1.status);
+        }
+
+        public async void StatusChange(string status)
         {
             if (axWindowsMediaPlayer1.status == "停止" || axWindowsMediaPlayer1.status == "準備完了")
             {
@@ -154,10 +166,24 @@ namespace Media_Player_SMP
             if ( Extension == ".mp3" || Extension == "MP3" || Extension == ".wma" || Extension == ".WMA" || Extension == ".m4a" || Extension == ".M4A" || Extension == ".wav" || Extension == ".WAV" )
             {
                 panel2.Visible = true;
+                checkBox1.Enabled = true;
+                trackBar1.Enabled = true;
+                axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
+                axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+            }
+            else if ( Extension == ".mid" || Extension == ".MID" )
+            {
+                panel2.Visible = true;
+                checkBox1.Enabled = false;
+                trackBar1.Enabled = true;
             }
             else
             {
                 panel2.Visible = false;
+                checkBox1.Enabled = true;
+                trackBar1.Enabled = true;
+                axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
+                axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
             }
         }
 
@@ -223,6 +249,20 @@ namespace Media_Player_SMP
         private void 終了ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void axWindowsMediaPlayer1_MediaError(object sender, AxWMPLib._WMPOCXEvents_MediaErrorEvent e)
+        {
+            DialogResult result = MessageBox.Show("再生時にエラーが発生しました。\n\n対象ファイルパス: " + axWindowsMediaPlayer1.currentMedia.sourceURL, "エラー", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+            if (result == DialogResult.Abort)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+            }
+            else if (result == DialogResult.Retry)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
         }
     }
 }
