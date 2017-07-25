@@ -83,7 +83,6 @@ namespace Media_Player_SMP
                     label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
                     int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
                     trackBar1.Maximum = duration;
-                    panel2.Visible = true;
                     checkBox1.Enabled = true;
                     trackBar2.Enabled = true;
 #if ID3取得
