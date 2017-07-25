@@ -83,6 +83,27 @@ namespace Media_Player_SMP
                     label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
                     int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
                     trackBar1.Maximum = duration;
+                    panel2.Visible = true;
+                    checkBox1.Enabled = true;
+                    trackBar2.Enabled = true;
+#if ID3取得
+                    /*
+                    Mp3File mp3 = new Mp3File(axWindowsMediaPlayer1.currentMedia.sourceURL);
+                    label9.Visible = true;
+                    try
+                    {
+                        StatusChange("ID3 v2 タグの取得を試みています...");
+                        Id3Tag tag = mp3.GetTag(Id3TagFamily.Version2x);
+                        label9.Text = "タイトル: " + tag.Title + "\nアーティスト: " + tag.Artists + "\nアルバム: " + tag.Album + "\n収録日: " + tag.RecordingDate + "\n著作権: " + tag.CopyrightUrl + "\n指揮者: " + tag.Conductor + "\nトラック: " + tag.Track + "\nリリース年: " + tag.Year;
+                    }
+                    catch (Exception)
+                    {
+                        StatusChange("ID3 v1 タグの取得を試みています...");
+                        Id3Tag tag = mp3.GetTag(Id3TagFamily.Version1x);
+                        label9.Text = "タイトル: " + tag.Title + "\nアーティスト: " + tag.Artists + "\nアルバム: " + tag.Album + "\n収録日: " + tag.RecordingDate + "\n著作権: " + tag.CopyrightUrl + "\n指揮者: " + tag.Conductor + "\nトラック: " + tag.Track + "\nリリース年: " + tag.Year;
+                    }
+                    */
+#endif
                     break;
 
                 default:
@@ -172,6 +193,9 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
                 label9.Visible = false;
+            }
+            else if ( Extension == ".mp3" || Extension == "MP3" )
+            {
             }
             else if ( Extension == ".mid" || Extension == ".MID" )
             {
