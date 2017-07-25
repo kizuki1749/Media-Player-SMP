@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Shell32;
+using Tsukikage.WinMM.MidiIO;
 
 namespace Media_Player_SMP
 {
@@ -170,12 +171,16 @@ namespace Media_Player_SMP
                 trackBar2.Enabled = true;
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+                label9.Visible = false;
             }
             else if ( Extension == ".mid" || Extension == ".MID" )
             {
                 panel2.Visible = true;
                 checkBox1.Enabled = false;
                 trackBar2.Enabled = false;
+                MidiSequence midi = new MidiSequence(axWindowsMediaPlayer1.currentMedia.sourceURL);
+                label9.Text = "タイトル: " + midi.Title + "\n\n著作権: " + midi.Copyright + "\n\nトラック: "+midi.Tracks;
+                label9.Visible = true;
             }
             else
             {
@@ -184,6 +189,7 @@ namespace Media_Player_SMP
                 trackBar2.Enabled = true;
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+                label9.Visible = false;
             }
             label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
             int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;

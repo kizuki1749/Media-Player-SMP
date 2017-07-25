@@ -64,6 +64,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -376,6 +377,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -403,6 +405,16 @@
             this.label7.Size = new System.Drawing.Size(113, 12);
             this.label7.TabIndex = 0;
             this.label7.Text = "ファイル名 / FileName";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 64);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 12);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "MIDIData";
+            this.label9.Visible = false;
             // 
             // Form1
             // 
@@ -468,6 +480,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 
