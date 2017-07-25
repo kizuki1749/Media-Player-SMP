@@ -185,6 +185,9 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
             }
+            label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+            int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
+            trackBar1.Maximum = duration;
         }
 
         private string ByteToStr(byte[] b)
