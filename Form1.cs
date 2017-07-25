@@ -167,7 +167,7 @@ namespace Media_Player_SMP
             {
                 panel2.Visible = true;
                 checkBox1.Enabled = true;
-                trackBar1.Enabled = true;
+                trackBar2.Enabled = true;
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
             }
@@ -175,13 +175,13 @@ namespace Media_Player_SMP
             {
                 panel2.Visible = true;
                 checkBox1.Enabled = false;
-                trackBar1.Enabled = true;
+                trackBar2.Enabled = false;
             }
             else
             {
                 panel2.Visible = false;
                 checkBox1.Enabled = true;
-                trackBar1.Enabled = true;
+                trackBar2.Enabled = true;
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
             }
@@ -227,6 +227,7 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.currentPlaylist.clear();
                 panel2.Visible = false;
                 label1.Text = "";
+                label3.Text = "00:00";
             }
         }
 
