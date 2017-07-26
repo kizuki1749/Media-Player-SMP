@@ -62,9 +62,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -387,6 +387,16 @@
             this.panel2.TabIndex = 14;
             this.panel2.Visible = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 64);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 12);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "MIDIData";
+            this.label9.Visible = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -406,16 +416,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "ファイル名 / FileName";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 12);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "MIDIData";
-            this.label9.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -428,7 +428,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Media Player SMP 1.1 Beta 6";
+            this.Text = "Media Player SMP 1.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
