@@ -83,8 +83,6 @@ namespace Media_Player_SMP
                     label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
                     int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
                     trackBar1.Maximum = duration;
-                    checkBox1.Enabled = true;
-                    trackBar2.Enabled = true;
 #if ID3取得
                     /*
                     Mp3File mp3 = new Mp3File(axWindowsMediaPlayer1.currentMedia.sourceURL);
@@ -146,7 +144,7 @@ namespace Media_Player_SMP
                 progressBar1.Visible = false;
                 label6.Visible = false;
             }
-            label5.Text = axWindowsMediaPlayer1.status;
+            label5.Text = status;
             label5.Visible = true;
             await Task.Delay(5000);
             label5.Visible = false;
@@ -180,10 +178,15 @@ namespace Media_Player_SMP
 
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
+            if (panel3.Visible == true)
+            {
+                StatusChange("テキストファイル セッション を閉じました。");
+            }
+            panel3.Visible = false;
             label1.Text = axWindowsMediaPlayer1.currentMedia.name;
             label7.Text = axWindowsMediaPlayer1.currentMedia.sourceURL;
             label8.Text = axWindowsMediaPlayer1.currentMedia.name;
-            string Extension = System.IO.Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL);
+            string Extension = Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL);
             if ( Extension == ".mp3" || Extension == "MP3" || Extension == ".wma" || Extension == ".WMA" || Extension == ".m4a" || Extension == ".M4A" || Extension == ".wav" || Extension == ".WAV" )
             {
                 panel2.Visible = true;
@@ -296,6 +299,35 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.Ctlcontrols.stop();
                 axWindowsMediaPlayer1.Ctlcontrols.play();
             }
+        }
+
+        private void 開くOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                axWindowsMediaPlayer1.currentPlaylist.clear();
+                label1.Text = "";
+                label3.Text = "00:00";
+                StreamReader sr = new StreamReader(openFileDialog2.FileName, Encoding.GetEncoding("Shift_JIS"));
+                string text = sr.ReadToEnd();
+                textBox1.Text = text;
+                panel3.Visible = true;
+                StatusChange(openFileDialog2.FileName+" を読み込みました。");
+                sr.Close();
+            }
+        }
+
+        private void 閉じるToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = false;
+            panel2.Visible = false;
+            StatusChange("テキストファイル セッション を閉じました。");
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
