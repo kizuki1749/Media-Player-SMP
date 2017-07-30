@@ -137,7 +137,7 @@ namespace Media_Player_SMP
         {
             StatusChange(axWindowsMediaPlayer1.status);
         }
-
+        public enum Language { Japanese , English }
         public async void StatusChange(string status)
         {
             if (axWindowsMediaPlayer1.status == "停止" || axWindowsMediaPlayer1.status == "準備完了")
@@ -342,6 +342,12 @@ namespace Media_Player_SMP
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void 環境設定OToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Option f = new Option();
+            f.ShowDialog();
         }
     }
 }
