@@ -41,6 +41,9 @@
             this.uRLを開くUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.リストの削除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.テキストTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.開くOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.閉じるToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -66,9 +69,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.開くOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.閉じるToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.テキストTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -165,6 +165,31 @@
             this.リストの削除DToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.リストの削除DToolStripMenuItem.Text = "リストの削除(&D)";
             this.リストの削除DToolStripMenuItem.Click += new System.EventHandler(this.リストの削除DToolStripMenuItem_Click);
+            // 
+            // テキストTToolStripMenuItem
+            // 
+            this.テキストTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.開くOToolStripMenuItem1,
+            this.閉じるToolStripMenuItem});
+            this.テキストTToolStripMenuItem.Name = "テキストTToolStripMenuItem";
+            this.テキストTToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.テキストTToolStripMenuItem.Text = "テキスト(&T)";
+            // 
+            // 開くOToolStripMenuItem1
+            // 
+            this.開くOToolStripMenuItem1.Name = "開くOToolStripMenuItem1";
+            this.開くOToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.O)));
+            this.開くOToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.開くOToolStripMenuItem1.Text = "開く(&O)";
+            this.開くOToolStripMenuItem1.Click += new System.EventHandler(this.開くOToolStripMenuItem1_Click);
+            // 
+            // 閉じるToolStripMenuItem
+            // 
+            this.閉じるToolStripMenuItem.Name = "閉じるToolStripMenuItem";
+            this.閉じるToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.閉じるToolStripMenuItem.Text = "閉じる(&C)";
+            this.閉じるToolStripMenuItem.Click += new System.EventHandler(this.閉じるToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -437,31 +462,6 @@
             this.textBox1.TabIndex = 16;
             this.textBox1.WordWrap = false;
             // 
-            // 開くOToolStripMenuItem1
-            // 
-            this.開くOToolStripMenuItem1.Name = "開くOToolStripMenuItem1";
-            this.開くOToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.O)));
-            this.開くOToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
-            this.開くOToolStripMenuItem1.Text = "開く(&O)";
-            this.開くOToolStripMenuItem1.Click += new System.EventHandler(this.開くOToolStripMenuItem1_Click);
-            // 
-            // 閉じるToolStripMenuItem
-            // 
-            this.閉じるToolStripMenuItem.Name = "閉じるToolStripMenuItem";
-            this.閉じるToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.閉じるToolStripMenuItem.Text = "閉じる(&C)";
-            this.閉じるToolStripMenuItem.Click += new System.EventHandler(this.閉じるToolStripMenuItem_Click);
-            // 
-            // テキストTToolStripMenuItem
-            // 
-            this.テキストTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.開くOToolStripMenuItem1,
-            this.閉じるToolStripMenuItem});
-            this.テキストTToolStripMenuItem.Name = "テキストTToolStripMenuItem";
-            this.テキストTToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.テキストTToolStripMenuItem.Text = "テキスト(&T)";
-            // 
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
@@ -493,7 +493,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Media Player SMP 1.2 Beta 1";
+            this.Text = "Media Player SMP 1.2 Beta 2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -20,10 +20,24 @@ namespace Media_Player_SMP
             InitializeComponent();
         }
 
+        string[] cmds = System.Environment.GetCommandLineArgs();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.uiMode = "None";
             axWindowsMediaPlayer1.settings.volume = 50;
+            try
+            {
+                if (cmds[1] != "")
+                {
+                    axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(cmds[1]));
+                    timer1.Start();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void 開くOToolStripMenuItem_Click(object sender, EventArgs e)
