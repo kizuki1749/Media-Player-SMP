@@ -349,5 +349,10 @@ namespace Media_Player_SMP
             Option f = new Option();
             f.ShowDialog();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

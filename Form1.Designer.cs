@@ -296,6 +296,7 @@
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
