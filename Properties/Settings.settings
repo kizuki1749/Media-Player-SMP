@@ -5,5 +5,8 @@
     <Setting Name="Launguage" Type="System.String" Scope="User">
       <Value Profile="(Default)">Japanese</Value>
     </Setting>
+    <Setting Name="textfileflag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

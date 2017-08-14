@@ -34,5 +34,17 @@ namespace Media_Player_SMP.Properties {
                 this["Launguage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool textfileflag {
+            get {
+                return ((bool)(this["textfileflag"]));
+            }
+            set {
+                this["textfileflag"] = value;
+            }
+        }
     }
 }

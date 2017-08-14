@@ -24,11 +24,19 @@ namespace Media_Player_SMP
                 case 0:
                     panel2.Visible = true;
                     panel3.Visible = false;
+                    panel4.Visible = false;
                     break;
 
                 case 1:
+                    panel3.Visible = false;
+                    panel2.Visible = false;
+                    panel4.Visible = true;
+                    break;
+
+                case 2:
                     panel3.Visible = true;
                     panel2.Visible = false;
+                    panel4.Visible = false;
                     break;
             }
         }
@@ -50,6 +58,15 @@ namespace Media_Player_SMP
                     Properties.Settings.Default.Launguage = "English";
                     break;
             }
+            if (checkBox1.Checked == true)
+            {
+                Properties.Settings.Default.textfileflag = true;
+            }
+            else
+            {
+                Properties.Settings.Default.textfileflag = false;
+            }
+
             Properties.Settings.Default.Save();
         }
 
@@ -67,6 +84,35 @@ namespace Media_Player_SMP
         private void button4_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+        }
+
+        private void Option_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Launguage == "Japanease")
+            {
+                comboBox1.SelectedIndex = 0;
+            }
+            else if (Properties.Settings.Default.Launguage == "English")
+            {
+                comboBox1.SelectedIndex = 1;
+            }
+            if (Properties.Settings.Default.textfileflag == true)
+            {
+                checkBox1.Checked = true;
+            }
+            else
+            {
+                checkBox1.Checked = false;
+            }
         }
     }
 }

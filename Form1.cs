@@ -319,10 +319,13 @@ namespace Media_Player_SMP
         {
             if (openFileDialog2.ShowDialog() == DialogResult.OK)
             {
-                axWindowsMediaPlayer1.Ctlcontrols.stop();
-                axWindowsMediaPlayer1.currentPlaylist.clear();
-                label1.Text = "";
-                label3.Text = "00:00";
+                if (Properties.Settings.Default.textfileflag == false)
+                {
+                    axWindowsMediaPlayer1.Ctlcontrols.stop();
+                    axWindowsMediaPlayer1.currentPlaylist.clear();
+                    label1.Text = "";
+                    label3.Text = "00:00";
+                }
                 StreamReader sr = new StreamReader(openFileDialog2.FileName, Encoding.GetEncoding("Shift_JIS"));
                 string text = sr.ReadToEnd();
                 textBox1.Text = text;
@@ -335,7 +338,21 @@ namespace Media_Player_SMP
         private void 閉じるToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel3.Visible = false;
-            panel2.Visible = false;
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying || axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPaused)
+            {
+                if (panel2.Visible == false)
+                {
+                    panel2.Visible = false;
+                }
+                else
+                {
+                    panel2.Visible = true;
+                }
+            }
+            else
+            {
+                panel2.Visible = false;
+            }
             StatusChange("テキストファイル セッション を閉じました。");
         }
 

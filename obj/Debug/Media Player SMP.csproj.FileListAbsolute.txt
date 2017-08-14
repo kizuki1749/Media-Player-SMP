@@ -22,3 +22,9 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\en\Media
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Option.resources
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Option.en.resources
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Option.ja.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Form1.en-IE.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Form1.is.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\en-IE\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\is\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\en-IE\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\is\Media Player SMP.resources.dll
