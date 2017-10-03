@@ -157,9 +157,6 @@
   <data name="リストの削除DToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete a List(&amp;D)</value>
   </data>
-  <data name="メディアMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
   <data name="メディアMToolStripMenuItem.Text" xml:space="preserve">
     <value>Media(&amp;M)</value>
   </data>
@@ -192,6 +189,18 @@
   </data>
   <data name="設定SToolStripMenuItem.Text" xml:space="preserve">
     <value>Settings(&amp;S)</value>
+  </data>
+  <data name="フルスクリーンFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
+  </data>
+  <data name="フルスクリーンFToolStripMenuItem.Text" xml:space="preserve">
+    <value>FullScreen(&amp;F)</value>
+  </data>
+  <data name="再生PToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="再生PToolStripMenuItem.Text" xml:space="preserve">
+    <value>Player(&amp;P)</value>
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Forward</value>

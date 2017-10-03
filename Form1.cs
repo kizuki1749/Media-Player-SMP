@@ -371,5 +371,77 @@ namespace Media_Player_SMP
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void フルスクリーンFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            フルスクリーンFToolStripMenuItem.Checked = !フルスクリーンFToolStripMenuItem.Checked;
+        }
+        bool maxflag = false;
+        private void フルスクリーンFToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (フルスクリーンFToolStripMenuItem.Checked == true)
+            {
+                if (WindowState == FormWindowState.Maximized)
+                {
+                    WindowState = FormWindowState.Normal;
+                    maxflag = true;
+                }
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+                timer3.Enabled = true;
+                StatusChange("フルスクリーン表示に切り替えました。Ctrl(Control)キー+Altキー+Fキーで元に戻ります。またマウスを一番上や一番下に合わせるとメニューやシークバーが表示されます。");
+                menuStrip1.Visible = false;
+                panel1.Visible = false;
+            }
+            else
+            {
+                if (maxflag == true)
+                {
+                    WindowState = FormWindowState.Normal;
+                }
+                FormBorderStyle = FormBorderStyle.Sizable;
+                if (maxflag == true)
+                {
+                    WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    WindowState = FormWindowState.Normal;
+                }
+                timer3.Enabled = false;
+                StatusChange("ウィンドウ表示に切り替えました。");
+                menuStrip1.Visible = true;
+                panel1.Visible = true;
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (MousePosition.Y == 0)
+            {
+                menuStrip1.Visible = true;
+            }
+            else
+            {
+                if (MousePosition.Y >= 25)
+                {
+                    menuStrip1.Visible = false;
+                }
+            }
+            if ((Size.Height - 1) <= MousePosition.Y)
+            {
+                panel1.Visible = true;
+            }
+            if ((Size.Height - 98) >= MousePosition.Y)
+            {
+                panel1.Visible = false;
+            }
+        }
+
     }
 }
