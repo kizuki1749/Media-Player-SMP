@@ -87,31 +87,30 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ファイルFToolStripMenuItem,
             this.メディアMToolStripMenuItem,
             this.テキストTToolStripMenuItem,
             this.設定SToolStripMenuItem,
             this.再生PToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // ファイルFToolStripMenuItem
             // 
-            resources.ApplyResources(this.ファイルFToolStripMenuItem, "ファイルFToolStripMenuItem");
             this.ファイルFToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.終了ToolStripMenuItem});
             this.ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem";
+            resources.ApplyResources(this.ファイルFToolStripMenuItem, "ファイルFToolStripMenuItem");
             // 
             // 終了ToolStripMenuItem
             // 
-            resources.ApplyResources(this.終了ToolStripMenuItem, "終了ToolStripMenuItem");
             this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
+            resources.ApplyResources(this.終了ToolStripMenuItem, "終了ToolStripMenuItem");
             this.終了ToolStripMenuItem.Click += new System.EventHandler(this.終了ToolStripMenuItem_Click);
             // 
             // メディアMToolStripMenuItem
             // 
-            resources.ApplyResources(this.メディアMToolStripMenuItem, "メディアMToolStripMenuItem");
             this.メディアMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.開くOToolStripMenuItem,
             this.toolStripSeparator1,
@@ -121,17 +120,18 @@
             this.toolStripSeparator2,
             this.リストの削除DToolStripMenuItem});
             this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
+            resources.ApplyResources(this.メディアMToolStripMenuItem, "メディアMToolStripMenuItem");
             // 
             // 開くOToolStripMenuItem
             // 
-            resources.ApplyResources(this.開くOToolStripMenuItem, "開くOToolStripMenuItem");
             this.開くOToolStripMenuItem.Name = "開くOToolStripMenuItem";
+            resources.ApplyResources(this.開くOToolStripMenuItem, "開くOToolStripMenuItem");
             this.開くOToolStripMenuItem.Click += new System.EventHandler(this.開くOToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripMenuItem1
             // 
@@ -140,70 +140,70 @@
             // 
             // toolStripTextBox1
             // 
-            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
             this.toolStripTextBox1.Name = "toolStripTextBox1";
+            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
             // 
             // uRLを開くUToolStripMenuItem
             // 
-            resources.ApplyResources(this.uRLを開くUToolStripMenuItem, "uRLを開くUToolStripMenuItem");
             this.uRLを開くUToolStripMenuItem.Name = "uRLを開くUToolStripMenuItem";
+            resources.ApplyResources(this.uRLを開くUToolStripMenuItem, "uRLを開くUToolStripMenuItem");
             this.uRLを開くUToolStripMenuItem.Click += new System.EventHandler(this.uRLを開くUToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             this.toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             // 
             // リストの削除DToolStripMenuItem
             // 
-            resources.ApplyResources(this.リストの削除DToolStripMenuItem, "リストの削除DToolStripMenuItem");
             this.リストの削除DToolStripMenuItem.Name = "リストの削除DToolStripMenuItem";
+            resources.ApplyResources(this.リストの削除DToolStripMenuItem, "リストの削除DToolStripMenuItem");
             this.リストの削除DToolStripMenuItem.Click += new System.EventHandler(this.リストの削除DToolStripMenuItem_Click);
             // 
             // テキストTToolStripMenuItem
             // 
-            resources.ApplyResources(this.テキストTToolStripMenuItem, "テキストTToolStripMenuItem");
             this.テキストTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.開くOToolStripMenuItem1,
             this.閉じるToolStripMenuItem});
             this.テキストTToolStripMenuItem.Name = "テキストTToolStripMenuItem";
+            resources.ApplyResources(this.テキストTToolStripMenuItem, "テキストTToolStripMenuItem");
             // 
             // 開くOToolStripMenuItem1
             // 
-            resources.ApplyResources(this.開くOToolStripMenuItem1, "開くOToolStripMenuItem1");
             this.開くOToolStripMenuItem1.Name = "開くOToolStripMenuItem1";
+            resources.ApplyResources(this.開くOToolStripMenuItem1, "開くOToolStripMenuItem1");
             this.開くOToolStripMenuItem1.Click += new System.EventHandler(this.開くOToolStripMenuItem1_Click);
             // 
             // 閉じるToolStripMenuItem
             // 
-            resources.ApplyResources(this.閉じるToolStripMenuItem, "閉じるToolStripMenuItem");
             this.閉じるToolStripMenuItem.Name = "閉じるToolStripMenuItem";
+            resources.ApplyResources(this.閉じるToolStripMenuItem, "閉じるToolStripMenuItem");
             this.閉じるToolStripMenuItem.Click += new System.EventHandler(this.閉じるToolStripMenuItem_Click);
             // 
             // 設定SToolStripMenuItem
             // 
-            resources.ApplyResources(this.設定SToolStripMenuItem, "設定SToolStripMenuItem");
             this.設定SToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.環境設定PToolStripMenuItem});
             this.設定SToolStripMenuItem.Name = "設定SToolStripMenuItem";
+            resources.ApplyResources(this.設定SToolStripMenuItem, "設定SToolStripMenuItem");
             // 
             // 環境設定PToolStripMenuItem
             // 
-            resources.ApplyResources(this.環境設定PToolStripMenuItem, "環境設定PToolStripMenuItem");
             this.環境設定PToolStripMenuItem.Name = "環境設定PToolStripMenuItem";
+            resources.ApplyResources(this.環境設定PToolStripMenuItem, "環境設定PToolStripMenuItem");
             this.環境設定PToolStripMenuItem.Click += new System.EventHandler(this.環境設定OToolStripMenuItem_Click);
             // 
             // 再生PToolStripMenuItem
             // 
-            resources.ApplyResources(this.再生PToolStripMenuItem, "再生PToolStripMenuItem");
             this.再生PToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.フルスクリーンFToolStripMenuItem});
             this.再生PToolStripMenuItem.Name = "再生PToolStripMenuItem";
+            resources.ApplyResources(this.再生PToolStripMenuItem, "再生PToolStripMenuItem");
             // 
             // フルスクリーンFToolStripMenuItem
             // 
-            resources.ApplyResources(this.フルスクリーンFToolStripMenuItem, "フルスクリーンFToolStripMenuItem");
             this.フルスクリーンFToolStripMenuItem.Name = "フルスクリーンFToolStripMenuItem";
+            resources.ApplyResources(this.フルスクリーンFToolStripMenuItem, "フルスクリーンFToolStripMenuItem");
             this.フルスクリーンFToolStripMenuItem.CheckedChanged += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_CheckedChanged);
             this.フルスクリーンFToolStripMenuItem.Click += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_Click);
             // 
@@ -356,11 +356,11 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // label9
@@ -393,9 +393,9 @@
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.textBox1);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
