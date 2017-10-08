@@ -1,0 +1,31 @@
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\Media Player SMP.exe.config
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\Media Player SMP.exe
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\Media Player SMP.pdb
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\en-IE\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\en\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\is\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\ja\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Interop.Shell32.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.csproj.ResolveComReference.cache
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form1.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Option.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Properties.Resources.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form1.en-IE.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form1.en.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form1.is.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form1.ja.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Option.en.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Option.ja.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.csproj.GenerateResource.Cache
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\en-IE\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\en\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\is\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\ja\Media Player SMP.resources.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.exe
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.pdb
