@@ -29,3 +29,34 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\is\Media
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\en-IE\Media Player SMP.resources.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\is\Media Player SMP.resources.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\Media Player SMP.exe.config
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\Media Player SMP.exe
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\Media Player SMP.pdb
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\en-IE\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\en\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\is\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\ja\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\Interop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.csprojResolveAssemblyReference.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Interop.Shell32.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Interop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.csproj.ResolveComReference.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Form1.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Option.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Properties.Resources.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Form1.en-IE.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Form1.en.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Form1.is.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Form1.ja.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Option.en.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media_Player_SMP.Option.ja.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.csproj.GenerateResource.Cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\en-IE\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\en\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\is\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\ja\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.exe
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.pdb
