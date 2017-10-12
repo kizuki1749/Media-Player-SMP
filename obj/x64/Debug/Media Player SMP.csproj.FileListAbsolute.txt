@@ -29,3 +29,4 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\is\M
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\ja\Media Player SMP.resources.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.exe
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.pdb
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\niconicoviewer.progresswindow.resources

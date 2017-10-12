@@ -443,5 +443,141 @@ namespace Media_Player_SMP
             }
         }
 
+        private void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+        }
+
+        bool errflag = false;
+        string errtext = "";
+
+        private async void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] fileName = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            Array.Sort(fileName);
+            p.Show();
+            p.progressstyle = ProgressBarStyle.Continuous;
+            p.progressvalue = 0;
+            p.text = "ファイルの読み込み中です。( " + p.progressvalue + " / " + p.progressmax + " )";
+            p.progressmax = 0;
+            try
+            {
+                p.progressstyle = ProgressBarStyle.Marquee;
+                foreach (string file in fileName)
+                {
+                    p.text = "しばらくお待ちください。ファイル数が多いと時間がかかる場合があります。";
+                    FileAttributes file1 = File.GetAttributes(file);
+                    if ((file1 & FileAttributes.Directory) == FileAttributes.Directory)
+                    {
+                        p.progressmax += Directory.GetFiles(file, "*", SearchOption.TopDirectoryOnly).Length;
+                    }
+                    else
+                    {
+                        p.progressmax++;
+                    }
+                }
+                p.progressstyle = ProgressBarStyle.Continuous;
+                Add(fileName);
+            }
+            catch
+            {
+                errflag = true;
+                errtext += "読み込みに不明なエラーが発生しました。\n";
+
+            }
+        }
+
+        niconicoviewer.progresswindow p = new niconicoviewer.progresswindow();
+
+        public async Task Add(string[] filelist)
+        {
+            bool flag = false;
+            p.progressstyle = ProgressBarStyle.Continuous;
+            foreach (string file1 in filelist)
+            {
+                Array.Sort(filelist);
+                await Task.Delay(20);
+                FileAttributes file = File.GetAttributes(file1);
+                p.text = "ファイルの読み込み中です。( " + p.progressvalue + " / " + p.progressmax + " )\n"+file1;
+                if ((file & FileAttributes.Directory) == FileAttributes.Directory)
+                {
+                    p.Visible = true;
+                    flag = true;
+                    string[] files = Directory.GetFiles(file1, "*", SearchOption.AllDirectories);
+                    p.progressmax += files.Length;
+                    await Task.Delay(20);
+                    await Add(files);
+                }
+                else
+                {
+                    if (Path.GetExtension(file1) == ".mp4" || Path.GetExtension(file1) == ".mp3" || Path.GetExtension(file1) == ".wmv" || Path.GetExtension(file1) == ".mid" || Path.GetExtension(file1) == ".wpl" || Path.GetExtension(file1) == ".m3u" || Path.GetExtension(file1) == ".mpg" || Path.GetExtension(file1) == ".mpeg" || Path.GetExtension(file1) == ".wma" || Path.GetExtension(file1) == ".m4a" || Path.GetExtension(file1) == ".wav" || Path.GetExtension(file1) == ".avi")
+                    {
+                        axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(file1));
+                    }
+                }
+                try
+                {
+                    p.progressvalue++;
+                }
+                catch
+                {
+
+                }
+                if (p.cancel == true)
+                {
+                    break;
+                }
+            }
+            if (errflag == true)
+            {
+                //MessageBox.Show(errtext, "エラー一覧", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            errflag = false;
+            errtext = "";
+
+            flag = false;
+            p.Visible = false;
+        }
+
+        private static niconicoviewer.progresswindow _Instance;
+
+        public static niconicoviewer.progresswindow Instance
+        {
+            get
+            {
+                return _Instance;
+            }
+            set
+            {
+                _Instance = value;
+            }
+        }
+
+        private async void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                p.Show();
+                p.progressstyle = ProgressBarStyle.Continuous;
+                p.progressvalue = 0;
+                p.text = "ファイルの読み込み中です。( " + p.progressvalue + " / " + p.progressmax + " )";
+
+                try
+                {
+                    p.progressmax = Directory.GetFiles(folderBrowserDialog1.SelectedPath, "*", SearchOption.TopDirectoryOnly).Length;
+                    string[] a = { "" };
+                    a[0] = folderBrowserDialog1.SelectedPath;
+                    Add(a);
+                }
+                catch
+                {
+                    errflag = true;
+                    errtext += "読み込みに不明なエラーが発生しました。" + folderBrowserDialog1.SelectedPath + "\n";
+                }
+            }
+        }
     }
 }

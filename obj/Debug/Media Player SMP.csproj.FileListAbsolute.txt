@@ -60,3 +60,4 @@ C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\is\
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\ja\Media Player SMP.resources.dll
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.exe
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.pdb
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\niconicoviewer.progresswindow.resources
