@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.IO;
 using Shell32;
 using Tsukikage.WinMM.MidiIO;
+using System.Net;
+using System.Text.RegularExpressions;
 
 namespace Media_Player_SMP
 {
@@ -26,6 +28,7 @@ namespace Media_Player_SMP
         {
             axWindowsMediaPlayer1.uiMode = "None";
             axWindowsMediaPlayer1.settings.volume = 50;
+            axWindowsMediaPlayer1.settings.autoStart = false;
             try
             {
                 if (cmds[1] != "")
@@ -578,6 +581,19 @@ namespace Media_Player_SMP
                     errtext += "読み込みに不明なエラーが発生しました。" + folderBrowserDialog1.SelectedPath + "\n";
                 }
             }
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            Form2.Form2Instance = f;
+            f.Show();
+            f.url = toolStripTextBox1.Text;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.settings.setMode("loop",checkBox2.Checked);
         }
     }
 }
