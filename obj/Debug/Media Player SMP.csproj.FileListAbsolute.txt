@@ -61,3 +61,8 @@ C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\ja\
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.exe
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.6\Media-Player-SMP-1.6\obj\Debug\Media Player SMP.pdb
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\niconicoviewer.progresswindow.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Form2.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
