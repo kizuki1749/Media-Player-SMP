@@ -30,3 +30,8 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\ja\M
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.exe
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media Player SMP.pdb
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\niconicoviewer.progresswindow.resources
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form2.resources
