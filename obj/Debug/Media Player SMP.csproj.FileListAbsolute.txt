@@ -5,7 +5,6 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\Interop.
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\AxInterop.WMPLib.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media Player SMP.csprojResolveAssemblyReference.cache
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Interop.WMPLib.dll
-D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\AxInterop.WMPLib.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media Player SMP.csproj.ResolveComReference.cache
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Form1.resources
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Properties.Resources.resources
@@ -66,3 +65,4 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\AxIntero
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Media_Player_SMP.Form2.resources
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\Interop.ShockwaveFlashObjects.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\Debug\Interop.MediaPlayer.dll
