@@ -50,6 +50,8 @@
             this.環境設定PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.再生PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.フルスクリーンFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.表示VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -96,7 +98,8 @@
             this.メディアMToolStripMenuItem,
             this.テキストTToolStripMenuItem,
             this.設定SToolStripMenuItem,
-            this.再生PToolStripMenuItem});
+            this.再生PToolStripMenuItem,
+            this.表示VToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -224,6 +227,20 @@
             resources.ApplyResources(this.フルスクリーンFToolStripMenuItem, "フルスクリーンFToolStripMenuItem");
             this.フルスクリーンFToolStripMenuItem.CheckedChanged += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_CheckedChanged);
             this.フルスクリーンFToolStripMenuItem.Click += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_Click);
+            // 
+            // 表示VToolStripMenuItem
+            // 
+            this.表示VToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem});
+            this.表示VToolStripMenuItem.Name = "表示VToolStripMenuItem";
+            resources.ApplyResources(this.表示VToolStripMenuItem, "表示VToolStripMenuItem");
+            // 
+            // このウィンドウを常に最前面に表示するTToolStripMenuItem
+            // 
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem.Name = "このウィンドウを常に最前面に表示するTToolStripMenuItem";
+            resources.ApplyResources(this.このウィンドウを常に最前面に表示するTToolStripMenuItem, "このウィンドウを常に最前面に表示するTToolStripMenuItem");
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem.CheckedChanged += new System.EventHandler(this.このウィンドウを常に最前面に表示するTToolStripMenuItem_CheckedChanged);
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem.Click += new System.EventHandler(this.このウィンドウを常に最前面に表示するTToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -518,6 +535,8 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ToolStripMenuItem 表示VToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem このウィンドウを常に最前面に表示するTToolStripMenuItem;
     }
 }
 

@@ -130,29 +130,11 @@
   <data name="ファイルFToolStripMenuItem.Text" xml:space="preserve">
     <value>File(&amp;F)</value>
   </data>
-  <data name="開くOToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 22</value>
-  </data>
   <data name="開くOToolStripMenuItem.Text" xml:space="preserve">
     <value>Add item to list from file...(&amp;O)</value>
   </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 6</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 22</value>
-  </data>
-  <data name="uRLを開くUToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 22</value>
-  </data>
   <data name="uRLを開くUToolStripMenuItem.Text" xml:space="preserve">
     <value>Add a item to list from URL(&amp;U)</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 6</value>
-  </data>
-  <data name="リストの削除DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 22</value>
   </data>
   <data name="リストの削除DToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete a List(&amp;D)</value>
@@ -201,6 +183,18 @@
   </data>
   <data name="再生PToolStripMenuItem.Text" xml:space="preserve">
     <value>Player(&amp;P)</value>
+  </data>
+  <data name="このウィンドウを常に最前面に表示するTToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="このウィンドウを常に最前面に表示するTToolStripMenuItem.Text" xml:space="preserve">
+    <value>TopMost(&amp;T)</value>
+  </data>
+  <data name="表示VToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="表示VToolStripMenuItem.Text" xml:space="preserve">
+    <value>View(&amp;V)</value>
   </data>
   <data name="button5.Text" xml:space="preserve">
     <value>Forward</value>

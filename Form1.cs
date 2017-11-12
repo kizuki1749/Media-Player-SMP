@@ -13,6 +13,7 @@ using Tsukikage.WinMM.MidiIO;
 using System.Net;
 using System.Text.RegularExpressions;
 
+
 namespace Media_Player_SMP
 {
     public partial class Form1 : Form
@@ -367,6 +368,14 @@ namespace Media_Player_SMP
         private void 環境設定OToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Option f = new Option();
+            if (this.TopMost == true)
+            {
+                f.TopMost = true;
+            }
+            else
+            {
+                f.TopMost = false;
+            }
             f.ShowDialog();
         }
 
@@ -593,7 +602,26 @@ namespace Media_Player_SMP
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.settings.setMode("loop",checkBox2.Checked);
+            axWindowsMediaPlayer1.settings.setMode("loop", checkBox2.Checked);
+        }
+
+        private void このウィンドウを常に最前面に表示するTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            このウィンドウを常に最前面に表示するTToolStripMenuItem.Checked = !このウィンドウを常に最前面に表示するTToolStripMenuItem.Checked;
+        }
+
+        private void このウィンドウを常に最前面に表示するTToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            switch (このウィンドウを常に最前面に表示するTToolStripMenuItem.Checked)
+            {
+                case true:
+                    this.TopMost = true;
+                    break;
+
+                case false:
+                    this.TopMost = false;
+                    break;
+            }
         }
     }
 }
