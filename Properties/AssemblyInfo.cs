@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("Media Player SMP 1.10")]
-[assembly: AssemblyDescription("Media Player SMP 1.10")]
+[assembly: AssemblyTitle("Media Player SMP 1.11")]
+[assembly: AssemblyDescription("Media Player SMP 1.11")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("kizuki1749")]
 [assembly: AssemblyProduct("Media Player SMP")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、下のように '*' を使ってビルドおよびリビジョン番号を 
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.10")]
-[assembly: AssemblyFileVersion("1.10")]
+[assembly: AssemblyVersion("1.11")]
+[assembly: AssemblyFileVersion("1.11")]
