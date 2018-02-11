@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="exteditwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exteditwindow.Designer.cs">
+      <DependentUpon>exteditwindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
       <DependentUpon>progresswindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="exteditwindow.resx">
+      <DependentUpon>exteditwindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en-IE.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,7 +147,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Compile Include="Properties\Settings.Designer.cs">
@@ -158,15 +167,6 @@
       <Lcid>0</Lcid>
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="MediaPlayer">
-      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
     <COMReference Include="Shell32">
       <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>

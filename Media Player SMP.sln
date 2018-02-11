@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Media Player SMP", "Media Player SMP.csproj", "{CF22007B-C1D1-43F1-A8A9-6A6343732B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Debug|x64.ActiveCfg = Debug|x64
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Debug|x64.Build.0 = Debug|x64
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Release|x64.ActiveCfg = Release|x64
+		{CF22007B-C1D1-43F1-A8A9-6A6343732B08}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F046B9F5-3B92-4A14-B52A-BFD34FBFDF5A}
+	EndGlobalSection
+EndGlobal

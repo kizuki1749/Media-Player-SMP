@@ -1,4 +1,5 @@
-﻿using System;
+﻿using niconicoviewer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,8 +47,13 @@ namespace Media_Player_SMP
             SaveSettings();
         }
 
-        public void SaveSettings()
+        public async void SaveSettings()
         {
+            progresswindow p = new progresswindow();
+            p.progressvisible = false;
+            p.text = "設定ファイルを書き換えています。";
+            p.Show();
+            await Task.Delay(2000);
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
@@ -68,6 +74,7 @@ namespace Media_Player_SMP
             }
 
             Properties.Settings.Default.Save();
+            p.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,6 +120,12 @@ namespace Media_Player_SMP
             {
                 checkBox1.Checked = false;
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            exteditwindow exteditwindow = new exteditwindow();
+            exteditwindow.ShowDialog();
         }
     }
 }

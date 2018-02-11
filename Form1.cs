@@ -525,9 +525,12 @@ namespace Media_Player_SMP
                 }
                 else
                 {
-                    if (Path.GetExtension(file1) == ".mp4" || Path.GetExtension(file1) == ".mp3" || Path.GetExtension(file1) == ".wmv" || Path.GetExtension(file1) == ".mid" || Path.GetExtension(file1) == ".wpl" || Path.GetExtension(file1) == ".m3u" || Path.GetExtension(file1) == ".mpg" || Path.GetExtension(file1) == ".mpeg" || Path.GetExtension(file1) == ".wma" || Path.GetExtension(file1) == ".m4a" || Path.GetExtension(file1) == ".wav" || Path.GetExtension(file1) == ".avi")
+                    foreach (string fileext in Properties.Settings.Default.fileext)
                     {
-                        axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(file1));
+                        if (fileext == Path.GetExtension(file1))
+                        {
+                            axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(file1));
+                        }
                     }
                 }
                 try

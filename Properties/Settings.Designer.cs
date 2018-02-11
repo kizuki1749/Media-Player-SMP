@@ -12,8 +12,8 @@ namespace Media_Player_SMP.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
+    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -44,6 +44,30 @@ namespace Media_Player_SMP.Properties {
             }
             set {
                 this["textfileflag"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <string>.mp4</string>
+  <string>.mp3</string>
+  <string>.m4a</string>
+  <string>.wmv</string>
+  <string>.mts</string>
+  <string>.mid</string>
+  <string>.midi</string>
+  <string>.avi</string>
+  <string>.wpl</string>
+  <string>.m3u</string>
+</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection fileext {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["fileext"]));
+            }
+            set {
+                this["fileext"] = value;
             }
         }
     }

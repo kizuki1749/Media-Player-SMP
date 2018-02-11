@@ -8,5 +8,20 @@
     <Setting Name="textfileflag" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="fileext" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.mp4&lt;/string&gt;
+  &lt;string&gt;.mp3&lt;/string&gt;
+  &lt;string&gt;.m4a&lt;/string&gt;
+  &lt;string&gt;.wmv&lt;/string&gt;
+  &lt;string&gt;.mts&lt;/string&gt;
+  &lt;string&gt;.mid&lt;/string&gt;
+  &lt;string&gt;.midi&lt;/string&gt;
+  &lt;string&gt;.avi&lt;/string&gt;
+  &lt;string&gt;.wpl&lt;/string&gt;
+  &lt;string&gt;.m3u&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

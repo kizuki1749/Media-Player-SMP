@@ -21,6 +21,19 @@ namespace niconicoviewer
         {
             
         }
+
+        public bool progressvisible
+        {
+            set
+            {
+                progressBar1.Visible = value;
+            }
+            get
+            {
+                return progressBar1.Visible;
+            }
+        }
+
         public string text
         {
             set
