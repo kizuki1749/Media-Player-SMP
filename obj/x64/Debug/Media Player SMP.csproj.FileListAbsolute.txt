@@ -35,3 +35,39 @@ D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Inte
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Media_Player_SMP.Form2.resources
 D:\Visual Studio 2015\Projects\LabelProgress\Media Player SMP\obj\x64\Debug\Interop.MediaPlayer.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\Media Player SMP.exe.config
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\Media Player SMP.exe
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\Media Player SMP.pdb
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\en-IE\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\en\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\is\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\ja\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\Interop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.csprojResolveAssemblyReference.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Interop.Shell32.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Interop.WMPLib.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.csproj.ResolveComReference.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.exteditwindow.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form1.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form2.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Option.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\niconicoviewer.progresswindow.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Properties.Resources.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form1.en-IE.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form1.en.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form1.is.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Form1.ja.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Option.en.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media_Player_SMP.Option.ja.resources
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.csproj.GenerateResource.Cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\en-IE\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\en\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\is\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\ja\Media Player SMP.resources.dll
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.exe
+C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.pdb
