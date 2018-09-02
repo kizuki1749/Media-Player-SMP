@@ -11,7 +11,7 @@
 The Simple Media Player.
 
 ## 必要なもの / Requirement
-.NET Framework 4.7.2
+.NET Framework 4.7.2  
 Windows 7 / Windows Server 2008 R2 SP1 以降
 
 ## インストール方法 / install
