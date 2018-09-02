@@ -39,7 +39,6 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.ダウンロードをキャンセルCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ダウンロードスレッド数の変更SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.リストの削除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.テキストTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.開くOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +53,8 @@
             this.表示VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.このウィンドウを常に最前面に表示するTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.マウスカーソルを非表示HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.メンテナンスMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.chromeCastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストを停止SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,6 +101,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.終了時に自動実行されますToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -119,6 +121,7 @@
             this.設定SToolStripMenuItem,
             this.再生PToolStripMenuItem,
             this.表示VToolStripMenuItem,
+            this.メンテナンスMToolStripMenuItem,
             this.chromeCastToolStripMenuItem,
             this.ヘルプHToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -145,7 +148,6 @@
             this.toolStripMenuItem6,
             this.toolStripSeparator1,
             this.ダウンロードをキャンセルCToolStripMenuItem,
-            this.ダウンロードスレッド数の変更SToolStripMenuItem,
             this.リストの削除DToolStripMenuItem});
             this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
             resources.ApplyResources(this.メディアMToolStripMenuItem, "メディアMToolStripMenuItem");
@@ -178,12 +180,6 @@
             resources.ApplyResources(this.ダウンロードをキャンセルCToolStripMenuItem, "ダウンロードをキャンセルCToolStripMenuItem");
             this.ダウンロードをキャンセルCToolStripMenuItem.Name = "ダウンロードをキャンセルCToolStripMenuItem";
             this.ダウンロードをキャンセルCToolStripMenuItem.Click += new System.EventHandler(this.ダウンロードをキャンセルCToolStripMenuItem_Click);
-            // 
-            // ダウンロードスレッド数の変更SToolStripMenuItem
-            // 
-            this.ダウンロードスレッド数の変更SToolStripMenuItem.Name = "ダウンロードスレッド数の変更SToolStripMenuItem";
-            resources.ApplyResources(this.ダウンロードスレッド数の変更SToolStripMenuItem, "ダウンロードスレッド数の変更SToolStripMenuItem");
-            this.ダウンロードスレッド数の変更SToolStripMenuItem.Click += new System.EventHandler(this.ダウンロードスレッド数の変更SToolStripMenuItem_Click);
             // 
             // リストの削除DToolStripMenuItem
             // 
@@ -278,6 +274,20 @@
             this.マウスカーソルを非表示HToolStripMenuItem.Name = "マウスカーソルを非表示HToolStripMenuItem";
             resources.ApplyResources(this.マウスカーソルを非表示HToolStripMenuItem, "マウスカーソルを非表示HToolStripMenuItem");
             this.マウスカーソルを非表示HToolStripMenuItem.Click += new System.EventHandler(this.マウスカーソルを非表示HToolStripMenuItem_Click);
+            // 
+            // メンテナンスMToolStripMenuItem
+            // 
+            this.メンテナンスMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.終了時に自動実行されますToolStripMenuItem});
+            this.メンテナンスMToolStripMenuItem.Name = "メンテナンスMToolStripMenuItem";
+            resources.ApplyResources(this.メンテナンスMToolStripMenuItem, "メンテナンスMToolStripMenuItem");
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // chromeCastToolStripMenuItem
             // 
@@ -591,6 +601,11 @@
             this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
             this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
             // 
+            // 終了時に自動実行されますToolStripMenuItem
+            // 
+            resources.ApplyResources(this.終了時に自動実行されますToolStripMenuItem, "終了時に自動実行されますToolStripMenuItem");
+            this.終了時に自動実行されますToolStripMenuItem.Name = "終了時に自動実行されますToolStripMenuItem";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -605,6 +620,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
@@ -698,9 +714,11 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         public System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem ダウンロードをキャンセルCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ダウンロードスレッド数の変更SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ヘルプHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem バージョン情報AToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem メンテナンスMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 終了時に自動実行されますToolStripMenuItem;
     }
 }
 

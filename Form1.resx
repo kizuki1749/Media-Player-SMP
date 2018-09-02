@@ -174,15 +174,6 @@
   <data name="ダウンロードをキャンセルCToolStripMenuItem.Text" xml:space="preserve">
     <value>ダウンロードをキャンセル(&amp;C)</value>
   </data>
-  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 22</value>
-  </data>
-  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Text" xml:space="preserve">
-    <value>ダウンロードスレッド数の変更(&amp;S)</value>
-  </data>
-  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="リストの削除DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 22</value>
   </data>
@@ -270,6 +261,27 @@
   <data name="表示VToolStripMenuItem.Text" xml:space="preserve">
     <value>表示(&amp;V)</value>
   </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>テンポラリファイルを削除する(&amp;C)</value>
+  </data>
+  <data name="終了時に自動実行されますToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="終了時に自動実行されますToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 22</value>
+  </data>
+  <data name="終了時に自動実行されますToolStripMenuItem.Text" xml:space="preserve">
+    <value>終了時に自動実行されます</value>
+  </data>
+  <data name="メンテナンスMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="メンテナンスMToolStripMenuItem.Text" xml:space="preserve">
+    <value>メンテナンス(&amp;M)</value>
+  </data>
   <data name="キャストCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 22</value>
   </data>
@@ -322,7 +334,7 @@
     <value>False</value>
   </data>
   <data name="バージョン情報AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>158, 22</value>
   </data>
   <data name="バージョン情報AToolStripMenuItem.Text" xml:space="preserve">
     <value>バージョン情報(&amp;A)</value>
@@ -6513,12 +6525,6 @@
   <data name="&gt;&gt;ダウンロードをキャンセルCToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ダウンロードスレッド数の変更SToolStripMenuItem.Name" xml:space="preserve">
-    <value>ダウンロードスレッド数の変更SToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ダウンロードスレッド数の変更SToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;リストの削除DToolStripMenuItem.Name" xml:space="preserve">
     <value>リストの削除DToolStripMenuItem</value>
   </data>
@@ -6601,6 +6607,18 @@
     <value>マウスカーソルを非表示HToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;マウスカーソルを非表示HToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;メンテナンスMToolStripMenuItem.Name" xml:space="preserve">
+    <value>メンテナンスMToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;メンテナンスMToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chromeCastToolStripMenuItem.Name" xml:space="preserve">
@@ -6704,6 +6722,12 @@
   </data>
   <data name="&gt;&gt;timer4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;終了時に自動実行されますToolStripMenuItem.Name" xml:space="preserve">
+    <value>終了時に自動実行されますToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;終了時に自動実行されますToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

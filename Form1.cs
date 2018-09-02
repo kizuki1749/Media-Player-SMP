@@ -44,7 +44,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_STRING = 0x00000000;
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
-        public string version = "1.27 Revision 2 Release Candidate 1";
+        public string version = "1.27 Revision 2";
 
         public Form1()
         {
@@ -1473,6 +1473,62 @@ namespace Media_Player_SMP
         private void バージョン情報AToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Media Player SMP "+version+"\r\n"+ "By kizuki1749\r\n\r\nCopyright © 2017-2018 kizuki1749 All Rights Reserved.","バージョン情報",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                foreach (string file in Directory.GetFiles(".", "Temp.*"))
+                {
+                    DeleteFile(file);
+                }
+                StatusChange("成功: テンポラリファイルを削除しました。");
+            }
+            catch
+            {
+                StatusChange("失敗: テンポラリファイルを削除できませんでした。");
+            }
+        }
+
+        /// -----------------------------------------------------------------------------
+        /// <summary>
+        ///     指定したファイルを削除します。</summary>
+        /// <param name="stFilePath">
+        ///     削除するファイルまでのパス。</param>
+        /// -----------------------------------------------------------------------------
+        public static void DeleteFile(string stFilePath)
+        {
+            System.IO.FileInfo cFileInfo = new System.IO.FileInfo(stFilePath);
+
+            // ファイルが存在しているか判断する
+            if (cFileInfo.Exists)
+            {
+                // 読み取り専用属性がある場合は、読み取り専用属性を解除する
+                if ((cFileInfo.Attributes & System.IO.FileAttributes.ReadOnly) == System.IO.FileAttributes.ReadOnly)
+                {
+                    cFileInfo.Attributes = System.IO.FileAttributes.Normal;
+                }
+
+                // ファイルを削除する
+                cFileInfo.Delete();
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (string file in Directory.GetFiles(".", "Temp.*"))
+                {
+                    DeleteFile(file);
+                }
+                StatusChange("成功: テンポラリファイルを削除しました。");
+            }
+            catch
+            {
+                StatusChange("失敗: テンポラリファイルを削除できませんでした。");
+            }
         }
     }
 }
