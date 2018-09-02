@@ -12,7 +12,7 @@ namespace Media_Player_SMP.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -68,6 +68,102 @@ namespace Media_Player_SMP.Properties {
             }
             set {
                 this["fileext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool betafuture {
+            get {
+                return ((bool)(this["betafuture"]));
+            }
+            set {
+                this["betafuture"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool autoplay {
+            get {
+                return ((bool)(this["autoplay"]));
+            }
+            set {
+                this["autoplay"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int firstvol {
+            get {
+                return ((int)(this["firstvol"]));
+            }
+            set {
+                this["firstvol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("MS UI Gothic, 9pt")]
+        public global::System.Drawing.Font FormFont {
+            get {
+                return ((global::System.Drawing.Font)(this["FormFont"]));
+            }
+            set {
+                this["FormFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EnableAdvancedInfo {
+            get {
+                return ((bool)(this["EnableAdvancedInfo"]));
+            }
+            set {
+                this["EnableAdvancedInfo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EnableErrorDialogs {
+            get {
+                return ((bool)(this["EnableErrorDialogs"]));
+            }
+            set {
+                this["EnableErrorDialogs"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LoadingDialogEnable {
+            get {
+                return ((bool)(this["LoadingDialogEnable"]));
+            }
+            set {
+                this["LoadingDialogEnable"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsUpgrade {
+            get {
+                return ((bool)(this["IsUpgrade"]));
+            }
+            set {
+                this["IsUpgrade"] = value;
             }
         }
     }

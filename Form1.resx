@@ -141,50 +141,50 @@
     <value>Ctrl+O</value>
   </data>
   <data name="開くOToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
+    <value>293, 22</value>
   </data>
   <data name="開くOToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイルからリストに追加(&amp;O)</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
+    <value>293, 22</value>
   </data>
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
     <value>フォルダからリストに追加(&amp;F)</value>
   </data>
+  <data name="toolStripMenuItem6.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 22</value>
+  </data>
+  <data name="toolStripMenuItem6.Text" xml:space="preserve">
+    <value>URL / ネットワークストリームからリストに追加(&amp;U)</value>
+  </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
+    <value>290, 6</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="toolStripMenuItem1.Enabled" type="System.Boolean, mscorlib">
+  <data name="ダウンロードをキャンセルCToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
+  <data name="ダウンロードをキャンセルCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 22</value>
   </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>URL</value>
+  <data name="ダウンロードをキャンセルCToolStripMenuItem.Text" xml:space="preserve">
+    <value>ダウンロードをキャンセル(&amp;C)</value>
   </data>
-  <data name="toolStripTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 22</value>
   </data>
-  <data name="uRLを開くUToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
+  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Text" xml:space="preserve">
+    <value>ダウンロードスレッド数の変更(&amp;S)</value>
   </data>
-  <data name="uRLを開くUToolStripMenuItem.Text" xml:space="preserve">
-    <value>URLからリストに追加(&amp;U)</value>
-  </data>
-  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="toolStripMenuItem3.Text" xml:space="preserve">
-    <value>Shockware Flash の再生(別ウィンドウ)(&amp;Y)</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
+  <data name="ダウンロードスレッド数の変更SToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="リストの削除DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
+    <value>293, 22</value>
   </data>
   <data name="リストの削除DToolStripMenuItem.Text" xml:space="preserve">
     <value>リストの削除(&amp;D)</value>
@@ -231,6 +231,21 @@
   <data name="フルスクリーンFToolStripMenuItem.Text" xml:space="preserve">
     <value>フルスクリーン(&amp;F)</value>
   </data>
+  <data name="フルウィンドウWToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 22</value>
+  </data>
+  <data name="フルウィンドウWToolStripMenuItem.Text" xml:space="preserve">
+    <value>フルウィンドウ(&amp;W)</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 6</value>
+  </data>
+  <data name="再生速度の変更SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 22</value>
+  </data>
+  <data name="再生速度の変更SToolStripMenuItem.Text" xml:space="preserve">
+    <value>再生速度の変更(&amp;S)</value>
+  </data>
   <data name="再生PToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
   </data>
@@ -243,11 +258,80 @@
   <data name="このウィンドウを常に最前面に表示するTToolStripMenuItem.Text" xml:space="preserve">
     <value>このウィンドウを常に最前面に表示する(&amp;T)</value>
   </data>
+  <data name="マウスカーソルを非表示HToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="マウスカーソルを非表示HToolStripMenuItem.Text" xml:space="preserve">
+    <value>マウスカーソルを非表示(&amp;H)</value>
+  </data>
   <data name="表示VToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
   </data>
   <data name="表示VToolStripMenuItem.Text" xml:space="preserve">
     <value>表示(&amp;V)</value>
+  </data>
+  <data name="キャストCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 22</value>
+  </data>
+  <data name="キャストCToolStripMenuItem.Text" xml:space="preserve">
+    <value>キャスト(&amp;C)</value>
+  </data>
+  <data name="キャストを停止SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 22</value>
+  </data>
+  <data name="キャストを停止SToolStripMenuItem.Text" xml:space="preserve">
+    <value>キャストを停止(&amp;S)</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 6</value>
+  </data>
+  <data name="toolStripMenuItem4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 22</value>
+  </data>
+  <data name="toolStripMenuItem4.Text" xml:space="preserve">
+    <value>自機IPアドレスを指定</value>
+  </data>
+  <data name="toolStripMenuItem5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 22</value>
+  </data>
+  <data name="toolStripMenuItem5.Text" xml:space="preserve">
+    <value>(キャストデバイスが見つからない場合)</value>
+  </data>
+  <data name="toolStripTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="iPアドレスを指定してキャストToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 22</value>
+  </data>
+  <data name="iPアドレスを指定してキャストToolStripMenuItem.Text" xml:space="preserve">
+    <value>IPアドレスを指定してキャスト(&amp;A)</value>
+  </data>
+  <data name="chromeCastToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="chromeCastToolStripMenuItem.Text" xml:space="preserve">
+    <value>ChromeCast(&amp;C)</value>
+  </data>
+  <data name="chromeCastToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="バージョン情報AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="バージョン情報AToolStripMenuItem.Text" xml:space="preserve">
+    <value>バージョン情報(&amp;A)</value>
+  </data>
+  <data name="ヘルプHToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="ヘルプHToolStripMenuItem.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -271,7 +355,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -281,6 +365,9 @@
   </data>
   <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>462, 31</value>
@@ -309,6 +396,9 @@
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>258, 65</value>
   </data>
@@ -336,6 +426,9 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="progressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 62</value>
   </data>
@@ -359,6 +452,9 @@
   </data>
   <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 50</value>
@@ -384,6 +480,9 @@
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>160, 50</value>
   </data>
@@ -408,14 +507,17 @@
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 32</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 12</value>
+    <value>445, 12</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -440,6 +542,9 @@
   </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>540, 56</value>
@@ -474,17 +579,20 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 32</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 12</value>
+    <value>57, 12</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>音量 : 50</value>
+    <value>音量 : 100</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -500,6 +608,9 @@
   </data>
   <data name="trackBar2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
+  </data>
+  <data name="trackBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="trackBar2.Location" type="System.Drawing.Point, System.Drawing">
     <value>604, 32</value>
@@ -521,6 +632,9 @@
   </data>
   <data name="&gt;&gt;trackBar2.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 50</value>
@@ -546,6 +660,9 @@
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 50</value>
   </data>
@@ -569,6 +686,9 @@
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 50</value>
@@ -596,6 +716,9 @@
   </data>
   <data name="trackBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="trackBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, -1</value>
@@ -627,6 +750,9 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>712, 6</value>
   </data>
@@ -653,6 +779,9 @@
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 3</value>
@@ -700,51 +829,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.Enabled" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAuQAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAKQAAAAAAwAACAACAAAAAAAFAAAAAAAAAPA/AwAAAAAABQAAAAAAAAAAAAgA
-        AgAAAAAAAwABAAAACwD//wMAAAAAAAsA//8IAAIAAAAAAAMAMgAAAAsAAAAIAAoAAABuAG8AbgBlAAAA
-        CwD//wsAAAALAP//CwD//wsAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAAIAAIAAAAAAAsAAAAjTgAA
-        KyoAAAs=
-</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 408</value>
-  </data>
-  <data name="axWindowsMediaPlayer1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Name" xml:space="preserve">
-    <value>axWindowsMediaPlayer1</value>
-  </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Type" xml:space="preserve">
-    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 38</value>
+    <value>15, 38</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 12</value>
@@ -774,7 +868,7 @@
     <value>119, 5</value>
   </metadata>
   <data name="openFileDialog1.Filter" xml:space="preserve">
-    <value>すべてのファイル|*.*|動画ファイル|*.mp4;*.avi;*.mpg;*.mpeg;*.wmv|音楽ファイル|*.mp3;*.wma;*.m4a;*.wav|MIDI シーケンス|*.mid|プレイリスト|*.wpl;*.m3u</value>
+    <value>すべてのファイル|*.*|動画ファイル|*.mp4;*.avi;*.mpg;*.mpeg;*.wmv|音楽ファイル|*.mp3;*.wma;*.m4a;*.wav|MIDI シーケンス|*.mid|プレイリスト|*.wpl;*.m3u|---------------ここから細分化---------------|*.*|MPEG-1/2 Audio Layer-1|*.mpa;*.mp1|MPEG-1/2 Audio Layer-2|*.mp2;*.mpc|MPEG-1 Audio Layer-3|*.mp3|MPEG-1 Audio Layer-4(著作権保護目的)|*.mp4|Windows Media Audio|*.wma;*.asf|RIFF waveform Audio Format|*.wav|Advanced Audio Coding|*.3gp;*.3g2;*.aac;*.avi;*.m2ts;*.m4a;*.m4b;*.mov;*.mp4;*.wav;*.mkv;*.mka|MPEG-4 Part 14 / ISO/IEC 14496-14:2003 / ISO/IEC JTC 1|*.mp4|Windows Media Video|*.wmv|Joint Photographic Experts Group|*.jpeg;*.jpg;*.jpe;*.jfif;*.jfi;*.jif|Joint Photographic Experts Group 2000 / JPEG 2000|*.jp2;*.j2k;*.jpf;*.jpx;*.jpm;*.mj2|Portable Network Graphics|*.png|Microsoft Windows Bitmap Image|*.bmp|Tagged Image File Format|*.tiff;*.tif|スタンダードMIDIファイル / Standard MIDI File (Format 0 / Format 1 / Format 2)|*.mid|Adobe Shockware Flash|*.swf;*.flv</value>
   </data>
   <data name="openFileDialog1.Title" xml:space="preserve">
     <value>メディアファイルを開く</value>
@@ -787,6 +881,9 @@
   </metadata>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 64</value>
@@ -818,6 +915,9 @@
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 38</value>
   </data>
@@ -844,6 +944,9 @@
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 14</value>
@@ -894,10 +997,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>3</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -966,7 +1066,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="timer3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>573, 5</value>
@@ -976,6 +1076,182 @@
   </metadata>
   <data name="folderBrowserDialog1.Description" xml:space="preserve">
     <value>フォルダを指定してください。</value>
+  </data>
+  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 217</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>キャスト(&amp;C)</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 217</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 27</value>
+  </data>
+  <data name="listBox1.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 184</value>
+  </data>
+  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 12</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 12</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>キャスト先:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 244</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="panel4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="timer4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>829, 5</value>
+  </metadata>
+  <data name="axWindowsMediaPlayer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="axWindowsMediaPlayer1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="axWindowsMediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="axWindowsMediaPlayer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAuQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKQAAAAAAwAACAACAAAAAAAFAAAAAAAAAPA/AwAAAAAABQAAAAAAAAAAAAgA
+        AgAAAAAAAwABAAAACwD//wMAAAAAAAsA//8IAAIAAAAAAAMAMgAAAAsAAAAIAAoAAABuAG8AbgBlAAAA
+        CwD//wsAAAALAP//CwD//wsAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAAIAAIAAAAAAAsAAAAjTgAA
+        KyoAAAs=
+</value>
+  </data>
+  <data name="axWindowsMediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 408</value>
+  </data>
+  <data name="axWindowsMediaPlayer1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;axWindowsMediaPlayer1.Name" xml:space="preserve">
+    <value>axWindowsMediaPlayer1</value>
+  </data>
+  <data name="&gt;&gt;axWindowsMediaPlayer1.Type" xml:space="preserve">
+    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;axWindowsMediaPlayer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;axWindowsMediaPlayer1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -6187,7 +6463,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Media Player SMP 1.12</value>
+    <value>Media Player SMP</value>
   </data>
   <data name="&gt;&gt;ファイルFToolStripMenuItem.Name" xml:space="preserve">
     <value>ファイルFToolStripMenuItem</value>
@@ -6219,41 +6495,29 @@
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
+    <value>toolStripMenuItem6</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
+  <data name="&gt;&gt;ダウンロードをキャンセルCToolStripMenuItem.Name" xml:space="preserve">
+    <value>ダウンロードをキャンセルCToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;ダウンロードをキャンセルCToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
-    <value>toolStripTextBox1</value>
+  <data name="&gt;&gt;ダウンロードスレッド数の変更SToolStripMenuItem.Name" xml:space="preserve">
+    <value>ダウンロードスレッド数の変更SToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;uRLを開くUToolStripMenuItem.Name" xml:space="preserve">
-    <value>uRLを開くUToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;uRLを開くUToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ダウンロードスレッド数の変更SToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
-    <value>toolStripMenuItem3</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
-    <value>toolStripSeparator2</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;リストの削除DToolStripMenuItem.Name" xml:space="preserve">
     <value>リストの削除DToolStripMenuItem</value>
@@ -6303,6 +6567,24 @@
   <data name="&gt;&gt;フルスクリーンFToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;フルウィンドウWToolStripMenuItem.Name" xml:space="preserve">
+    <value>フルウィンドウWToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;フルウィンドウWToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
+    <value>toolStripSeparator4</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;再生速度の変更SToolStripMenuItem.Name" xml:space="preserve">
+    <value>再生速度の変更SToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;再生速度の変更SToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;表示VToolStripMenuItem.Name" xml:space="preserve">
     <value>表示VToolStripMenuItem</value>
   </data>
@@ -6313,6 +6595,72 @@
     <value>このウィンドウを常に最前面に表示するTToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;このウィンドウを常に最前面に表示するTToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;マウスカーソルを非表示HToolStripMenuItem.Name" xml:space="preserve">
+    <value>マウスカーソルを非表示HToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;マウスカーソルを非表示HToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chromeCastToolStripMenuItem.Name" xml:space="preserve">
+    <value>chromeCastToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;chromeCastToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;キャストCToolStripMenuItem.Name" xml:space="preserve">
+    <value>キャストCToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;キャストCToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;キャストを停止SToolStripMenuItem.Name" xml:space="preserve">
+    <value>キャストを停止SToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;キャストを停止SToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
+    <value>toolStripMenuItem4</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
+    <value>toolStripMenuItem5</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox2.Name" xml:space="preserve">
+    <value>toolStripTextBox2</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iPアドレスを指定してキャストToolStripMenuItem.Name" xml:space="preserve">
+    <value>iPアドレスを指定してキャストToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;iPアドレスを指定してキャストToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Name" xml:space="preserve">
+    <value>ヘルプHToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Name" xml:space="preserve">
+    <value>バージョン情報AToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
@@ -6350,6 +6698,12 @@
   </data>
   <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer4.Name" xml:space="preserve">
+    <value>timer4</value>
+  </data>
+  <data name="&gt;&gt;timer4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

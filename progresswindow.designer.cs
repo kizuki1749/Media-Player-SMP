@@ -45,14 +45,14 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 45);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(380, 20);
+            this.progressBar1.Size = new System.Drawing.Size(400, 20);
             this.progressBar1.TabIndex = 1;
             // 
             // progresswindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 77);
+            this.ClientSize = new System.Drawing.Size(424, 77);
             this.ControlBox = false;
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -60,7 +60,6 @@
             this.MaximizeBox = false;
             this.Name = "progresswindow";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.Text = "しばらくお待ちください";
             this.Load += new System.EventHandler(this.progresswindow_Load);
             this.ResumeLayout(false);

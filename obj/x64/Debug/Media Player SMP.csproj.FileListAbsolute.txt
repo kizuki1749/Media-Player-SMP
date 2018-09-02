@@ -71,3 +71,10 @@ C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\is\Media Player SMP
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\ja\Media Player SMP.resources.dll
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.exe
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\x64\Debug\Media Player SMP.pdb
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Interop.AXVLC.dll
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Interop.Shell32.dll
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Interop.WMPLib.dll
+D:\Media-Player-SMP-1.12\obj\x64\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Media Player SMP.exe
+D:\Media-Player-SMP-1.12\obj\x64\Debug\Media Player SMP.pdb

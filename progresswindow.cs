@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Taskbar;
 
 namespace niconicoviewer
 {
@@ -78,6 +79,26 @@ namespace niconicoviewer
             {
                 return progressBar1.Maximum;
             }
+        }
+
+        TaskbarProgressBarState taskbarProgressBarState;
+
+        public TaskbarProgressBarState TaskbarprogressBarState
+        {
+            set
+            {
+                taskbarProgressBarState = TaskbarprogressBarState;
+                TaskbarManager.Instance.SetProgressState(TaskbarprogressBarState);
+            }
+            get
+            {
+                return taskbarProgressBarState;
+            }
+        }
+
+        public void SetTProgressValue(int val, int max)
+        {
+            TaskbarManager.Instance.SetProgressValue(val, max);
         }
 
         public bool cancel

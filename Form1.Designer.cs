@@ -36,12 +36,10 @@
             this.メディアMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.開くOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.uRLを開くUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.ダウンロードをキャンセルCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ダウンロードスレッド数の変更SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.リストの削除DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.テキストTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.開くOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,8 +48,22 @@
             this.環境設定PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.再生PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.フルスクリーンFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.フルウィンドウWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.再生速度の変更SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.表示VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.このウィンドウを常に最前面に表示するTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.マウスカーソルを非表示HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chromeCastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.キャストCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.キャストを停止SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.iPアドレスを指定してキャストToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,7 +80,6 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.label5 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -82,13 +93,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -99,7 +118,9 @@
             this.テキストTToolStripMenuItem,
             this.設定SToolStripMenuItem,
             this.再生PToolStripMenuItem,
-            this.表示VToolStripMenuItem});
+            this.表示VToolStripMenuItem,
+            this.chromeCastToolStripMenuItem,
+            this.ヘルプHToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -121,12 +142,10 @@
             this.メディアMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.開くOToolStripMenuItem,
             this.toolStripMenuItem2,
+            this.toolStripMenuItem6,
             this.toolStripSeparator1,
-            this.toolStripMenuItem1,
-            this.toolStripTextBox1,
-            this.uRLを開くUToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.toolStripSeparator2,
+            this.ダウンロードをキャンセルCToolStripMenuItem,
+            this.ダウンロードスレッド数の変更SToolStripMenuItem,
             this.リストの削除DToolStripMenuItem});
             this.メディアMToolStripMenuItem.Name = "メディアMToolStripMenuItem";
             resources.ApplyResources(this.メディアMToolStripMenuItem, "メディアMToolStripMenuItem");
@@ -143,37 +162,28 @@
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            resources.ApplyResources(this.toolStripMenuItem6, "toolStripMenuItem6");
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
-            // toolStripMenuItem1
+            // ダウンロードをキャンセルCToolStripMenuItem
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.ダウンロードをキャンセルCToolStripMenuItem, "ダウンロードをキャンセルCToolStripMenuItem");
+            this.ダウンロードをキャンセルCToolStripMenuItem.Name = "ダウンロードをキャンセルCToolStripMenuItem";
+            this.ダウンロードをキャンセルCToolStripMenuItem.Click += new System.EventHandler(this.ダウンロードをキャンセルCToolStripMenuItem_Click);
             // 
-            // toolStripTextBox1
+            // ダウンロードスレッド数の変更SToolStripMenuItem
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            resources.ApplyResources(this.toolStripTextBox1, "toolStripTextBox1");
-            // 
-            // uRLを開くUToolStripMenuItem
-            // 
-            this.uRLを開くUToolStripMenuItem.Name = "uRLを開くUToolStripMenuItem";
-            resources.ApplyResources(this.uRLを開くUToolStripMenuItem, "uRLを開くUToolStripMenuItem");
-            this.uRLを開くUToolStripMenuItem.Click += new System.EventHandler(this.uRLを開くUToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.ダウンロードスレッド数の変更SToolStripMenuItem.Name = "ダウンロードスレッド数の変更SToolStripMenuItem";
+            resources.ApplyResources(this.ダウンロードスレッド数の変更SToolStripMenuItem, "ダウンロードスレッド数の変更SToolStripMenuItem");
+            this.ダウンロードスレッド数の変更SToolStripMenuItem.Click += new System.EventHandler(this.ダウンロードスレッド数の変更SToolStripMenuItem_Click);
             // 
             // リストの削除DToolStripMenuItem
             // 
@@ -217,7 +227,10 @@
             // 再生PToolStripMenuItem
             // 
             this.再生PToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.フルスクリーンFToolStripMenuItem});
+            this.フルスクリーンFToolStripMenuItem,
+            this.フルウィンドウWToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.再生速度の変更SToolStripMenuItem});
             this.再生PToolStripMenuItem.Name = "再生PToolStripMenuItem";
             resources.ApplyResources(this.再生PToolStripMenuItem, "再生PToolStripMenuItem");
             // 
@@ -228,10 +241,28 @@
             this.フルスクリーンFToolStripMenuItem.CheckedChanged += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_CheckedChanged);
             this.フルスクリーンFToolStripMenuItem.Click += new System.EventHandler(this.フルスクリーンFToolStripMenuItem_Click);
             // 
+            // フルウィンドウWToolStripMenuItem
+            // 
+            this.フルウィンドウWToolStripMenuItem.Name = "フルウィンドウWToolStripMenuItem";
+            resources.ApplyResources(this.フルウィンドウWToolStripMenuItem, "フルウィンドウWToolStripMenuItem");
+            this.フルウィンドウWToolStripMenuItem.Click += new System.EventHandler(this.フルウィンドウWToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            // 
+            // 再生速度の変更SToolStripMenuItem
+            // 
+            this.再生速度の変更SToolStripMenuItem.Name = "再生速度の変更SToolStripMenuItem";
+            resources.ApplyResources(this.再生速度の変更SToolStripMenuItem, "再生速度の変更SToolStripMenuItem");
+            this.再生速度の変更SToolStripMenuItem.Click += new System.EventHandler(this.再生速度の変更SToolStripMenuItem_Click);
+            // 
             // 表示VToolStripMenuItem
             // 
             this.表示VToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.このウィンドウを常に最前面に表示するTToolStripMenuItem});
+            this.このウィンドウを常に最前面に表示するTToolStripMenuItem,
+            this.マウスカーソルを非表示HToolStripMenuItem});
             this.表示VToolStripMenuItem.Name = "表示VToolStripMenuItem";
             resources.ApplyResources(this.表示VToolStripMenuItem, "表示VToolStripMenuItem");
             // 
@@ -241,6 +272,75 @@
             resources.ApplyResources(this.このウィンドウを常に最前面に表示するTToolStripMenuItem, "このウィンドウを常に最前面に表示するTToolStripMenuItem");
             this.このウィンドウを常に最前面に表示するTToolStripMenuItem.CheckedChanged += new System.EventHandler(this.このウィンドウを常に最前面に表示するTToolStripMenuItem_CheckedChanged);
             this.このウィンドウを常に最前面に表示するTToolStripMenuItem.Click += new System.EventHandler(this.このウィンドウを常に最前面に表示するTToolStripMenuItem_Click);
+            // 
+            // マウスカーソルを非表示HToolStripMenuItem
+            // 
+            this.マウスカーソルを非表示HToolStripMenuItem.Name = "マウスカーソルを非表示HToolStripMenuItem";
+            resources.ApplyResources(this.マウスカーソルを非表示HToolStripMenuItem, "マウスカーソルを非表示HToolStripMenuItem");
+            this.マウスカーソルを非表示HToolStripMenuItem.Click += new System.EventHandler(this.マウスカーソルを非表示HToolStripMenuItem_Click);
+            // 
+            // chromeCastToolStripMenuItem
+            // 
+            this.chromeCastToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.キャストCToolStripMenuItem,
+            this.キャストを停止SToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripTextBox2,
+            this.iPアドレスを指定してキャストToolStripMenuItem});
+            this.chromeCastToolStripMenuItem.Name = "chromeCastToolStripMenuItem";
+            resources.ApplyResources(this.chromeCastToolStripMenuItem, "chromeCastToolStripMenuItem");
+            // 
+            // キャストCToolStripMenuItem
+            // 
+            this.キャストCToolStripMenuItem.Name = "キャストCToolStripMenuItem";
+            resources.ApplyResources(this.キャストCToolStripMenuItem, "キャストCToolStripMenuItem");
+            this.キャストCToolStripMenuItem.Click += new System.EventHandler(this.キャストCToolStripMenuItem_Click);
+            // 
+            // キャストを停止SToolStripMenuItem
+            // 
+            this.キャストを停止SToolStripMenuItem.Name = "キャストを停止SToolStripMenuItem";
+            resources.ApplyResources(this.キャストを停止SToolStripMenuItem, "キャストを停止SToolStripMenuItem");
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            // 
+            // toolStripMenuItem4
+            // 
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            // 
+            // toolStripMenuItem5
+            // 
+            resources.ApplyResources(this.toolStripMenuItem5, "toolStripMenuItem5");
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            resources.ApplyResources(this.toolStripTextBox2, "toolStripTextBox2");
+            // 
+            // iPアドレスを指定してキャストToolStripMenuItem
+            // 
+            this.iPアドレスを指定してキャストToolStripMenuItem.Name = "iPアドレスを指定してキャストToolStripMenuItem";
+            resources.ApplyResources(this.iPアドレスを指定してキャストToolStripMenuItem, "iPアドレスを指定してキャストToolStripMenuItem");
+            this.iPアドレスを指定してキャストToolStripMenuItem.Click += new System.EventHandler(this.iPアドレスを指定してキャストToolStripMenuItem_Click);
+            // 
+            // ヘルプHToolStripMenuItem
+            // 
+            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.バージョン情報AToolStripMenuItem});
+            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
+            resources.ApplyResources(this.ヘルプHToolStripMenuItem, "ヘルプHToolStripMenuItem");
+            // 
+            // バージョン情報AToolStripMenuItem
+            // 
+            this.バージョン情報AToolStripMenuItem.Name = "バージョン情報AToolStripMenuItem";
+            resources.ApplyResources(this.バージョン情報AToolStripMenuItem, "バージョン情報AToolStripMenuItem");
+            this.バージョン情報AToolStripMenuItem.Click += new System.EventHandler(this.バージョン情報AToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -319,7 +419,7 @@
             this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.TickFrequency = 10;
-            this.trackBar2.Value = 50;
+            this.trackBar2.Value = 100;
             this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // button3
@@ -363,17 +463,6 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.axWindowsMediaPlayer1_OpenStateChange);
-            this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
-            this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
-            this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
-            this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
             // 
             // label5
             // 
@@ -451,12 +540,64 @@
             // 
             resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.listBox1);
+            this.panel4.Controls.Add(this.label10);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_ClickAsync);
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox1, "listBox1");
+            this.listBox1.Name = "listBox1";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // timer4
+            // 
+            this.timer4.Enabled = true;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.OpenStateChange += new AxWMPLib._WMPOCXEvents_OpenStateChangeEventHandler(this.axWindowsMediaPlayer1_OpenStateChange);
+            this.axWindowsMediaPlayer1.StatusChange += new System.EventHandler(this.axWindowsMediaPlayer1_StatusChange);
+            this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
+            this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
+            this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -465,30 +606,33 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.MouseHover += new System.EventHandler(this.Form1_MouseHover);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ファイルFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -503,20 +647,13 @@
         private System.Windows.Forms.ToolStripMenuItem メディアMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 開くOToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ToolStripMenuItem uRLを開くUToolStripMenuItem;
         public AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem リストの削除DToolStripMenuItem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -525,7 +662,6 @@
         private System.Windows.Forms.ToolStripMenuItem 開くOToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 閉じるToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ToolStripMenuItem 設定SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 環境設定PToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 再生PToolStripMenuItem;
@@ -533,10 +669,38 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ToolStripMenuItem 表示VToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem このウィンドウを常に最前面に表示するTToolStripMenuItem;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ToolStripMenuItem chromeCastToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストを停止SToolStripMenuItem;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripMenuItem iPアドレスを指定してキャストToolStripMenuItem;
+        internal System.Windows.Forms.MenuStrip menuStrip1;
+        internal System.Windows.Forms.Panel panel1;
+        internal System.Windows.Forms.Panel panel2;
+        internal System.Windows.Forms.Panel panel3;
+        internal System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.ToolStripMenuItem マウスカーソルを非表示HToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem フルウィンドウWToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 再生速度の変更SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        public System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem ダウンロードをキャンセルCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ダウンロードスレッド数の変更SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ヘルプHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem バージョン情報AToolStripMenuItem;
     }
 }
 

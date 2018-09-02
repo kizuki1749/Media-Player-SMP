@@ -102,3 +102,94 @@ C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\Debug\Media Player SMP.pdb
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\Debug\Media_Player_SMP.exteditwindow.resources
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\bin\Debug\Interop.WMPLib.dll
 C:\Users\tkizu\Downloads\Media-Player-SMP-1.11\obj\Debug\Media Player SMP.csprojResolveAssemblyReference.cache
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.AXVLC.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.Shell32.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.WMPLib.dll
+D:\Media-Player-SMP-1.12\obj\Debug\AxInterop.AXVLC.dll
+D:\Media-Player-SMP-1.12\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.csproj.ResolveComReference.cache
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.csprojAssemblyReference.cache
+D:\Media-Player-SMP-1.12\bin\Debug\Media Player SMP.exe.config
+D:\Media-Player-SMP-1.12\bin\Debug\Media Player SMP.exe.manifest
+D:\Media-Player-SMP-1.12\bin\Debug\Media Player SMP.application
+D:\Media-Player-SMP-1.12\bin\Debug\Media Player SMP.exe
+D:\Media-Player-SMP-1.12\bin\Debug\Media Player SMP.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\en\Media Player SMP.resources.dll
+D:\Media-Player-SMP-1.12\bin\Debug\ja\Media Player SMP.resources.dll
+D:\Media-Player-SMP-1.12\bin\Debug\AxInterop.WMPLib.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Google.Protobuf.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Newtonsoft.Json.dll
+D:\Media-Player-SMP-1.12\bin\Debug\policy.2.0.taglib-sharp.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Rssdp.dll
+D:\Media-Player-SMP-1.12\bin\Debug\SharpCaster.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.Abstractions.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.dll
+D:\Media-Player-SMP-1.12\bin\Debug\taglib-sharp.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.Interops.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Forms.dll
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.abstractions.dll
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.assert.dll
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.core.dll
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.execution.desktop.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Interop.WMPLib.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Google.Protobuf.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Newtonsoft.Json.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Rssdp.xml
+D:\Media-Player-SMP-1.12\bin\Debug\SharpCaster.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.Abstractions.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Sockets.Plugin.Abstractions.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.Interops.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Core.Interops.xml
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Forms.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Vlc.DotNet.Forms.xml
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.abstractions.xml
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.assert.xml
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.core.xml
+D:\Media-Player-SMP-1.12\bin\Debug\xunit.execution.desktop.xml
+D:\Media-Player-SMP-1.12\bin\Debug\policy.2.0.taglib-sharp.config
+D:\Media-Player-SMP-1.12\bin\Debug\Interop.AXVLC.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Interop.Shell32.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\bin\Debug\AxInterop.AXVLC.dll
+D:\Media-Player-SMP-1.12\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.exteditwindow.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Form1.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Form2.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Option.resources
+D:\Media-Player-SMP-1.12\obj\Debug\niconicoviewer.progresswindow.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Properties.Resources.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Form1.en.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Form1.ja.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Option.en.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.Option.ja.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.csproj.GenerateResource.cache
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+D:\Media-Player-SMP-1.12\obj\Debug\en\Media Player SMP.resources.dll
+D:\Media-Player-SMP-1.12\obj\Debug\ja\Media Player SMP.resources.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.exe.manifest
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.application
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.csproj.CopyComplete
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.exe
+D:\Media-Player-SMP-1.12\obj\Debug\Media Player SMP.pdb
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.AdvancedInfo.resources
+D:\Media-Player-SMP-1.12\bin\Debug\KeyboardHook.dll
+D:\Media-Player-SMP-1.12\bin\Debug\KeyboardHook.pdb
+D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.SpeedForm.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.OpenURLWindow.resources
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.MSComDlg.dll
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.MSCommLib.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\Media-Player-SMP-1.12\obj\Debug\Interop.MSComctlLib.dll
+D:\Media-Player-SMP-1.12\bin\Debug\System.Management.Automation.dll
+D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.Management.Infrastructure.dll
+D:\Media-Player-SMP-1.12\bin\Debug\System.Management.Automation.xml
+D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.downloadthread.resources
