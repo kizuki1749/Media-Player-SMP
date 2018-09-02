@@ -394,7 +394,6 @@
   <ItemGroup>
     <None Include="Resources\WiFi.png" />
     <Content Include="SMPicon.ico" />
-    <Content Include="WiFi.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">

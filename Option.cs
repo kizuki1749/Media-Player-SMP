@@ -131,6 +131,7 @@ namespace Media_Player_SMP
             propertyGrid6.SelectedObject = (Panel)form1.Controls["Panel4"];
             Property prop = new Property();
             propertyGrid8.SelectedObject = prop;
+            label3.Text = "Media Player SMP "+form1.version+"\r\n\r\nBy kizuki1749\r\n\r\n\r\n\r\nCopyright © 2017-2018 kizuki1749 All Rights Reserved.";
             if (Properties.Settings.Default.Launguage == "Japanease")
             {
                 comboBox1.SelectedIndex = 0;

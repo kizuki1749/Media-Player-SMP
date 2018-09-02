@@ -193,3 +193,91 @@ D:\Media-Player-SMP-1.12\bin\Debug\System.Management.Automation.dll
 D:\Media-Player-SMP-1.12\bin\Debug\Microsoft.Management.Infrastructure.dll
 D:\Media-Player-SMP-1.12\bin\Debug\System.Management.Automation.xml
 D:\Media-Player-SMP-1.12\obj\Debug\Media_Player_SMP.downloadthread.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csprojAssemblyReference.cache
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.AXVLC.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.MSComctlLib.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.MSComDlg.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.MSCommLib.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.Shell32.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Interop.WMPLib.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\AxInterop.AXVLC.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.ResolveComReference.cache
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.AdvancedInfo.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.downloadthread.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.exteditwindow.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Form1.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Form2.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.OpenURLWindow.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Option.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\niconicoviewer.progresswindow.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Properties.Resources.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.SpeedForm.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Form1.en.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Form1.ja.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Option.en.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.Option.ja.resources
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.GenerateResource.cache
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.CoreCompileInputs.cache
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\en\Media Player SMP.resources.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\ja\Media Player SMP.resources.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.exe.manifest
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.exe
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Media Player SMP.exe.config
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Media Player SMP.exe.manifest
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Media Player SMP.application
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Media Player SMP.exe
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Media Player SMP.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\en\Media Player SMP.resources.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\ja\Media Player SMP.resources.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\AxInterop.WMPLib.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Google.Protobuf.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\KeyboardHook.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\policy.2.0.taglib-sharp.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Rssdp.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\SharpCaster.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.Abstractions.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Management.Automation.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\taglib-sharp.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.abstractions.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.assert.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.core.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.execution.desktop.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Interop.WMPLib.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Microsoft.Management.Infrastructure.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\KeyboardHook.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Google.Protobuf.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Rssdp.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\SharpCaster.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.Abstractions.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Sockets.Plugin.Abstractions.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Management.Automation.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Core.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Core.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Core.Interops.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Core.Interops.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Forms.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Vlc.DotNet.Forms.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.abstractions.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.assert.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.core.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\xunit.execution.desktop.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\policy.2.0.taglib-sharp.config
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Interop.AXVLC.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Interop.Shell32.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\AxInterop.AXVLC.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.application
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.CopyComplete
