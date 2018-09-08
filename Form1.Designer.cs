@@ -55,6 +55,7 @@
             this.マウスカーソルを非表示HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.メンテナンスMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.終了時に自動実行されますToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chromeCastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストを停止SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -101,7 +102,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.終了時に自動実行されますToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -288,6 +288,11 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // 終了時に自動実行されますToolStripMenuItem
+            // 
+            resources.ApplyResources(this.終了時に自動実行されますToolStripMenuItem, "終了時に自動実行されますToolStripMenuItem");
+            this.終了時に自動実行されますToolStripMenuItem.Name = "終了時に自動実行されますToolStripMenuItem";
             // 
             // chromeCastToolStripMenuItem
             // 
@@ -600,11 +605,6 @@
             this.axWindowsMediaPlayer1.Buffering += new AxWMPLib._WMPOCXEvents_BufferingEventHandler(this.axWindowsMediaPlayer1_Buffering);
             this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
             this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
-            // 
-            // 終了時に自動実行されますToolStripMenuItem
-            // 
-            resources.ApplyResources(this.終了時に自動実行されますToolStripMenuItem, "終了時に自動実行されますToolStripMenuItem");
-            this.終了時に自動実行されますToolStripMenuItem.Name = "終了時に自動実行されますToolStripMenuItem";
             // 
             // Form1
             // 

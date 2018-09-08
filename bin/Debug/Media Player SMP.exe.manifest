@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="906688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="907200">
       <assemblyIdentity name="Media Player SMP" version="1.27.2.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UyaEJdL0IeYOf/n7cAHc+6uwJqioIZvk4L30CankyGs=</dsig:DigestValue>
+        <dsig:DigestValue>GUSL8F3iWeq//NUnvGo15KwFcdpJkAAM+AcS1XXFLkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SzKCnBsOLqPbcPA38xIgCmZBt690N6d722CaVBg0mbw=</dsig:DigestValue>
+        <dsig:DigestValue>q9yzvHGAfRrv2z0f87YMjnuLrhEamkAYRjRDd8KAH60=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

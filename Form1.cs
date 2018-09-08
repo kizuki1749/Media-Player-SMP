@@ -44,7 +44,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_STRING = 0x00000000;
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
-        public string version = "1.27 Revision 2";
+        public string version = "1.28";
 
         public Form1()
         {
