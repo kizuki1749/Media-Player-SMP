@@ -44,7 +44,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_STRING = 0x00000000;
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
-        public string version = "1.28";
+        public string version = "1.29 Release Candidate 1";
 
         public Form1()
         {
@@ -881,6 +881,7 @@ namespace Media_Player_SMP
                 StatusChange("フルスクリーン表示に切り替えました。Ctrl(Control)キー+Altキー+Fキーで元に戻ります。またマウスを一番上や一番下に合わせるとメニューやシークバーが表示されます。");
                 menuStrip1.Visible = false;
                 panel1.Visible = false;
+                フルウィンドウWToolStripMenuItem.Enabled = false;
             }
             else
             {
@@ -901,6 +902,7 @@ namespace Media_Player_SMP
                 StatusChange("ウィンドウ表示に切り替えました。");
                 menuStrip1.Visible = true;
                 panel1.Visible = true;
+                フルウィンドウWToolStripMenuItem.Enabled = true;
             }
         }
 
