@@ -281,3 +281,6 @@ D:\GitHub Repository\Media-Player-SMP\bin\Debug\AxInterop.AXVLC.dll
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
 D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.application
 D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.CopyComplete
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.xml

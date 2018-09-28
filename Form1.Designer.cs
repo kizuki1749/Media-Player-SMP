@@ -102,6 +102,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -606,6 +607,12 @@
             this.axWindowsMediaPlayer1.CurrentItemChange += new AxWMPLib._WMPOCXEvents_CurrentItemChangeEventHandler(this.axWindowsMediaPlayer1_CurrentItemChange);
             this.axWindowsMediaPlayer1.MediaError += new AxWMPLib._WMPOCXEvents_MediaErrorEventHandler(this.axWindowsMediaPlayer1_MediaError);
             // 
+            // timer5
+            // 
+            this.timer5.Enabled = true;
+            this.timer5.Interval = 10;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -719,6 +726,7 @@
         private System.Windows.Forms.ToolStripMenuItem メンテナンスMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 終了時に自動実行されますToolStripMenuItem;
+        private System.Windows.Forms.Timer timer5;
     }
 }
 
