@@ -1623,8 +1623,7 @@ namespace Media_Player_SMP
                     {
                         track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
                     }
-
-                    str1 += " (" + artists + " / "+id3.Tag.Album+" / トラック番号: "+id3.Tag.Track+" / "+genres+" / "+id3.Tag.Year+")";
+                        str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
                 }
 
             }
@@ -1641,84 +1640,39 @@ namespace Media_Player_SMP
             {
                 str2 = str1;
             }
-            switch (axWindowsMediaPlayer1.playState)
+            try
             {
-                case WMPLib.WMPPlayState.wmppsPlaying:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                switch (axWindowsMediaPlayer1.playState)
+                {
+                    case WMPLib.WMPPlayState.wmppsPlaying:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
                         {
-                            DiscordRpcClient.SetPresence(new RichPresence()
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
                             {
-                                Details = str2,
-                                State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
+                                DiscordRpcClient.SetPresence(new RichPresence()
                                 {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
-                        }
-                        else
-                        {
-                            DiscordRpcClient.SetPresence(new RichPresence()
+                                    Details = str2,
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                            else
                             {
-                                Details = str2,
-                                State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
+                                DiscordRpcClient.SetPresence(new RichPresence()
                                 {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
-                        }
-                    }
-                    else
-                    {
-                        if (axWindowsMediaPlayer1.settings.rate == 1.0)
-                        {
-                            DiscordRpcClient.SetPresence(new RichPresence()
-                            {
-                                Details = str2,
-                                State = "再生中 ("+axWindowsMediaPlayer1.Ctlcontrols.currentPositionString+" / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
-                                {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
-                        }
-                        else
-                        {
-                            DiscordRpcClient.SetPresence(new RichPresence()
-                            {
-                                Details = str2,
-                                State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) ("+axWindowsMediaPlayer1.Ctlcontrols.currentPositionString+" / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
-                                {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
-                        }
-                    }
-                    break;
-
-                case WMPLib.WMPPlayState.wmppsScanForward:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        if (axWindowsMediaPlayer1.settings.rate == 1.0)
-                        {
-                            DiscordRpcClient.SetPresence(new RichPresence()
-                            {
-                                Details = str2,
-                                State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
-                                {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
+                                    Details = str2,
+                                    State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
                         }
                         else
                         {
@@ -1749,46 +1703,17 @@ namespace Media_Player_SMP
                                 });
                             }
                         }
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
+                        break;
 
-                case WMPLib.WMPPlayState.wmppsScanReverse:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        if (axWindowsMediaPlayer1.settings.rate == 1.0)
-                        {
-                            DiscordRpcClient.SetPresence(new RichPresence()
-                            {
-                                Details = str2,
-                                State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                                Assets = new Assets()
-                                {
-                                    LargeImageKey = "smpicon",
-                                    LargeImageText = "Media Player SMP " + version
-                                }
-                            });
-                        }
-                        else
+                    case WMPLib.WMPPlayState.wmppsScanForward:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
                         {
                             if (axWindowsMediaPlayer1.settings.rate == 1.0)
                             {
                                 DiscordRpcClient.SetPresence(new RichPresence()
                                 {
                                     Details = str2,
-                                    State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
                                     Assets = new Assets()
                                     {
                                         LargeImageKey = "smpicon",
@@ -1798,10 +1723,58 @@ namespace Media_Player_SMP
                             }
                             else
                             {
+                                if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsScanReverse:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                            {
                                 DiscordRpcClient.SetPresence(new RichPresence()
                                 {
                                     Details = str2,
-                                    State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
                                     Assets = new Assets()
                                     {
                                         LargeImageKey = "smpicon",
@@ -1809,154 +1782,514 @@ namespace Media_Player_SMP
                                     }
                                 });
                             }
+                            else
+                            {
+                                if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                            }
                         }
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
+                        else
                         {
-                            Details = str2,
-                            State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
+                            DiscordRpcClient.SetPresence(new RichPresence()
                             {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
-
-
-                case WMPLib.WMPPlayState.wmppsStopped:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
-
-                case WMPLib.WMPPlayState.wmppsReady:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
-
-                case WMPLib.WMPPlayState.wmppsPaused:
-                    DiscordRpcClient.SetPresence(new RichPresence()
-                    {
-                        Details = str2,
-                        State = "一時停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                        Assets = new Assets()
-                        {
-                            LargeImageKey = "smpicon",
-                            LargeImageText = "Media Player SMP " + version
+                                Details = str2,
+                                State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
                         }
-                    });
-                    break;
+                        break;
 
-                case WMPLib.WMPPlayState.wmppsBuffering:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
+
+                    case WMPLib.WMPPlayState.wmppsStopped:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsReady:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsPaused:
                         DiscordRpcClient.SetPresence(new RichPresence()
                         {
                             Details = str2,
-                            State = "バッファ中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                            State = "一時停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
                             Assets = new Assets()
                             {
                                 LargeImageKey = "smpicon",
                                 LargeImageText = "Media Player SMP " + version
                             }
                         });
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
-                        {
-                            Details = str2,
-                            State = "バッファ中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
-                            Assets = new Assets()
-                            {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
+                        break;
 
-                case WMPLib.WMPPlayState.wmppsUndefined:
-                    if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
+                    case WMPLib.WMPPlayState.wmppsBuffering:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
                         {
-                            Details = "",
-                            State = "停止中 (00:00 / 00:00)",
-                            Assets = new Assets()
+                            DiscordRpcClient.SetPresence(new RichPresence()
                             {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    else
-                    {
-                        DiscordRpcClient.SetPresence(new RichPresence()
+                                Details = str2,
+                                State = "バッファ中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
                         {
-                            Details = "",
-                            State = "停止中 (00:00 / 00:00)",
-                            Assets = new Assets()
+                            DiscordRpcClient.SetPresence(new RichPresence()
                             {
-                                LargeImageKey = "smpicon",
-                                LargeImageText = "Media Player SMP " + version
-                            }
-                        });
-                    }
-                    break;
+                                Details = str2,
+                                State = "バッファ中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsUndefined:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = "",
+                                State = "停止中 (00:00 / 00:00)",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = "",
+                                State = "停止中 (00:00 / 00:00)",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+                }
             }
-        }
+            catch
+            {
+                string str3 = "";
+                string str4 = "";
+                str3 = axWindowsMediaPlayer1.currentMedia.name;
+                if (str1.Length > 128)
+                {
+                    str4 = str1.Remove(125) + "...";
+                }
+                else
+                {
+                    str4 = str3;
+                }
+                str2 = str4;
+
+                switch (axWindowsMediaPlayer1.playState)
+                {
+                    case WMPLib.WMPPlayState.wmppsPlaying:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                        }
+                        else
+                        {
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsScanForward:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsScanReverse:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                            {
+                                DiscordRpcClient.SetPresence(new RichPresence()
+                                {
+                                    Details = str2,
+                                    State = "再生中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                    Assets = new Assets()
+                                    {
+                                        LargeImageKey = "smpicon",
+                                        LargeImageText = "Media Player SMP " + version
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                if (axWindowsMediaPlayer1.settings.rate == 1.0)
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    DiscordRpcClient.SetPresence(new RichPresence()
+                                    {
+                                        Details = str2,
+                                        State = "再生中(" + axWindowsMediaPlayer1.settings.rate + "倍速) (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                        Assets = new Assets()
+                                        {
+                                            LargeImageKey = "smpicon",
+                                            LargeImageText = "Media Player SMP " + version
+                                        }
+                                    });
+                                }
+                            }
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "再生中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+
+                    case WMPLib.WMPPlayState.wmppsStopped:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsReady:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsPaused:
+                        DiscordRpcClient.SetPresence(new RichPresence()
+                        {
+                            Details = str2,
+                            State = "一時停止中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                            Assets = new Assets()
+                            {
+                                LargeImageKey = "smpicon",
+                                LargeImageText = "Media Player SMP " + version
+                            }
+                        });
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsBuffering:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "バッファ中 (00:00 / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = str2,
+                                State = "バッファ中 (" + axWindowsMediaPlayer1.Ctlcontrols.currentPositionString + " / " + axWindowsMediaPlayer1.currentMedia.durationString + ")",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+
+                    case WMPLib.WMPPlayState.wmppsUndefined:
+                        if (axWindowsMediaPlayer1.Ctlcontrols.currentPositionString == "")
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = "",
+                                State = "停止中 (00:00 / 00:00)",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        else
+                        {
+                            DiscordRpcClient.SetPresence(new RichPresence()
+                            {
+                                Details = "",
+                                State = "停止中 (00:00 / 00:00)",
+                                Assets = new Assets()
+                                {
+                                    LargeImageKey = "smpicon",
+                                    LargeImageText = "Media Player SMP " + version
+                                }
+                            });
+                        }
+                        break;
+                }
+                }
+            }
     }
 }
 
