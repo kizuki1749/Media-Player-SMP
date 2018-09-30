@@ -193,6 +193,7 @@
     <Compile Include="AdvancedInfo.Designer.cs">
       <DependentUpon>AdvancedInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Discord.cs" />
     <Compile Include="downloadthread.cs">
       <SubType>Form</SubType>
     </Compile>

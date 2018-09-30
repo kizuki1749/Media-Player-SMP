@@ -28,6 +28,7 @@ using Microsoft.WindowsAPICodePack.ApplicationServices;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using DiscordRPC;
 using DiscordRPC.Logging;
+using SharpPresence;
 
 namespace Media_Player_SMP
 {
@@ -47,7 +48,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.29";
+        public string version = "1.30 Pre-Alpha 1";
 
         public Form1()
         {
@@ -109,6 +110,10 @@ namespace Media_Player_SMP
 
             dialog1.Show();
         }
+
+        DateTime nowtime = new DateTime();
+        DateTime duration = new DateTime();
+
 
         public void UpgradeSettings(object sender, EventArgs e)
         {
@@ -314,10 +319,13 @@ namespace Media_Player_SMP
                     LargeImageKey = "smpicon",
                     LargeImageText = "Media Player SMP " + version
                 },
+                Timestamps = new Timestamps()
+                {
+                    Start = nowtime
+                }
             });
         }
 
-        
 
         private void keyHookProc(object sender, KeyboardHookedEventArgs e)
         {
@@ -1623,7 +1631,7 @@ namespace Media_Player_SMP
                     {
                         track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
                     }
-                        str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
+                    str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
                 }
 
             }
@@ -2288,8 +2296,8 @@ namespace Media_Player_SMP
                         }
                         break;
                 }
-                }
             }
+        }
     }
 }
 
