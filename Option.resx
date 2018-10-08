@@ -1052,6 +1052,36 @@
   <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="commandLink5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="commandLink5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="commandLink5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 162</value>
+  </data>
+  <data name="commandLink5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 60</value>
+  </data>
+  <data name="commandLink5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="commandLink5.Text" xml:space="preserve">
+    <value>フリーズさせる</value>
+  </data>
+  <data name="&gt;&gt;commandLink5.Name" xml:space="preserve">
+    <value>commandLink5</value>
+  </data>
+  <data name="&gt;&gt;commandLink5.Type" xml:space="preserve">
+    <value>Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink, Microsoft.WindowsAPICodePack.Shell, Version=1.1.3.3, Culture=neutral, PublicKeyToken=8985beaab7ea3f04</value>
+  </data>
+  <data name="&gt;&gt;commandLink5.Parent" xml:space="preserve">
+    <value>tabPage16</value>
+  </data>
+  <data name="&gt;&gt;commandLink5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="commandLink2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
@@ -1077,7 +1107,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;commandLink2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="commandLink3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1104,7 +1134,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;commandLink3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1131,7 +1161,7 @@
     <value>tabPage16</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tabPage16.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

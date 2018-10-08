@@ -34,8 +34,9 @@ namespace Media_Player_SMP
 {
     public partial class Form1 : Form
     {
-        private static string RecoveryFile0 = "C:\\Temp\\RecoveryData0.txt";
-        private static string RecoveryFile1 = "C:\\Temp\\RecoveryData1.txt";
+        private static string RecoveryFile0 = "RecoveryData0.txt";
+        private static string RecoveryFile1 = "RecoveryData1.txt";
+        private static string RecoveryFile2 = "RecoveryData2.txt";
 
         [DllImport("USER32.DLL")]
         private static extern IntPtr GetSystemMenu(IntPtr hWnd, UInt32 bRevert);
@@ -48,7 +49,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Pre-Alpha 1";
+        public string version = "1.30 Pre-Alpha 2";
 
         public Form1()
         {
@@ -70,6 +71,9 @@ namespace Media_Player_SMP
         {
             File.WriteAllText(RecoveryFile0, NowMedia);
             File.WriteAllText(RecoveryFile1, NowTime.ToString());
+            File.WriteAllText(RecoveryFile2, volume.ToString());
+            Thread.Sleep(100000);
+            ApplicationRestartRecoveryManager.ApplicationRecoveryFinished(true);
             return 0;
         }
 
@@ -537,9 +541,12 @@ namespace Media_Player_SMP
             }
         }
 
+        int volume = 0;
+
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+            volume = trackBar2.Value;
             label4.Text = "音量 : " + trackBar2.Value;
         }
 
@@ -1468,7 +1475,7 @@ namespace Media_Player_SMP
         {
             // 再起動用コードの登録
             ApplicationRestartRecoveryManager.RegisterForApplicationRestart(
-                    new RestartSettings("-restart",
+                    new RestartSettings("",
                     RestartRestrictions.NotOnReboot | RestartRestrictions.NotOnPatch));
 
             // 修復用メソッドの登録
@@ -1478,35 +1485,68 @@ namespace Media_Player_SMP
 
             // 起動時の再起動かどうかの判断
             // 再起動時にデータを修復するコードの作成
-            if (System.Environment.GetCommandLineArgs().Length > 1 &&
-                System.Environment.GetCommandLineArgs()[1] == "-restart")
+            if (System.IO.File.Exists(RecoveryFile0) && System.IO.File.Exists(RecoveryFile1))
             {
-                if (File.Exists(RecoveryFile0) == true && File.Exists(RecoveryFile1) == true)
+                if (File.ReadAllText(RecoveryFile0).Length != 0)
                 {
                     try
                     {
                         axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(File.ReadAllText(RecoveryFile0)));
-                        axWindowsMediaPlayer1.Ctlcontrols.currentPosition = double.Parse(File.ReadAllText(RecoveryFile1));
                         recoveryresult = 1;
                     }
                     catch
                     {
                         recoveryresult = 2;
                     }
+                    File.Delete(RecoveryFile0);
                 }
-            }
-            switch (recoveryresult)
-            {
-                case 0:
-                    break;
+                if (File.ReadAllText(RecoveryFile1).Length != 0)
+                {
+                    try
+                    {
+                        axWindowsMediaPlayer1.Ctlcontrols.currentPosition = double.Parse(File.ReadAllText(RecoveryFile1));
+                        if (recoveryresult == 1)
+                        {
+                            recoveryresult = 1;
+                        }
+                    }
+                    catch
+                    {
+                        recoveryresult = 2;
+                    }
+                    File.Delete(RecoveryFile1);
+                }
+                if (File.ReadAllText(RecoveryFile2).Length != 0)
+                {
+                    try
+                    {
+                        axWindowsMediaPlayer1.settings.volume = int.Parse(File.ReadAllText(RecoveryFile2));
+                        if (recoveryresult == 1)
+                        {
+                            recoveryresult = 1;
+                        }
+                    }
+                    catch
+                    {
+                        recoveryresult = 2;
+                    }
+                    File.Delete(RecoveryFile2);
+                }
+                switch (recoveryresult)
+                {
+                    case 0:
+                        break;
 
-                case 1:
-                    StatusChange("強制終了時の状態を自動的に復元しました。");
-                    break;
+                    case 1:
+                        StatusChange("強制終了時の状態を自動的に復元しました。");
+                        break;
 
-                case 2:
-                    StatusChange("強制終了時の状態の一部または全てを復元することができませんでした。");
-                    break;
+                    case 2:
+                        StatusChange("強制終了時の状態の一部または全てを復元することができませんでした。");
+                        break;
+                }
+
+
             }
         }
 
@@ -1584,6 +1624,7 @@ namespace Media_Player_SMP
 
         private void timer5_Tick(object sender, EventArgs e)
         {
+            NowTime = axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
             string str1 = "";
             try
             {
