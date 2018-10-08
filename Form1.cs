@@ -49,7 +49,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Pre-Alpha 2";
+        public string version = "1.30 Pre-Alpha 3";
 
         public Form1()
         {
@@ -1498,7 +1498,6 @@ namespace Media_Player_SMP
                     {
                         recoveryresult = 2;
                     }
-                    File.Delete(RecoveryFile0);
                 }
                 if (File.ReadAllText(RecoveryFile1).Length != 0)
                 {
@@ -1514,7 +1513,6 @@ namespace Media_Player_SMP
                     {
                         recoveryresult = 2;
                     }
-                    File.Delete(RecoveryFile1);
                 }
                 if (File.ReadAllText(RecoveryFile2).Length != 0)
                 {
@@ -1530,7 +1528,16 @@ namespace Media_Player_SMP
                     {
                         recoveryresult = 2;
                     }
+                }
+                try
+                {
+                    File.Delete(RecoveryFile0);
+                    File.Delete(RecoveryFile1);
                     File.Delete(RecoveryFile2);
+                }
+                catch
+                {
+                    recoveryresult = 2;
                 }
                 switch (recoveryresult)
                 {

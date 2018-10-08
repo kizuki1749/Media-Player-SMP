@@ -4,7 +4,7 @@
   <description asmv2:iconFile="SMPicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Media Player SMP" version="1.30.0.2" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Media Player SMP" version="1.30.0.3" language="neutral" processorArchitecture="msil" />
     <commandLine file="Media Player SMP.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -104,25 +104,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1401792">
-      <assemblyIdentity name="Media Player SMP" version="1.30.0.2" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP" version="1.30.0.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6BODEAiXe+gLFnCTWd/B2hxPijU3ZPACYao7hZIHGdk=</dsig:DigestValue>
+        <dsig:DigestValue>0Sj4Y1NSjBB8bOvvZVTETNAPRwLjTTYtBk2/49Ds+Rk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Media Player SMP.resources.dll" size="6144">
-      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.2" language="ja" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.3" language="ja" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dC6htK55DuTI1DulJq2sg7/X4Q5N8CeFzYmtPP6VuZc=</dsig:DigestValue>
+        <dsig:DigestValue>GytF5aqgYxl6OIwMd6e88XrzZLa/da59687KuP3o0RI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
