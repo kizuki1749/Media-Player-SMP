@@ -29,14 +29,15 @@ using Microsoft.WindowsAPICodePack.Taskbar;
 using DiscordRPC;
 using DiscordRPC.Logging;
 using SharpPresence;
+using System.Reflection;
 
 namespace Media_Player_SMP
 {
     public partial class Form1 : Form
     {
-        private static string RecoveryFile0 = "RecoveryData0.txt";
-        private static string RecoveryFile1 = "RecoveryData1.txt";
-        private static string RecoveryFile2 = "RecoveryData2.txt";
+        private static string RecoveryFile0 = Directory.GetCurrentDirectory() + "RecoveryData0.txt";
+        private static string RecoveryFile1 = Directory.GetCurrentDirectory() + "RecoveryData1.txt";
+        private static string RecoveryFile2 = Directory.GetCurrentDirectory() + "RecoveryData2.txt";
 
         [DllImport("USER32.DLL")]
         private static extern IntPtr GetSystemMenu(IntPtr hWnd, UInt32 bRevert);
@@ -49,7 +50,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Pre-Alpha 3";
+        public string version = "1.30 Pre-Alpha 4";
 
         public Form1()
         {
@@ -168,6 +169,11 @@ namespace Media_Player_SMP
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Assembly myAssembly = Assembly.GetEntryAssembly();
+            string path = myAssembly.Location;
+            RecoveryFile0 = Path.GetDirectoryName(path) + "\\RecoveryData0.txt";
+            RecoveryFile1 = Path.GetDirectoryName(path) + "\\RecoveryData1.txt";
+            RecoveryFile2 = Path.GetDirectoryName(path) + "\\RecoveryData2.txt";
             Text = "Media Player SMP "+version;
             mCallback = new MMFrame.Windows.GlobalHook.VistaRestartRecoveryAPI.ApplicationRecoveryCallback(this.RecoverData);
             IntPtr del = Marshal.GetFunctionPointerForDelegate(mCallback);
@@ -1487,6 +1493,11 @@ namespace Media_Player_SMP
             // 再起動時にデータを修復するコードの作成
             if (System.IO.File.Exists(RecoveryFile0) && System.IO.File.Exists(RecoveryFile1))
             {
+                Assembly myAssembly = Assembly.GetEntryAssembly();
+                string path = myAssembly.Location;
+                RecoveryFile0 = Path.GetDirectoryName(path) + "\\RecoveryData0.txt";
+                RecoveryFile1 = Path.GetDirectoryName(path) + "\\RecoveryData1.txt";
+                RecoveryFile2 = Path.GetDirectoryName(path) + "\\RecoveryData2.txt";
                 if (File.ReadAllText(RecoveryFile0).Length != 0)
                 {
                     try
