@@ -282,6 +282,36 @@
   <data name="メンテナンスMToolStripMenuItem.Text" xml:space="preserve">
     <value>メンテナンス(&amp;M)</value>
   </data>
+  <data name="表示変更CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="表示変更CToolStripMenuItem.Text" xml:space="preserve">
+    <value>表示変更(&amp;C)</value>
+  </data>
+  <data name="discord連携DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="discord連携DToolStripMenuItem.Text" xml:space="preserve">
+    <value>Discord(&amp;D)</value>
+  </data>
+  <data name="外部連携CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="外部連携CToolStripMenuItem.Text" xml:space="preserve">
+    <value>外部連携(&amp;C)</value>
+  </data>
+  <data name="バージョン情報AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="バージョン情報AToolStripMenuItem.Text" xml:space="preserve">
+    <value>バージョン情報(&amp;A)</value>
+  </data>
+  <data name="ヘルプHToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="ヘルプHToolStripMenuItem.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
   <data name="キャストCToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 22</value>
   </data>
@@ -332,18 +362,6 @@
   </data>
   <data name="chromeCastToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="バージョン情報AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="バージョン情報AToolStripMenuItem.Text" xml:space="preserve">
-    <value>バージョン情報(&amp;A)</value>
-  </data>
-  <data name="ヘルプHToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="ヘルプHToolStripMenuItem.Text" xml:space="preserve">
-    <value>ヘルプ(&amp;H)</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -6679,6 +6697,24 @@
     <value>iPアドレスを指定してキャストToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;iPアドレスを指定してキャストToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;外部連携CToolStripMenuItem.Name" xml:space="preserve">
+    <value>外部連携CToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;外部連携CToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;discord連携DToolStripMenuItem.Name" xml:space="preserve">
+    <value>discord連携DToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;discord連携DToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;表示変更CToolStripMenuItem.Name" xml:space="preserve">
+    <value>表示変更CToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;表示変更CToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ヘルプHToolStripMenuItem.Name" xml:space="preserve">

@@ -313,6 +313,14 @@ namespace Media_Player_SMP
             System.Diagnostics.Process.Start(Application.ExecutablePath, "-reset");
             Application.Exit();
         }
+
+        private void commandLink5_Click(object sender, EventArgs e)
+        {
+            while (true)
+            {
+                System.Threading.Thread.Sleep(1000);
+            }
+        }
     }
 
     public class Property

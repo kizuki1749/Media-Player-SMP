@@ -284,3 +284,4 @@ D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media Player SMP.csproj.CopyComp
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.dll
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.pdb
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\DiscordRPC.xml
+D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.DiscordChangeWindow.resources
