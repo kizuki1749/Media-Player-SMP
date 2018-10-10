@@ -142,5 +142,17 @@ namespace Media_Player_SMP
         {
             get { return AdvancedInfo.form1.axWindowsMediaPlayer1.isRemote; }
         }
+        [Category("Flags")]
+        [ReadOnly(true)]
+        public bool t5flag
+        {
+            get { return AdvancedInfo.form1.t5flag; }
+        }
+        [Category("Flags(string)")]
+        [ReadOnly(true)]
+        public string str1
+        {
+            get { return AdvancedInfo.form1.str1; }
+        }
     }
 }

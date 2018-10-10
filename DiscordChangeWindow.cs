@@ -29,13 +29,13 @@ namespace Media_Player_SMP
         {
             if (checkBox1.Checked == false)
             {
-                form1.t5flag = true;
-                timer1.Enabled = true;
+                form1.t5flag = false;
+                timer1.Enabled = false;
             }
             else
             {
-                form1.t5flag = false;
-                timer1.Enabled = false;
+                form1.t5flag = true;
+                timer1.Enabled = true;
             }
         }
 

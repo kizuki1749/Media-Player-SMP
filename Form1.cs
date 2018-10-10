@@ -50,7 +50,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Alpha 1";
+        public string version = "1.30 Alpha 2";
 
         public Form1()
         {
@@ -1656,57 +1656,62 @@ namespace Media_Player_SMP
             }
             try
             {
-                str1 = axWindowsMediaPlayer1.currentMedia.name;
-
-                if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
+                if (t5flag == false)
                 {
-                    TagLib.File id3 = TagLib.File.Create(axWindowsMediaPlayer1.currentMedia.sourceURL);
-                    string artists;
-                    artists = "";
-                    foreach (string artist in id3.Tag.Artists)
-                    {
-                        artists = artist + " ";
-                    }
+                    str1 = axWindowsMediaPlayer1.currentMedia.name;
 
-                    string albumartists;
-                    albumartists = "";
-                    foreach (string albumartist in id3.Tag.AlbumArtists)
+                    if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
                     {
-                        albumartists = albumartist + " ";
-                    }
+                        TagLib.File id3 = TagLib.File.Create(axWindowsMediaPlayer1.currentMedia.sourceURL);
+                        string artists;
+                        artists = "";
+                        foreach (string artist in id3.Tag.Artists)
+                        {
+                            artists = artist + " ";
+                        }
 
-                    string genres;
-                    genres = "";
-                    foreach (string genre in id3.Tag.Genres)
-                    {
-                        genres = genre + " ";
-                    }
+                        string albumartists;
+                        albumartists = "";
+                        foreach (string albumartist in id3.Tag.AlbumArtists)
+                        {
+                            albumartists = albumartist + " ";
+                        }
 
-                    string track;
-                    track = "";
-                    if (id3.Tag.TrackCount == 0)
-                    {
-                        track = id3.Tag.Track.ToString();
+                        string genres;
+                        genres = "";
+                        foreach (string genre in id3.Tag.Genres)
+                        {
+                            genres = genre + " ";
+                        }
+
+                        string track;
+                        track = "";
+                        if (id3.Tag.TrackCount == 0)
+                        {
+                            track = id3.Tag.Track.ToString();
+                        }
+                        else
+                        {
+                            track = id3.Tag.Track + " / " + id3.Tag.TrackCount;
+                        }
+                        if (id3.Tag.DiscCount == 0)
+                        {
+                            track = id3.Tag.Disc.ToString();
+                        }
+                        else
+                        {
+                            track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
+                        }
+                        str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
                     }
-                    else
-                    {
-                        track = id3.Tag.Track + " / " + id3.Tag.TrackCount;
-                    }
-                    if (id3.Tag.DiscCount == 0)
-                    {
-                        track = id3.Tag.Disc.ToString();
-                    }
-                    else
-                    {
-                        track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
-                    }
-                    str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
                 }
-
             }
             catch
             {
-                str1 = "";
+                if (t5flag == false)
+                {
+                    str1 = "";
+                }
             }
             string str2 = "";
             if (str1.Length > 128)
