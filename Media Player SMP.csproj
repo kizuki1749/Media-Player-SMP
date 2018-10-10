@@ -194,6 +194,12 @@
       <DependentUpon>AdvancedInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Discord.cs" />
+    <Compile Include="DiscordChangeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscordChangeWindow.Designer.cs">
+      <DependentUpon>DiscordChangeWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="downloadthread.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </Compile>
     <EmbeddedResource Include="AdvancedInfo.resx">
       <DependentUpon>AdvancedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscordChangeWindow.resx">
+      <DependentUpon>DiscordChangeWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="downloadthread.resx">
       <DependentUpon>downloadthread.cs</DependentUpon>

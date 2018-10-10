@@ -64,6 +64,9 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.iPアドレスを指定してキャストToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.外部連携CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discord連携DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.表示変更CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -123,8 +126,9 @@
             this.再生PToolStripMenuItem,
             this.表示VToolStripMenuItem,
             this.メンテナンスMToolStripMenuItem,
-            this.chromeCastToolStripMenuItem,
-            this.ヘルプHToolStripMenuItem});
+            this.外部連携CToolStripMenuItem,
+            this.ヘルプHToolStripMenuItem,
+            this.chromeCastToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -312,7 +316,6 @@
             // 
             this.キャストCToolStripMenuItem.Name = "キャストCToolStripMenuItem";
             resources.ApplyResources(this.キャストCToolStripMenuItem, "キャストCToolStripMenuItem");
-            this.キャストCToolStripMenuItem.Click += new System.EventHandler(this.キャストCToolStripMenuItem_Click);
             // 
             // キャストを停止SToolStripMenuItem
             // 
@@ -343,7 +346,26 @@
             // 
             this.iPアドレスを指定してキャストToolStripMenuItem.Name = "iPアドレスを指定してキャストToolStripMenuItem";
             resources.ApplyResources(this.iPアドレスを指定してキャストToolStripMenuItem, "iPアドレスを指定してキャストToolStripMenuItem");
-            this.iPアドレスを指定してキャストToolStripMenuItem.Click += new System.EventHandler(this.iPアドレスを指定してキャストToolStripMenuItem_Click);
+            // 
+            // 外部連携CToolStripMenuItem
+            // 
+            this.外部連携CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.discord連携DToolStripMenuItem});
+            this.外部連携CToolStripMenuItem.Name = "外部連携CToolStripMenuItem";
+            resources.ApplyResources(this.外部連携CToolStripMenuItem, "外部連携CToolStripMenuItem");
+            // 
+            // discord連携DToolStripMenuItem
+            // 
+            this.discord連携DToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.表示変更CToolStripMenuItem});
+            this.discord連携DToolStripMenuItem.Name = "discord連携DToolStripMenuItem";
+            resources.ApplyResources(this.discord連携DToolStripMenuItem, "discord連携DToolStripMenuItem");
+            // 
+            // 表示変更CToolStripMenuItem
+            // 
+            this.表示変更CToolStripMenuItem.Name = "表示変更CToolStripMenuItem";
+            resources.ApplyResources(this.表示変更CToolStripMenuItem, "表示変更CToolStripMenuItem");
+            this.表示変更CToolStripMenuItem.Click += new System.EventHandler(this.表示変更CToolStripMenuItem_Click);
             // 
             // ヘルプHToolStripMenuItem
             // 
@@ -698,15 +720,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ToolStripMenuItem chromeCastToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem キャストCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem キャストを停止SToolStripMenuItem;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripMenuItem iPアドレスを指定してキャストToolStripMenuItem;
         internal System.Windows.Forms.MenuStrip menuStrip1;
         internal System.Windows.Forms.Panel panel1;
         internal System.Windows.Forms.Panel panel2;
@@ -727,6 +741,17 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 終了時に自動実行されますToolStripMenuItem;
         private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.ToolStripMenuItem chromeCastToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストを停止SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripMenuItem iPアドレスを指定してキャストToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 外部連携CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem discord連携DToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 表示変更CToolStripMenuItem;
     }
 }
 

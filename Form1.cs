@@ -50,7 +50,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Pre-Alpha 4";
+        public string version = "1.30 Pre-Alpha 5";
 
         public Form1()
         {
@@ -1640,10 +1640,20 @@ namespace Media_Player_SMP
             }
         }
 
+        public bool t5flag = false;
+        public string str1;
+
         private void timer5_Tick(object sender, EventArgs e)
         {
             NowTime = axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
-            string str1 = "";
+            if (t5flag == false)
+            {
+                str1 = "";
+            }
+            else
+            {
+
+            }
             try
             {
                 str1 = axWindowsMediaPlayer1.currentMedia.name;
@@ -2356,6 +2366,12 @@ namespace Media_Player_SMP
                         break;
                 }
             }
+        }
+
+        private void 表示変更CToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DiscordChangeWindow discordChangeWindow = new DiscordChangeWindow(this);
+            discordChangeWindow.Show();
         }
     }
 }
