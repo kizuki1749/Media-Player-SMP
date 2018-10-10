@@ -22,7 +22,8 @@ namespace Media_Player_SMP
 
         private void DiscordChangeWindow_Load(object sender, EventArgs e)
         {
-            
+            checkBox1.Checked = form1.t5flag;
+            textBox1.Text = form1.str1;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
