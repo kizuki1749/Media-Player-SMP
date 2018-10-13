@@ -56,6 +56,13 @@
             this.メンテナンスMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.終了時に自動実行されますToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.外部連携CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discord連携DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.表示変更CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ツールTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.動画変換CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chromeCastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストを停止SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,11 +71,6 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.iPアドレスを指定してキャストToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.外部連携CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.discord連携DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.表示変更CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -127,6 +129,7 @@
             this.表示VToolStripMenuItem,
             this.メンテナンスMToolStripMenuItem,
             this.外部連携CToolStripMenuItem,
+            this.ツールTToolStripMenuItem,
             this.ヘルプHToolStripMenuItem,
             this.chromeCastToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -299,6 +302,52 @@
             resources.ApplyResources(this.終了時に自動実行されますToolStripMenuItem, "終了時に自動実行されますToolStripMenuItem");
             this.終了時に自動実行されますToolStripMenuItem.Name = "終了時に自動実行されますToolStripMenuItem";
             // 
+            // 外部連携CToolStripMenuItem
+            // 
+            this.外部連携CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.discord連携DToolStripMenuItem});
+            this.外部連携CToolStripMenuItem.Name = "外部連携CToolStripMenuItem";
+            resources.ApplyResources(this.外部連携CToolStripMenuItem, "外部連携CToolStripMenuItem");
+            // 
+            // discord連携DToolStripMenuItem
+            // 
+            this.discord連携DToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.表示変更CToolStripMenuItem});
+            this.discord連携DToolStripMenuItem.Name = "discord連携DToolStripMenuItem";
+            resources.ApplyResources(this.discord連携DToolStripMenuItem, "discord連携DToolStripMenuItem");
+            // 
+            // 表示変更CToolStripMenuItem
+            // 
+            this.表示変更CToolStripMenuItem.Name = "表示変更CToolStripMenuItem";
+            resources.ApplyResources(this.表示変更CToolStripMenuItem, "表示変更CToolStripMenuItem");
+            this.表示変更CToolStripMenuItem.Click += new System.EventHandler(this.表示変更CToolStripMenuItem_Click);
+            // 
+            // ツールTToolStripMenuItem
+            // 
+            this.ツールTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.動画変換CToolStripMenuItem});
+            this.ツールTToolStripMenuItem.Name = "ツールTToolStripMenuItem";
+            resources.ApplyResources(this.ツールTToolStripMenuItem, "ツールTToolStripMenuItem");
+            // 
+            // 動画変換CToolStripMenuItem
+            // 
+            this.動画変換CToolStripMenuItem.Name = "動画変換CToolStripMenuItem";
+            resources.ApplyResources(this.動画変換CToolStripMenuItem, "動画変換CToolStripMenuItem");
+            this.動画変換CToolStripMenuItem.Click += new System.EventHandler(this.動画変換CToolStripMenuItem_Click);
+            // 
+            // ヘルプHToolStripMenuItem
+            // 
+            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.バージョン情報AToolStripMenuItem});
+            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
+            resources.ApplyResources(this.ヘルプHToolStripMenuItem, "ヘルプHToolStripMenuItem");
+            // 
+            // バージョン情報AToolStripMenuItem
+            // 
+            this.バージョン情報AToolStripMenuItem.Name = "バージョン情報AToolStripMenuItem";
+            resources.ApplyResources(this.バージョン情報AToolStripMenuItem, "バージョン情報AToolStripMenuItem");
+            this.バージョン情報AToolStripMenuItem.Click += new System.EventHandler(this.バージョン情報AToolStripMenuItem_Click);
+            // 
             // chromeCastToolStripMenuItem
             // 
             this.chromeCastToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -346,39 +395,6 @@
             // 
             this.iPアドレスを指定してキャストToolStripMenuItem.Name = "iPアドレスを指定してキャストToolStripMenuItem";
             resources.ApplyResources(this.iPアドレスを指定してキャストToolStripMenuItem, "iPアドレスを指定してキャストToolStripMenuItem");
-            // 
-            // 外部連携CToolStripMenuItem
-            // 
-            this.外部連携CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.discord連携DToolStripMenuItem});
-            this.外部連携CToolStripMenuItem.Name = "外部連携CToolStripMenuItem";
-            resources.ApplyResources(this.外部連携CToolStripMenuItem, "外部連携CToolStripMenuItem");
-            // 
-            // discord連携DToolStripMenuItem
-            // 
-            this.discord連携DToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.表示変更CToolStripMenuItem});
-            this.discord連携DToolStripMenuItem.Name = "discord連携DToolStripMenuItem";
-            resources.ApplyResources(this.discord連携DToolStripMenuItem, "discord連携DToolStripMenuItem");
-            // 
-            // 表示変更CToolStripMenuItem
-            // 
-            this.表示変更CToolStripMenuItem.Name = "表示変更CToolStripMenuItem";
-            resources.ApplyResources(this.表示変更CToolStripMenuItem, "表示変更CToolStripMenuItem");
-            this.表示変更CToolStripMenuItem.Click += new System.EventHandler(this.表示変更CToolStripMenuItem_Click);
-            // 
-            // ヘルプHToolStripMenuItem
-            // 
-            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.バージョン情報AToolStripMenuItem});
-            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
-            resources.ApplyResources(this.ヘルプHToolStripMenuItem, "ヘルプHToolStripMenuItem");
-            // 
-            // バージョン情報AToolStripMenuItem
-            // 
-            this.バージョン情報AToolStripMenuItem.Name = "バージョン情報AToolStripMenuItem";
-            resources.ApplyResources(this.バージョン情報AToolStripMenuItem, "バージョン情報AToolStripMenuItem");
-            this.バージョン情報AToolStripMenuItem.Click += new System.EventHandler(this.バージョン情報AToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -752,6 +768,8 @@
         private System.Windows.Forms.ToolStripMenuItem 外部連携CToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem discord連携DToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 表示変更CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ツールTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 動画変換CToolStripMenuItem;
     }
 }
 

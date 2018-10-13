@@ -4,7 +4,7 @@
   <description asmv2:iconFile="SMPicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Media Player SMP" version="1.30.0.9" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Media Player SMP" version="1.30.0.10" language="neutral" processorArchitecture="msil" />
     <commandLine file="Media Player SMP.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -51,6 +51,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>jUi/Yu5n2j58aV46U+tL+ivXljCXPsEfAZuKOivUGuA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Be.Windows.Forms.HexBox.dll" size="86016">
+      <assemblyIdentity name="Be.Windows.Forms.HexBox" version="1.6.0.38064" publicKeyToken="E0E5ADF0EBC99863" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oyys8eM5/JnyIClQO8B0WLy/+7vw8ztbur+m74RITT0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,26 +115,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1406912">
-      <assemblyIdentity name="Media Player SMP" version="1.30.0.9" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1417152">
+      <assemblyIdentity name="Media Player SMP" version="1.30.0.10" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xfO111A6eaNW/QR3PBcDNBCnpctM2qfz1GpaOVql/Nc=</dsig:DigestValue>
+        <dsig:DigestValue>T4c7D+wydpwxMPqL5/3JzhcxQMPfx0H4nyrCgPhDN9s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Media Player SMP.resources.dll" size="6144">
-      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.9" language="ja" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.10" language="ja" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WdOok3WGgPEXbLG/DNIom+o3GvXYj9Eeq9x4dRPAwtg=</dsig:DigestValue>
+        <dsig:DigestValue>3N3dAfg3j8/rjDWmT2sRUZ9vyKNxpMhLGWqS5ODRtC0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -171,6 +183,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>9Yw3T/yq5ONtdA2Q+/f+cNCrtzKM2a86CntwgD6ZS6Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NReco.VideoConverter.dll" size="16961024">
+      <assemblyIdentity name="NReco.VideoConverter" version="1.1.3.0" publicKeyToken="395CCB334978A0CD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PP00NybTT1KI4RuAFJlAbwamc11NxCacP3V6qJBiBdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

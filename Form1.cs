@@ -30,6 +30,7 @@ using DiscordRPC;
 using DiscordRPC.Logging;
 using SharpPresence;
 using System.Reflection;
+using NReco.VideoConverter;
 
 namespace Media_Player_SMP
 {
@@ -50,7 +51,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Alpha 4";
+        public string version = "1.30 Alpha 5";
 
         public Form1()
         {
@@ -1434,7 +1435,9 @@ namespace Media_Player_SMP
                         downloadClient_DownloadFileCompleted);
             }
             //非同期ダウンロードを開始する
-            downloadClient.DownloadFileAsync(u, "Temp"+Path.GetExtension(uri.ToString()));
+            Assembly myAssembly = Assembly.GetEntryAssembly();
+            string path = myAssembly.Location;
+            downloadClient.DownloadFileAsync(u, Path.GetDirectoryName(path) + "Temp" +Path.GetExtension(uri.ToString()));
         }
 
         public void SetThread(int thread)
@@ -2377,6 +2380,12 @@ namespace Media_Player_SMP
         {
             DiscordChangeWindow discordChangeWindow = new DiscordChangeWindow(this);
             discordChangeWindow.Show();
+        }
+
+        private void 動画変換CToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MediaConverter mediaConverter = new MediaConverter();
+            mediaConverter.Show();
         }
     }
 }

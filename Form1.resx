@@ -283,7 +283,7 @@
     <value>メンテナンス(&amp;M)</value>
   </data>
   <data name="表示変更CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>137, 22</value>
   </data>
   <data name="表示変更CToolStripMenuItem.Text" xml:space="preserve">
     <value>表示変更(&amp;C)</value>
@@ -299,6 +299,18 @@
   </data>
   <data name="外部連携CToolStripMenuItem.Text" xml:space="preserve">
     <value>外部連携(&amp;C)</value>
+  </data>
+  <data name="動画変換CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="動画変換CToolStripMenuItem.Text" xml:space="preserve">
+    <value>動画変換(&amp;C)</value>
+  </data>
+  <data name="ツールTToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="ツールTToolStripMenuItem.Text" xml:space="preserve">
+    <value>ツール(&amp;T)</value>
   </data>
   <data name="バージョン情報AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 22</value>
@@ -367,7 +379,7 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 24</value>
+    <value>799, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -400,7 +412,7 @@
     <value>NoControl</value>
   </data>
   <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 31</value>
+    <value>506, 34</value>
   </data>
   <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
@@ -547,7 +559,7 @@
     <value>11, 32</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 12</value>
+    <value>462, 12</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -577,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 56</value>
+    <value>602, 56</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 22</value>
@@ -613,7 +625,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>538, 32</value>
+    <value>584, 35</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 12</value>
@@ -643,7 +655,7 @@
     <value>NoControl</value>
   </data>
   <data name="trackBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>604, 32</value>
+    <value>647, 33</value>
   </data>
   <data name="trackBar2.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 45</value>
@@ -757,7 +769,7 @@
     <value>No</value>
   </data>
   <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 45</value>
+    <value>697, 45</value>
   </data>
   <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -784,7 +796,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>712, 6</value>
+    <value>755, 6</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 12</value>
@@ -841,10 +853,10 @@
     <value>Bottom</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 432</value>
+    <value>0, 439</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 98</value>
+    <value>799, 98</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1009,7 +1021,7 @@
     <value>0, 24</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 408</value>
+    <value>799, 415</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1045,7 +1057,7 @@
     <value>Both</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 408</value>
+    <value>799, 415</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1081,7 +1093,7 @@
     <value>0, 24</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 408</value>
+    <value>799, 415</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1269,7 +1281,7 @@
 </value>
   </data>
   <data name="axWindowsMediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>756, 408</value>
+    <value>799, 415</value>
   </data>
   <data name="axWindowsMediaPlayer1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1299,7 +1311,7 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>756, 530</value>
+    <value>799, 537</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6651,6 +6663,48 @@
   <data name="&gt;&gt;終了時に自動実行されますToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;外部連携CToolStripMenuItem.Name" xml:space="preserve">
+    <value>外部連携CToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;外部連携CToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;discord連携DToolStripMenuItem.Name" xml:space="preserve">
+    <value>discord連携DToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;discord連携DToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;表示変更CToolStripMenuItem.Name" xml:space="preserve">
+    <value>表示変更CToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;表示変更CToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ツールTToolStripMenuItem.Name" xml:space="preserve">
+    <value>ツールTToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ツールTToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;動画変換CToolStripMenuItem.Name" xml:space="preserve">
+    <value>動画変換CToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;動画変換CToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Name" xml:space="preserve">
+    <value>ヘルプHToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Name" xml:space="preserve">
+    <value>バージョン情報AToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;chromeCastToolStripMenuItem.Name" xml:space="preserve">
     <value>chromeCastToolStripMenuItem</value>
   </data>
@@ -6697,36 +6751,6 @@
     <value>iPアドレスを指定してキャストToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;iPアドレスを指定してキャストToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;外部連携CToolStripMenuItem.Name" xml:space="preserve">
-    <value>外部連携CToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;外部連携CToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;discord連携DToolStripMenuItem.Name" xml:space="preserve">
-    <value>discord連携DToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;discord連携DToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;表示変更CToolStripMenuItem.Name" xml:space="preserve">
-    <value>表示変更CToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;表示変更CToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Name" xml:space="preserve">
-    <value>ヘルプHToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ヘルプHToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Name" xml:space="preserve">
-    <value>バージョン情報AToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;バージョン情報AToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
