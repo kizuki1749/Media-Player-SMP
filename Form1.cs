@@ -51,7 +51,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Alpha 5";
+        public string version = "1.30 Alpha 6";
 
         public Form1()
         {
@@ -1437,7 +1437,7 @@ namespace Media_Player_SMP
             //非同期ダウンロードを開始する
             Assembly myAssembly = Assembly.GetEntryAssembly();
             string path = myAssembly.Location;
-            downloadClient.DownloadFileAsync(u, Path.GetDirectoryName(path) + "Temp" +Path.GetExtension(uri.ToString()));
+            downloadClient.DownloadFileAsync(u, Path.GetDirectoryName(path) + "\\Temp" +Path.GetExtension(uri.ToString()));
         }
 
         public void SetThread(int thread)
@@ -1631,7 +1631,8 @@ namespace Media_Player_SMP
         {
             try
             {
-                foreach (string file in Directory.GetFiles(".", "Temp.*"))
+                string path = Application.ExecutablePath;
+                foreach (string file in Directory.GetFiles(".", Path.GetDirectoryName(path) + "\\Temp.*"))
                 {
                     DeleteFile(file);
                 }
