@@ -72,6 +72,8 @@
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.iPアドレスを指定してキャストToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -400,6 +402,8 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.progressBar1);
@@ -416,6 +420,20 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Name = "panel1";
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // checkBox2
             // 
@@ -528,6 +546,7 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.RestoreDirectory = true;
             // 
             // timer1
             // 
@@ -576,6 +595,7 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             resources.ApplyResources(this.openFileDialog2, "openFileDialog2");
+            this.openFileDialog2.RestoreDirectory = true;
             // 
             // panel3
             // 
@@ -770,6 +790,8 @@
         private System.Windows.Forms.ToolStripMenuItem 表示変更CToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ツールTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 動画変換CToolStripMenuItem;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
 

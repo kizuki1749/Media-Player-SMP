@@ -4,7 +4,7 @@
   <description asmv2:iconFile="SMPicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Media Player SMP" version="1.30.0.13" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
     <commandLine file="Media Player SMP.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -110,31 +110,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OmQ0Km/kRSpkMmADzn5XI4LWCR0EE0ccNn3UBARkb/Q=</dsig:DigestValue>
+        <dsig:DigestValue>eOldCkwyOvYsnsosB8XftDUoJIzYD/XlF2ba5Dvs4CA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1417152">
-      <assemblyIdentity name="Media Player SMP" version="1.30.0.13" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1420736">
+      <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oH9x4xRF2A0xAJUW3ImD0Pr6sMr4v/vifvL394KDdmk=</dsig:DigestValue>
+        <dsig:DigestValue>aA7NqN+SMM2HMMXZTtHvCj71O1cQIlJ73+k/87aN3H8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Media Player SMP.resources.dll" size="6144">
-      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.13" language="ja" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.14" language="ja" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rruRunNN/kgSfW5fvzzDniKKeS7k8oYvgLoblsrNBkc=</dsig:DigestValue>
+        <dsig:DigestValue>6Uk7q5T8SiVQp7yBvzR6EPJWI+UyhE9nvMRvHuI4je4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

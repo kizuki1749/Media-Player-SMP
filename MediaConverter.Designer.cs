@@ -32,11 +32,11 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -52,11 +52,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = resources.GetString("openFileDialog1.Filter");
+            this.openFileDialog1.RestoreDirectory = true;
             this.openFileDialog1.Title = "メディアファイルを開く";
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.Filter = resources.GetString("saveFileDialog1.Filter");
+            this.saveFileDialog1.RestoreDirectory = true;
             this.saveFileDialog1.Title = "メディアファイルを保存";
             // 
             // groupBox1
@@ -70,13 +72,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "変換するファイル";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 19);
-            this.textBox1.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(243, 16);
@@ -86,6 +81,13 @@
             this.button1.Text = "参照";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 19);
+            this.textBox1.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -98,13 +100,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ファイルの保存先";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 19);
-            this.textBox2.TabIndex = 0;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(243, 16);
@@ -114,6 +109,13 @@
             this.button2.Text = "参照";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(6, 18);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(231, 19);
+            this.textBox2.TabIndex = 0;
             // 
             // button3
             // 

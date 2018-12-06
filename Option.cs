@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Media_Player_SMP.Form1;
 
 namespace Media_Player_SMP
 {
@@ -437,6 +438,14 @@ namespace Media_Player_SMP
         {
             get { return Properties.Settings.Default.IsUpgrade; }
             set { Properties.Settings.Default.IsUpgrade = value; }
+        }
+
+        [Category("一般")]
+        [Description("早送り、巻き戻し可能かを示す。")]
+        public FastPossibleState FastPossibleState
+        {
+            get { return Option.form1.GetFastPossible(); }
+            set { Option.form1.SetFastPossible(value); }
         }
     }
 }

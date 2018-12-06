@@ -51,7 +51,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Beta 1";
+        public string version = "1.30 Beta 2";
 
         public Form1()
         {
@@ -645,6 +645,98 @@ namespace Media_Player_SMP
             axWindowsMediaPlayer1.Ctlcontrols.next();
         }
 
+        /// <summary>
+        /// 早送り、巻き戻し可能かを示す
+        /// </summary>
+        public enum FastPossibleState
+        {
+            /// <summary>
+            /// 早送り不可能、巻き戻し不可能
+            /// </summary>
+            Impossible = -1,
+            /// <summary>
+            /// 早送り可能、巻き戻し可能
+            /// </summary>
+            Bothpossible,
+            /// <summary>
+            /// 早送り可能、巻き戻し不可能
+            /// </summary>
+            ForwardOnly,
+            /// <summary>
+            /// 早送り不可能、巻き戻し可能
+            /// </summary>
+            ReverseOnly
+        }
+
+        /// <summary>
+        /// 早送り、巻き戻し可能かを設定する
+        /// </summary>
+        /// <param name="fastPossibleState">早送り、巻き戻し可能かを示す</param>
+        /// <returns>なし</returns>
+        /// <seealso cref="FastPossibleState"/>
+        /// <example>
+        /// 不可能: SetFastPossible(FastPossibleState.Impossible)
+        /// 早送り、巻き戻し可能: SetFastPossible(FastPossibleState.Bothpossible)
+        /// 早送り可能: SetFastPossible(FastPossibleState.ForwardOnly)
+        /// 巻き戻し可能: SetFastPossible(FastPossibleState.ReverseOnly)
+        /// </example>
+        public void SetFastPossible(FastPossibleState fastPossibleState)
+        {
+            switch (fastPossibleState)
+            {
+                case FastPossibleState.Bothpossible:
+                    button8.Enabled = true;
+                    button9.Enabled = true;
+                    break;
+
+                case FastPossibleState.Impossible:
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    break;
+
+                case FastPossibleState.ForwardOnly:
+                    button8.Enabled = false;
+                    button9.Enabled = true;
+                    break;
+
+                case FastPossibleState.ReverseOnly:
+                    button8.Enabled = true;
+                    button9.Enabled = false;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 早送り、巻き戻し可能かを取得する
+        /// </summary>
+        /// <returns>FastPossibleState: 早送り、巻き戻し可能か</returns>
+        /// <seealso cref="FastPossibleState"/>
+        public FastPossibleState GetFastPossible()
+        {
+            if (button8.Enabled)
+            {
+                if (button9.Enabled)
+                {
+                    return FastPossibleState.Bothpossible;
+                }
+                else
+                {
+                    return FastPossibleState.ReverseOnly;
+                }
+            }
+            else
+            {
+                if (button9.Enabled)
+                {
+                    return FastPossibleState.ForwardOnly;
+                }
+                else
+                {
+                    return FastPossibleState.Impossible;
+                }
+            }
+        }
+
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
             NowMedia = axWindowsMediaPlayer1.currentMedia.sourceURL;
@@ -665,9 +757,7 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
                 label9.Visible = false;
-            }
-            else if (Extension == ".mp3" || Extension == "MP3")
-            {
+                SetFastPossible(FastPossibleState.ForwardOnly);
             }
             else if (Extension == ".mid" || Extension == ".MID")
             {
@@ -678,6 +768,10 @@ namespace Media_Player_SMP
                 label9.Text = "タイトル: " + midi.Title + "\n\n著作権: " + midi.Copyright + "\n\nトラック: " + midi.Tracks;
                 label9.Visible = true;
             }
+            else if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wma" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WMA" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wmv" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WMV" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wm" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WM" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".asf" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".ASF" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp4" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP4" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".avi" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".AVI")
+            {
+                SetFastPossible(FastPossibleState.Bothpossible);
+            }
             else
             {
                 panel2.Visible = false;
@@ -686,11 +780,11 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
                 label9.Visible = false;
+                SetFastPossible(FastPossibleState.Impossible);
             }
             label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
             int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
             trackBar1.Maximum = duration;
-
 
             if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
             {
@@ -1381,7 +1475,7 @@ namespace Media_Player_SMP
             progresswindow1.TaskbarprogressBarState = TaskbarProgressBarState.NoProgress;
             if (e.Cancelled == false)
             {
-                axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia("Temp" + Path.GetExtension(downloaduri.ToString())));
+                axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(Application.StartupPath+"\\Temp" + Path.GetExtension(downloaduri.ToString())));
                 StatusChange("ダウンロード終了: " + downloaduri);
             }
             else
@@ -1436,8 +1530,8 @@ namespace Media_Player_SMP
             }
             //非同期ダウンロードを開始する
             Assembly myAssembly = Assembly.GetEntryAssembly();
-            string path = myAssembly.Location;
-            downloadClient.DownloadFileAsync(u, Path.GetDirectoryName(path) + "\\Temp" +Path.GetExtension(uri.ToString()));
+            string path = Application.StartupPath;
+            downloadClient.DownloadFileAsync(u, path + "\\Temp" +Path.GetExtension(uri.ToString()));
         }
 
         public void SetThread(int thread)
@@ -2388,6 +2482,21 @@ namespace Media_Player_SMP
         {
             MediaConverter mediaConverter = new MediaConverter();
             mediaConverter.Show();
+        }
+
+        private void currentdirectoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Application.StartupPath);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.fastReverse();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.fastForward();
         }
     }
 }
