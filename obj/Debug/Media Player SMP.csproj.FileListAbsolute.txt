@@ -289,3 +289,8 @@ D:\GitHub Repository\Media-Player-SMP\bin\Debug\NReco.VideoConverter.dll
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\NReco.VideoConverter.xml
 D:\GitHub Repository\Media-Player-SMP\obj\Debug\Media_Player_SMP.MediaConverter.resources
 D:\GitHub Repository\Media-Player-SMP\bin\Debug\Be.Windows.Forms.HexBox.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Runtime.WindowsRuntime.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\Newtonsoft.Json.pdb
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Runtime.WindowsRuntime.xml
+D:\GitHub Repository\Media-Player-SMP\bin\Debug\System.Runtime.WindowsRuntime.UI.Xaml.xml

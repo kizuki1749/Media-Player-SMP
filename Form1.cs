@@ -31,6 +31,7 @@ using DiscordRPC.Logging;
 using SharpPresence;
 using System.Reflection;
 using NReco.VideoConverter;
+using Windows.Media;
 
 namespace Media_Player_SMP
 {
@@ -167,8 +168,9 @@ namespace Media_Player_SMP
 
         TaskDialog dialog;
         TaskDialog dialog2;
+        SystemMediaTransportControls systemMediaTransportControls;
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_LoadAsync(object sender, EventArgs e)
         {
             Assembly myAssembly = Assembly.GetEntryAssembly();
             string path = myAssembly.Location;
@@ -318,7 +320,7 @@ namespace Media_Player_SMP
             keyHook = new KeyboardHook();
             keyHook.KeyboardHooked += new KeyboardHookedEventHandler(keyHookProc);
             ServicePointManager.DefaultConnectionLimit = 24;
-
+            
             DiscordRpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
             DiscordRpcClient.Initialize();
             DiscordRpcClient.SetPresence(new RichPresence()
@@ -337,6 +339,7 @@ namespace Media_Player_SMP
             });
         }
 
+        SystemMediaTransportControlsDisplayUpdater updater;
 
         private void keyHookProc(object sender, KeyboardHookedEventArgs e)
         {
