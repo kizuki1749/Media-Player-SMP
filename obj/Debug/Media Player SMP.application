@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Media Player SMP.exe.manifest" size="22743">
+    <dependentAssembly dependencyType="install" codebase="Media Player SMP.exe.manifest" size="25812">
       <assemblyIdentity name="Media Player SMP.exe" version="1.29.4.0" publicKeyToken="0000000000000000" language="ja" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lgIBuPBQ9Yb0HIpQ9GzL5ogKWHt/JCSsbrB5DjdgShA=</dsig:DigestValue>
+        <dsig:DigestValue>ckTgf1q06AMpobV/Ri9Bp7A42Ygttnz8c0ZwSB0QZjA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

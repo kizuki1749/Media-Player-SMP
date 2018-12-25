@@ -4,7 +4,7 @@
   <description asmv2:iconFile="SMPicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Media Player SMP" version="1.29.3.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
     <commandLine file="Media Player SMP.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,6 +43,11 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Numerics.Vectors" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
       <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -51,6 +56,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>jUi/Yu5n2j58aV46U+tL+ivXljCXPsEfAZuKOivUGuA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Be.Windows.Forms.HexBox.dll" size="86016">
+      <assemblyIdentity name="Be.Windows.Forms.HexBox" version="1.6.0.38064" publicKeyToken="E0E5ADF0EBC99863" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oyys8eM5/JnyIClQO8B0WLy/+7vw8ztbur+m74RITT0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,31 +115,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IQTw0guqYJWYiNSpZe7WKL5p+B3wgv3XKgi5r895Q/g=</dsig:DigestValue>
+        <dsig:DigestValue>gU3CNw2y5lxjWij10q/1rBOGJmUwkBU+TldC7SW6Kes=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1398208">
-      <assemblyIdentity name="Media Player SMP" version="1.29.3.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1422272">
+      <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>v+Zw9+k3/fKPcFtoCePGlNHjQPcuE/m19fwqs2O3rqc=</dsig:DigestValue>
+        <dsig:DigestValue>sBnLUIaFqlVL54xsndByVXk3YWNMv85TRljVjhtzV38=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Media Player SMP.resources.dll" size="6144">
-      <assemblyIdentity name="Media Player SMP.resources" version="1.29.3.0" language="ja" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.14" language="ja" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QgW3EyakkldjxaE7LU+nd15ZH6Pn4g7MgRllA45+ZxE=</dsig:DigestValue>
+        <dsig:DigestValue>YI274UyLi4By4fBOf7qApjJhWpxA2BjcF9QcfEo3VzI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -163,14 +180,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="662528">
-      <assemblyIdentity name="Newtonsoft.Json" version="11.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="675240">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9Yw3T/yq5ONtdA2Q+/f+cNCrtzKM2a86CntwgD6ZS6Q=</dsig:DigestValue>
+        <dsig:DigestValue>tmdJuB4UifzY11SyrTnr4NtoE0TjkqP0nckjVkO9vQY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NReco.VideoConverter.dll" size="16961024">
+      <assemblyIdentity name="NReco.VideoConverter" version="1.1.3.0" publicKeyToken="395CCB334978A0CD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PP00NybTT1KI4RuAFJlAbwamc11NxCacP3V6qJBiBdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -247,6 +276,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.WindowsRuntime.dll" size="28216">
+      <assemblyIdentity name="System.Runtime.WindowsRuntime" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1ALzPbabgGNICXybMkHIxlZ0Fr4c8tmR+iohNg87eCA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.WindowsRuntime.UI.Xaml.dll" size="30312">
+      <assemblyIdentity name="System.Runtime.WindowsRuntime.UI.Xaml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K53G8LjYRrJafpJsUBnWzG8q3bmeIhJg4JzRgqxWhB0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="taglib-sharp.dll" size="443392">
       <assemblyIdentity name="taglib-sharp" version="2.1.0.0" publicKeyToken="DB62EBA44689B5B0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -302,43 +355,43 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s1OlU4ZIAsdtH92dLkVJVr0sJCgorRePFj3uzQLJocs=</dsig:DigestValue>
+        <dsig:DigestValue>fAfjvOPheUz/wDMwL88ToAP9MgsW4cCenZoiH0lVZqQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xunit.assert.dll" size="72616">
-      <assemblyIdentity name="xunit.assert" version="2.4.0.4049" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xunit.assert.dll" size="73128">
+      <assemblyIdentity name="xunit.assert" version="2.4.1.0" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6QIBOSRHYr9rEh3BAiUFJvl85HPL5YMzA13jjgaO3Hg=</dsig:DigestValue>
+        <dsig:DigestValue>F7lzAe6F8jXMRRNAVaLtwv5plpZr2f3r8K7el3DGoG4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xunit.core.dll" size="55208">
-      <assemblyIdentity name="xunit.core" version="2.4.0.4049" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="xunit.core" version="2.4.1.0" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nGGv8cHiwdB4qd3dbxA2KqB6oR41t/e2sKJoZFADfj0=</dsig:DigestValue>
+        <dsig:DigestValue>VbHTl5YucgTtTgNU7rP3qqhPU0aTR+JfbuYsXN886RE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xunit.execution.desktop.dll" size="249768">
-      <assemblyIdentity name="xunit.execution.desktop" version="2.4.0.4049" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xunit.execution.desktop.dll" size="249256">
+      <assemblyIdentity name="xunit.execution.desktop" version="2.4.1.0" publicKeyToken="8D05B1BB7A6FDB6C" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LlmF9F6rEw9A2U7cWVOiu26x0zJOhg3WQwggKcw7hCA=</dsig:DigestValue>
+        <dsig:DigestValue>Yq/ctdVYQdQDLZy5lH+qlU/g0IftdQRfcPrzJDr+aFE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -348,7 +401,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ScqAmibfMBkU/hTBRdfxNeeeYJk4oqDS/2GSIZTAu1M=</dsig:DigestValue>
+      <dsig:DigestValue>Gnl68VYYlhT34J1mgdmHwej1kTwKwqciLmaEB9TCD2I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SMPicon.ico" size="311534">

@@ -88,6 +88,7 @@
             this.MinimizeBox = false;
             this.Name = "OpenURLWindow";
             this.Text = "URL / ネットワークストリームを開く";
+            this.Load += new System.EventHandler(this.OpenURLWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

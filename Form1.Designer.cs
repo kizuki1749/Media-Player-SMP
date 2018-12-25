@@ -56,6 +56,13 @@
             this.メンテナンスMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.終了時に自動実行されますToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.外部連携CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discord連携DToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.表示変更CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ツールTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.動画変換CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chromeCastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.キャストを停止SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,9 +71,9 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.iPアドレスを指定してキャストToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -123,8 +130,10 @@
             this.再生PToolStripMenuItem,
             this.表示VToolStripMenuItem,
             this.メンテナンスMToolStripMenuItem,
-            this.chromeCastToolStripMenuItem,
-            this.ヘルプHToolStripMenuItem});
+            this.外部連携CToolStripMenuItem,
+            this.ツールTToolStripMenuItem,
+            this.ヘルプHToolStripMenuItem,
+            this.chromeCastToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -295,6 +304,52 @@
             resources.ApplyResources(this.終了時に自動実行されますToolStripMenuItem, "終了時に自動実行されますToolStripMenuItem");
             this.終了時に自動実行されますToolStripMenuItem.Name = "終了時に自動実行されますToolStripMenuItem";
             // 
+            // 外部連携CToolStripMenuItem
+            // 
+            this.外部連携CToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.discord連携DToolStripMenuItem});
+            this.外部連携CToolStripMenuItem.Name = "外部連携CToolStripMenuItem";
+            resources.ApplyResources(this.外部連携CToolStripMenuItem, "外部連携CToolStripMenuItem");
+            // 
+            // discord連携DToolStripMenuItem
+            // 
+            this.discord連携DToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.表示変更CToolStripMenuItem});
+            this.discord連携DToolStripMenuItem.Name = "discord連携DToolStripMenuItem";
+            resources.ApplyResources(this.discord連携DToolStripMenuItem, "discord連携DToolStripMenuItem");
+            // 
+            // 表示変更CToolStripMenuItem
+            // 
+            this.表示変更CToolStripMenuItem.Name = "表示変更CToolStripMenuItem";
+            resources.ApplyResources(this.表示変更CToolStripMenuItem, "表示変更CToolStripMenuItem");
+            this.表示変更CToolStripMenuItem.Click += new System.EventHandler(this.表示変更CToolStripMenuItem_Click);
+            // 
+            // ツールTToolStripMenuItem
+            // 
+            this.ツールTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.動画変換CToolStripMenuItem});
+            this.ツールTToolStripMenuItem.Name = "ツールTToolStripMenuItem";
+            resources.ApplyResources(this.ツールTToolStripMenuItem, "ツールTToolStripMenuItem");
+            // 
+            // 動画変換CToolStripMenuItem
+            // 
+            this.動画変換CToolStripMenuItem.Name = "動画変換CToolStripMenuItem";
+            resources.ApplyResources(this.動画変換CToolStripMenuItem, "動画変換CToolStripMenuItem");
+            this.動画変換CToolStripMenuItem.Click += new System.EventHandler(this.動画変換CToolStripMenuItem_Click);
+            // 
+            // ヘルプHToolStripMenuItem
+            // 
+            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.バージョン情報AToolStripMenuItem});
+            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
+            resources.ApplyResources(this.ヘルプHToolStripMenuItem, "ヘルプHToolStripMenuItem");
+            // 
+            // バージョン情報AToolStripMenuItem
+            // 
+            this.バージョン情報AToolStripMenuItem.Name = "バージョン情報AToolStripMenuItem";
+            resources.ApplyResources(this.バージョン情報AToolStripMenuItem, "バージョン情報AToolStripMenuItem");
+            this.バージョン情報AToolStripMenuItem.Click += new System.EventHandler(this.バージョン情報AToolStripMenuItem_Click);
+            // 
             // chromeCastToolStripMenuItem
             // 
             this.chromeCastToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -312,7 +367,6 @@
             // 
             this.キャストCToolStripMenuItem.Name = "キャストCToolStripMenuItem";
             resources.ApplyResources(this.キャストCToolStripMenuItem, "キャストCToolStripMenuItem");
-            this.キャストCToolStripMenuItem.Click += new System.EventHandler(this.キャストCToolStripMenuItem_Click);
             // 
             // キャストを停止SToolStripMenuItem
             // 
@@ -343,25 +397,13 @@
             // 
             this.iPアドレスを指定してキャストToolStripMenuItem.Name = "iPアドレスを指定してキャストToolStripMenuItem";
             resources.ApplyResources(this.iPアドレスを指定してキャストToolStripMenuItem, "iPアドレスを指定してキャストToolStripMenuItem");
-            this.iPアドレスを指定してキャストToolStripMenuItem.Click += new System.EventHandler(this.iPアドレスを指定してキャストToolStripMenuItem_Click);
-            // 
-            // ヘルプHToolStripMenuItem
-            // 
-            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.バージョン情報AToolStripMenuItem});
-            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
-            resources.ApplyResources(this.ヘルプHToolStripMenuItem, "ヘルプHToolStripMenuItem");
-            // 
-            // バージョン情報AToolStripMenuItem
-            // 
-            this.バージョン情報AToolStripMenuItem.Name = "バージョン情報AToolStripMenuItem";
-            resources.ApplyResources(this.バージョン情報AToolStripMenuItem, "バージョン情報AToolStripMenuItem");
-            this.バージョン情報AToolStripMenuItem.Click += new System.EventHandler(this.バージョン情報AToolStripMenuItem_Click);
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.progressBar1);
@@ -378,6 +420,20 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Name = "panel1";
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // checkBox2
             // 
@@ -490,6 +546,7 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.RestoreDirectory = true;
             // 
             // timer1
             // 
@@ -538,6 +595,7 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             resources.ApplyResources(this.openFileDialog2, "openFileDialog2");
+            this.openFileDialog2.RestoreDirectory = true;
             // 
             // panel3
             // 
@@ -628,7 +686,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_LoadAsync);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
@@ -698,15 +756,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ToolStripMenuItem chromeCastToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem キャストCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem キャストを停止SToolStripMenuItem;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripMenuItem iPアドレスを指定してキャストToolStripMenuItem;
         internal System.Windows.Forms.MenuStrip menuStrip1;
         internal System.Windows.Forms.Panel panel1;
         internal System.Windows.Forms.Panel panel2;
@@ -727,6 +777,21 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 終了時に自動実行されますToolStripMenuItem;
         private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.ToolStripMenuItem chromeCastToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem キャストを停止SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripMenuItem iPアドレスを指定してキャストToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 外部連携CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem discord連携DToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 表示変更CToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ツールTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 動画変換CToolStripMenuItem;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
 

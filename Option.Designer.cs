@@ -34,6 +34,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.commandLink4 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
+            this.commandLink1 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -64,6 +66,10 @@
             this.propertyGrid8 = new System.Windows.Forms.PropertyGrid();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.commandLink2 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
+            this.commandLink3 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -85,12 +91,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
-            this.commandLink1 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
-            this.commandLink3 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
-            this.commandLink2 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
-            this.commandLink4 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
+            this.commandLink5 = new Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -112,13 +113,13 @@
             this.tabPage9.SuspendLayout();
             this.tabPage14.SuspendLayout();
             this.tabPage15.SuspendLayout();
+            this.tabPage16.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tabPage16.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -172,6 +173,22 @@
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // commandLink4
+            // 
+            resources.ApplyResources(this.commandLink4, "commandLink4");
+            this.commandLink4.Name = "commandLink4";
+            this.commandLink4.NoteText = "アプリケーションを再起動してから初期化します。アプリケーションの動作が不安定になったときなどに初期化してください。";
+            this.commandLink4.UseVisualStyleBackColor = true;
+            this.commandLink4.Click += new System.EventHandler(this.commandLink4_Click);
+            // 
+            // commandLink1
+            // 
+            resources.ApplyResources(this.commandLink1, "commandLink1");
+            this.commandLink1.Name = "commandLink1";
+            this.commandLink1.NoteText = "アプリケーションを再起動します。";
+            this.commandLink1.UseVisualStyleBackColor = true;
+            this.commandLink1.Click += new System.EventHandler(this.commandLink1_Click);
             // 
             // checkBox2
             // 
@@ -373,6 +390,37 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.commandLink5);
+            this.tabPage16.Controls.Add(this.commandLink2);
+            this.tabPage16.Controls.Add(this.commandLink3);
+            this.tabPage16.Controls.Add(this.label8);
+            resources.ApplyResources(this.tabPage16, "tabPage16");
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // commandLink2
+            // 
+            resources.ApplyResources(this.commandLink2, "commandLink2");
+            this.commandLink2.Name = "commandLink2";
+            this.commandLink2.NoteText = "";
+            this.commandLink2.UseVisualStyleBackColor = true;
+            this.commandLink2.Click += new System.EventHandler(this.commandLink2_Click);
+            // 
+            // commandLink3
+            // 
+            resources.ApplyResources(this.commandLink3, "commandLink3");
+            this.commandLink3.Name = "commandLink3";
+            this.commandLink3.NoteText = "";
+            this.commandLink3.UseVisualStyleBackColor = true;
+            this.commandLink3.Click += new System.EventHandler(this.commandLink3_Click);
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label3);
@@ -520,51 +568,13 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // tabPage16
+            // commandLink5
             // 
-            this.tabPage16.Controls.Add(this.commandLink2);
-            this.tabPage16.Controls.Add(this.commandLink3);
-            this.tabPage16.Controls.Add(this.label8);
-            resources.ApplyResources(this.tabPage16, "tabPage16");
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // commandLink1
-            // 
-            resources.ApplyResources(this.commandLink1, "commandLink1");
-            this.commandLink1.Name = "commandLink1";
-            this.commandLink1.NoteText = "アプリケーションを再起動します。";
-            this.commandLink1.UseVisualStyleBackColor = true;
-            this.commandLink1.Click += new System.EventHandler(this.commandLink1_Click);
-            // 
-            // commandLink3
-            // 
-            resources.ApplyResources(this.commandLink3, "commandLink3");
-            this.commandLink3.Name = "commandLink3";
-            this.commandLink3.NoteText = "";
-            this.commandLink3.UseVisualStyleBackColor = true;
-            this.commandLink3.Click += new System.EventHandler(this.commandLink3_Click);
-            // 
-            // commandLink2
-            // 
-            resources.ApplyResources(this.commandLink2, "commandLink2");
-            this.commandLink2.Name = "commandLink2";
-            this.commandLink2.NoteText = "";
-            this.commandLink2.UseVisualStyleBackColor = true;
-            this.commandLink2.Click += new System.EventHandler(this.commandLink2_Click);
-            // 
-            // commandLink4
-            // 
-            resources.ApplyResources(this.commandLink4, "commandLink4");
-            this.commandLink4.Name = "commandLink4";
-            this.commandLink4.NoteText = "アプリケーションを再起動してから初期化します。アプリケーションの動作が不安定になったときなどに初期化してください。";
-            this.commandLink4.UseVisualStyleBackColor = true;
-            this.commandLink4.Click += new System.EventHandler(this.commandLink4_Click);
+            resources.ApplyResources(this.commandLink5, "commandLink5");
+            this.commandLink5.Name = "commandLink5";
+            this.commandLink5.NoteText = "";
+            this.commandLink5.UseVisualStyleBackColor = true;
+            this.commandLink5.Click += new System.EventHandler(this.commandLink5_Click);
             // 
             // Option
             // 
@@ -601,6 +611,8 @@
             this.tabPage14.ResumeLayout(false);
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -610,8 +622,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.tabPage16.ResumeLayout(false);
-            this.tabPage16.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -680,5 +690,6 @@
         private Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink commandLink3;
         private Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink commandLink2;
         private Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink commandLink4;
+        private Microsoft.WindowsAPICodePack.Controls.WindowsForms.CommandLink commandLink5;
     }
 }

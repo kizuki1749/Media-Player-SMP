@@ -41,5 +41,9 @@ namespace Media_Player_SMP
             form1.filedownloadtemp(new Uri(url[0]));
             Close();
         }
+
+        private void OpenURLWindow_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

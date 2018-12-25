@@ -28,13 +28,18 @@ using Microsoft.WindowsAPICodePack.ApplicationServices;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using DiscordRPC;
 using DiscordRPC.Logging;
+using SharpPresence;
+using System.Reflection;
+using NReco.VideoConverter;
+using Windows.Media;
 
 namespace Media_Player_SMP
 {
     public partial class Form1 : Form
     {
-        private static string RecoveryFile0 = "C:\\Temp\\RecoveryData0.txt";
-        private static string RecoveryFile1 = "C:\\Temp\\RecoveryData1.txt";
+        private static string RecoveryFile0 = Directory.GetCurrentDirectory() + "RecoveryData0.txt";
+        private static string RecoveryFile1 = Directory.GetCurrentDirectory() + "RecoveryData1.txt";
+        private static string RecoveryFile2 = Directory.GetCurrentDirectory() + "RecoveryData2.txt";
 
         [DllImport("USER32.DLL")]
         private static extern IntPtr GetSystemMenu(IntPtr hWnd, UInt32 bRevert);
@@ -47,7 +52,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.29";
+        public string version = "1.30 Beta 2";
 
         public Form1()
         {
@@ -69,6 +74,9 @@ namespace Media_Player_SMP
         {
             File.WriteAllText(RecoveryFile0, NowMedia);
             File.WriteAllText(RecoveryFile1, NowTime.ToString());
+            File.WriteAllText(RecoveryFile2, volume.ToString());
+            Thread.Sleep(100000);
+            ApplicationRestartRecoveryManager.ApplicationRecoveryFinished(true);
             return 0;
         }
 
@@ -109,6 +117,10 @@ namespace Media_Player_SMP
 
             dialog1.Show();
         }
+
+        DateTime nowtime = new DateTime();
+        DateTime duration = new DateTime();
+
 
         public void UpgradeSettings(object sender, EventArgs e)
         {
@@ -156,9 +168,15 @@ namespace Media_Player_SMP
 
         TaskDialog dialog;
         TaskDialog dialog2;
+        SystemMediaTransportControls systemMediaTransportControls;
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_LoadAsync(object sender, EventArgs e)
         {
+            Assembly myAssembly = Assembly.GetEntryAssembly();
+            string path = myAssembly.Location;
+            RecoveryFile0 = Path.GetDirectoryName(path) + "\\RecoveryData0.txt";
+            RecoveryFile1 = Path.GetDirectoryName(path) + "\\RecoveryData1.txt";
+            RecoveryFile2 = Path.GetDirectoryName(path) + "\\RecoveryData2.txt";
             Text = "Media Player SMP "+version;
             mCallback = new MMFrame.Windows.GlobalHook.VistaRestartRecoveryAPI.ApplicationRecoveryCallback(this.RecoverData);
             IntPtr del = Marshal.GetFunctionPointerForDelegate(mCallback);
@@ -302,7 +320,7 @@ namespace Media_Player_SMP
             keyHook = new KeyboardHook();
             keyHook.KeyboardHooked += new KeyboardHookedEventHandler(keyHookProc);
             ServicePointManager.DefaultConnectionLimit = 24;
-
+            
             DiscordRpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
             DiscordRpcClient.Initialize();
             DiscordRpcClient.SetPresence(new RichPresence()
@@ -314,10 +332,14 @@ namespace Media_Player_SMP
                     LargeImageKey = "smpicon",
                     LargeImageText = "Media Player SMP " + version
                 },
+                Timestamps = new Timestamps()
+                {
+                    Start = nowtime
+                }
             });
         }
 
-        
+        SystemMediaTransportControlsDisplayUpdater updater;
 
         private void keyHookProc(object sender, KeyboardHookedEventArgs e)
         {
@@ -529,9 +551,12 @@ namespace Media_Player_SMP
             }
         }
 
+        int volume = 0;
+
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
+            volume = trackBar2.Value;
             label4.Text = "音量 : " + trackBar2.Value;
         }
 
@@ -623,6 +648,98 @@ namespace Media_Player_SMP
             axWindowsMediaPlayer1.Ctlcontrols.next();
         }
 
+        /// <summary>
+        /// 早送り、巻き戻し可能かを示す
+        /// </summary>
+        public enum FastPossibleState
+        {
+            /// <summary>
+            /// 早送り不可能、巻き戻し不可能
+            /// </summary>
+            Impossible = -1,
+            /// <summary>
+            /// 早送り可能、巻き戻し可能
+            /// </summary>
+            Bothpossible,
+            /// <summary>
+            /// 早送り可能、巻き戻し不可能
+            /// </summary>
+            ForwardOnly,
+            /// <summary>
+            /// 早送り不可能、巻き戻し可能
+            /// </summary>
+            ReverseOnly
+        }
+
+        /// <summary>
+        /// 早送り、巻き戻し可能かを設定する
+        /// </summary>
+        /// <param name="fastPossibleState">早送り、巻き戻し可能かを示す</param>
+        /// <returns>なし</returns>
+        /// <seealso cref="FastPossibleState"/>
+        /// <example>
+        /// 不可能: SetFastPossible(FastPossibleState.Impossible)
+        /// 早送り、巻き戻し可能: SetFastPossible(FastPossibleState.Bothpossible)
+        /// 早送り可能: SetFastPossible(FastPossibleState.ForwardOnly)
+        /// 巻き戻し可能: SetFastPossible(FastPossibleState.ReverseOnly)
+        /// </example>
+        public void SetFastPossible(FastPossibleState fastPossibleState)
+        {
+            switch (fastPossibleState)
+            {
+                case FastPossibleState.Bothpossible:
+                    button8.Enabled = true;
+                    button9.Enabled = true;
+                    break;
+
+                case FastPossibleState.Impossible:
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    break;
+
+                case FastPossibleState.ForwardOnly:
+                    button8.Enabled = false;
+                    button9.Enabled = true;
+                    break;
+
+                case FastPossibleState.ReverseOnly:
+                    button8.Enabled = true;
+                    button9.Enabled = false;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 早送り、巻き戻し可能かを取得する
+        /// </summary>
+        /// <returns>FastPossibleState: 早送り、巻き戻し可能か</returns>
+        /// <seealso cref="FastPossibleState"/>
+        public FastPossibleState GetFastPossible()
+        {
+            if (button8.Enabled)
+            {
+                if (button9.Enabled)
+                {
+                    return FastPossibleState.Bothpossible;
+                }
+                else
+                {
+                    return FastPossibleState.ReverseOnly;
+                }
+            }
+            else
+            {
+                if (button9.Enabled)
+                {
+                    return FastPossibleState.ForwardOnly;
+                }
+                else
+                {
+                    return FastPossibleState.Impossible;
+                }
+            }
+        }
+
         private void axWindowsMediaPlayer1_CurrentItemChange(object sender, AxWMPLib._WMPOCXEvents_CurrentItemChangeEvent e)
         {
             NowMedia = axWindowsMediaPlayer1.currentMedia.sourceURL;
@@ -643,9 +760,7 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
                 label9.Visible = false;
-            }
-            else if (Extension == ".mp3" || Extension == "MP3")
-            {
+                SetFastPossible(FastPossibleState.ForwardOnly);
             }
             else if (Extension == ".mid" || Extension == ".MID")
             {
@@ -656,6 +771,10 @@ namespace Media_Player_SMP
                 label9.Text = "タイトル: " + midi.Title + "\n\n著作権: " + midi.Copyright + "\n\nトラック: " + midi.Tracks;
                 label9.Visible = true;
             }
+            else if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wma" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WMA" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wmv" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WMV" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".wm" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".WM" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".asf" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".ASF" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp4" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP4" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".avi" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".AVI")
+            {
+                SetFastPossible(FastPossibleState.Bothpossible);
+            }
             else
             {
                 panel2.Visible = false;
@@ -664,11 +783,11 @@ namespace Media_Player_SMP
                 axWindowsMediaPlayer1.settings.mute = checkBox1.Checked;
                 axWindowsMediaPlayer1.settings.volume = trackBar2.Value;
                 label9.Visible = false;
+                SetFastPossible(FastPossibleState.Impossible);
             }
             label3.Text = axWindowsMediaPlayer1.currentMedia.durationString;
             int duration = (int)axWindowsMediaPlayer1.currentMedia.duration;
             trackBar1.Maximum = duration;
-
 
             if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
             {
@@ -1359,7 +1478,7 @@ namespace Media_Player_SMP
             progresswindow1.TaskbarprogressBarState = TaskbarProgressBarState.NoProgress;
             if (e.Cancelled == false)
             {
-                axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia("Temp" + Path.GetExtension(downloaduri.ToString())));
+                axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(Application.StartupPath+"\\Temp" + Path.GetExtension(downloaduri.ToString())));
                 StatusChange("ダウンロード終了: " + downloaduri);
             }
             else
@@ -1413,7 +1532,9 @@ namespace Media_Player_SMP
                         downloadClient_DownloadFileCompleted);
             }
             //非同期ダウンロードを開始する
-            downloadClient.DownloadFileAsync(u, "Temp"+Path.GetExtension(uri.ToString()));
+            Assembly myAssembly = Assembly.GetEntryAssembly();
+            string path = Application.StartupPath;
+            downloadClient.DownloadFileAsync(u, path + "\\Temp" +Path.GetExtension(uri.ToString()));
         }
 
         public void SetThread(int thread)
@@ -1460,7 +1581,7 @@ namespace Media_Player_SMP
         {
             // 再起動用コードの登録
             ApplicationRestartRecoveryManager.RegisterForApplicationRestart(
-                    new RestartSettings("-restart",
+                    new RestartSettings("",
                     RestartRestrictions.NotOnReboot | RestartRestrictions.NotOnPatch));
 
             // 修復用メソッドの登録
@@ -1470,15 +1591,18 @@ namespace Media_Player_SMP
 
             // 起動時の再起動かどうかの判断
             // 再起動時にデータを修復するコードの作成
-            if (System.Environment.GetCommandLineArgs().Length > 1 &&
-                System.Environment.GetCommandLineArgs()[1] == "-restart")
+            if (System.IO.File.Exists(RecoveryFile0) && System.IO.File.Exists(RecoveryFile1))
             {
-                if (File.Exists(RecoveryFile0) == true && File.Exists(RecoveryFile1) == true)
+                Assembly myAssembly = Assembly.GetEntryAssembly();
+                string path = myAssembly.Location;
+                RecoveryFile0 = Path.GetDirectoryName(path) + "\\RecoveryData0.txt";
+                RecoveryFile1 = Path.GetDirectoryName(path) + "\\RecoveryData1.txt";
+                RecoveryFile2 = Path.GetDirectoryName(path) + "\\RecoveryData2.txt";
+                if (File.ReadAllText(RecoveryFile0).Length != 0)
                 {
                     try
                     {
                         axWindowsMediaPlayer1.currentPlaylist.appendItem(axWindowsMediaPlayer1.newMedia(File.ReadAllText(RecoveryFile0)));
-                        axWindowsMediaPlayer1.Ctlcontrols.currentPosition = double.Parse(File.ReadAllText(RecoveryFile1));
                         recoveryresult = 1;
                     }
                     catch
@@ -1486,19 +1610,61 @@ namespace Media_Player_SMP
                         recoveryresult = 2;
                     }
                 }
-            }
-            switch (recoveryresult)
-            {
-                case 0:
-                    break;
+                if (File.ReadAllText(RecoveryFile1).Length != 0)
+                {
+                    try
+                    {
+                        axWindowsMediaPlayer1.Ctlcontrols.currentPosition = double.Parse(File.ReadAllText(RecoveryFile1));
+                        if (recoveryresult == 1)
+                        {
+                            recoveryresult = 1;
+                        }
+                    }
+                    catch
+                    {
+                        recoveryresult = 2;
+                    }
+                }
+                if (File.ReadAllText(RecoveryFile2).Length != 0)
+                {
+                    try
+                    {
+                        axWindowsMediaPlayer1.settings.volume = int.Parse(File.ReadAllText(RecoveryFile2));
+                        if (recoveryresult == 1)
+                        {
+                            recoveryresult = 1;
+                        }
+                    }
+                    catch
+                    {
+                        recoveryresult = 2;
+                    }
+                }
+                try
+                {
+                    File.Delete(RecoveryFile0);
+                    File.Delete(RecoveryFile1);
+                    File.Delete(RecoveryFile2);
+                }
+                catch
+                {
+                    recoveryresult = 2;
+                }
+                switch (recoveryresult)
+                {
+                    case 0:
+                        break;
 
-                case 1:
-                    StatusChange("強制終了時の状態を自動的に復元しました。");
-                    break;
+                    case 1:
+                        StatusChange("強制終了時の状態を自動的に復元しました。");
+                        break;
 
-                case 2:
-                    StatusChange("強制終了時の状態の一部または全てを復元することができませんでした。");
-                    break;
+                    case 2:
+                        StatusChange("強制終了時の状態の一部または全てを復元することができませんでした。");
+                        break;
+                }
+
+
             }
         }
 
@@ -1522,7 +1688,8 @@ namespace Media_Player_SMP
         {
             try
             {
-                foreach (string file in Directory.GetFiles(".", "Temp.*"))
+                string path = Application.ExecutablePath;
+                foreach (string file in Directory.GetFiles(Path.GetDirectoryName(path), "Temp.*"))
                 {
                     DeleteFile(file);
                 }
@@ -1562,7 +1729,8 @@ namespace Media_Player_SMP
         {
             try
             {
-                foreach (string file in Directory.GetFiles(".", "Temp.*"))
+                string path = Application.ExecutablePath;
+                foreach (string file in Directory.GetFiles(Path.GetDirectoryName(path), "Temp.*"))
                 {
                     DeleteFile(file);
                 }
@@ -1574,62 +1742,78 @@ namespace Media_Player_SMP
             }
         }
 
+        public bool t5flag = false;
+        public string str1;
+
         private void timer5_Tick(object sender, EventArgs e)
         {
-            string str1 = "";
+            NowTime = axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
+            if (t5flag == false)
+            {
+                str1 = "";
+            }
+            else
+            {
+
+            }
             try
             {
-                str1 = axWindowsMediaPlayer1.currentMedia.name;
-
-                if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
+                if (t5flag == false)
                 {
-                    TagLib.File id3 = TagLib.File.Create(axWindowsMediaPlayer1.currentMedia.sourceURL);
-                    string artists;
-                    artists = "";
-                    foreach (string artist in id3.Tag.Artists)
-                    {
-                        artists = artist + " ";
-                    }
+                    str1 = axWindowsMediaPlayer1.currentMedia.name;
 
-                    string albumartists;
-                    albumartists = "";
-                    foreach (string albumartist in id3.Tag.AlbumArtists)
+                    if (Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".mp3" || Path.GetExtension(axWindowsMediaPlayer1.currentMedia.sourceURL) == ".MP3")
                     {
-                        albumartists = albumartist + " ";
-                    }
+                        TagLib.File id3 = TagLib.File.Create(axWindowsMediaPlayer1.currentMedia.sourceURL);
+                        string artists;
+                        artists = "";
+                        foreach (string artist in id3.Tag.Artists)
+                        {
+                            artists = artist + " ";
+                        }
 
-                    string genres;
-                    genres = "";
-                    foreach (string genre in id3.Tag.Genres)
-                    {
-                        genres = genre + " ";
-                    }
+                        string albumartists;
+                        albumartists = "";
+                        foreach (string albumartist in id3.Tag.AlbumArtists)
+                        {
+                            albumartists = albumartist + " ";
+                        }
 
-                    string track;
-                    track = "";
-                    if (id3.Tag.TrackCount == 0)
-                    {
-                        track = id3.Tag.Track.ToString();
-                    }
-                    else
-                    {
-                        track = id3.Tag.Track + " / " + id3.Tag.TrackCount;
-                    }
-                    if (id3.Tag.DiscCount == 0)
-                    {
-                        track = id3.Tag.Disc.ToString();
-                    }
-                    else
-                    {
-                        track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
-                    }
+                        string genres;
+                        genres = "";
+                        foreach (string genre in id3.Tag.Genres)
+                        {
+                            genres = genre + " ";
+                        }
+
+                        string track;
+                        track = "";
+                        if (id3.Tag.TrackCount == 0)
+                        {
+                            track = id3.Tag.Track.ToString();
+                        }
+                        else
+                        {
+                            track = id3.Tag.Track + " / " + id3.Tag.TrackCount;
+                        }
+                        if (id3.Tag.DiscCount == 0)
+                        {
+                            track = id3.Tag.Disc.ToString();
+                        }
+                        else
+                        {
+                            track = id3.Tag.Disc + " / " + id3.Tag.DiscCount;
+                        }
                         str1 += " (" + artists + " / " + id3.Tag.Album + " / トラック番号: " + id3.Tag.Track + " / " + genres + " / " + id3.Tag.Year + ")";
+                    }
                 }
-
             }
             catch
             {
-                str1 = "";
+                if (t5flag == false)
+                {
+                    str1 = "";
+                }
             }
             string str2 = "";
             if (str1.Length > 128)
@@ -2288,8 +2472,35 @@ namespace Media_Player_SMP
                         }
                         break;
                 }
-                }
             }
+        }
+
+        private void 表示変更CToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DiscordChangeWindow discordChangeWindow = new DiscordChangeWindow(this);
+            discordChangeWindow.Show();
+        }
+
+        private void 動画変換CToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MediaConverter mediaConverter = new MediaConverter();
+            mediaConverter.Show();
+        }
+
+        private void currentdirectoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Application.StartupPath);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.fastReverse();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.fastForward();
+        }
     }
 }
 
