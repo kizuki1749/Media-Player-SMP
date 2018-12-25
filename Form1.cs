@@ -52,7 +52,7 @@ namespace Media_Player_SMP
         private const UInt32 MF_SEPARATOR = 0x00000800;
         private const int WM_SYSCOMMAND = 0x112;
         public DiscordRpcClient DiscordRpcClient = new DiscordRpcClient("495186532903157760", true);
-        public string version = "1.30 Beta 2";
+        public string version = "1.30";
 
         public Form1()
         {

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>ftp://sv2.html.xdomain.ne.jp/clickonce/smp/|http://kizuki1749.html.xdomain.jp/clickonce/smp/|D:\clickonce\|publish\</PublishUrlHistory>
-    <InstallUrlHistory>http://kizuki1749.html.xdomain.jp/clickonce/smp/|http://kizuki17/|http://kizuki1749.html.xdomain.co.jp/clickonce/smp/|https://clickonceget.azurewebsites.net/app/Media%2520Player%2520SMP/|https://clickonceget.azurewebsites.net/app/Media Player SMP/</InstallUrlHistory>
+    <PublishUrlHistory>U:\clickonce\smp\|https://kizuki1749server.mydns.jp/clickonce/smp/|U:\|ftp://sv2.html.xdomain.ne.jp/clickonce/smp/|http://kizuki1749.html.xdomain.jp/clickonce/smp/</PublishUrlHistory>
+    <InstallUrlHistory>https://kizuki1749server.mydns.jp/clickonce/smp/|http://kizuki1749server.mydns.jp/clickonce/smp/|\\kizuki1749server.mydns.jp\clickonce\smp\|http://kizuki1749.html.xdomain.jp/clickonce/smp/|http://kizuki17/</InstallUrlHistory>
     <SupportUrlHistory>http://kizuki1749.html.xdomain.jp/</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />

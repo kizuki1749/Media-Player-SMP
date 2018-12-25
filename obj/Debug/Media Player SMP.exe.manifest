@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Media Player SMP.exe" version="1.29.4.0" publicKeyToken="0000000000000000" language="ja" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Media Player SMP.exe" version="1.30.0.15" publicKeyToken="0000000000000000" language="ja" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="SMPicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Media Player SMP" version="1.30.0.15" language="neutral" processorArchitecture="msil" />
     <commandLine file="Media Player SMP.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -121,25 +121,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Media Player SMP.exe" size="1422272">
-      <assemblyIdentity name="Media Player SMP" version="1.30.0.14" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP" version="1.30.0.15" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sBnLUIaFqlVL54xsndByVXk3YWNMv85TRljVjhtzV38=</dsig:DigestValue>
+        <dsig:DigestValue>MVaw4fvMGuDS7lmEXK1AJhfympGZp6C79yszOHq6z4o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Media Player SMP.resources.dll" size="6144">
-      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.14" language="ja" processorArchitecture="msil" />
+      <assemblyIdentity name="Media Player SMP.resources" version="1.30.0.15" language="ja" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YI274UyLi4By4fBOf7qApjJhWpxA2BjcF9QcfEo3VzI=</dsig:DigestValue>
+        <dsig:DigestValue>Pwq9sQAzHp07tlFw1u7RfaUNxrhTNqkql53p4ZhZ1HQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -200,18 +200,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>PP00NybTT1KI4RuAFJlAbwamc11NxCacP3V6qJBiBdY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="policy.2.0.taglib-sharp.dll" size="3072">
-      <assemblyIdentity name="policy.2.0.taglib-sharp" version="0.0.0.0" publicKeyToken="DB62EBA44689B5B0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5NE7a3v2CdQ0sQx6u+RFtq+ua500tujNccDuvhxrr34=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

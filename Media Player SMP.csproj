@@ -17,7 +17,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>ftp://sv2.html.xdomain.ne.jp/clickonce/smp/</PublishUrl>
+    <PublishUrl>U:\clickonce\smp\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -27,7 +27,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>http://kizuki1749.html.xdomain.jp/clickonce/smp/</InstallUrl>
+    <InstallUrl>https://kizuki1749server.mydns.jp/clickonce/smp/</InstallUrl>
     <SupportUrl>http://kizuki1749.html.xdomain.jp/</SupportUrl>
     <ErrorReportUrl>http://kizuki1749.html.xdomain.jp/</ErrorReportUrl>
     <TargetCulture>ja</TargetCulture>
@@ -37,8 +37,8 @@
     <MinimumRequiredVersion>1.12.2.0</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.29.4.0</ApplicationVersion>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.30.0.15</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -531,6 +531,18 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="policy.2.0.taglib-sharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
